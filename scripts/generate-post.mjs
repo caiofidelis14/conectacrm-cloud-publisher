@@ -6,9 +6,11 @@ import { topics, ctas } from "./content.mjs";
 const now = new Date();
 const dayKey = now.toLocaleDateString("en-CA", { timeZone: "America/Sao_Paulo" });
 const dayNumber = Math.floor(Date.parse(`${dayKey}T12:00:00Z`) / 86400000);
+const topicCycle = Math.floor(dayNumber / topics.length);
 const topic = topics[dayNumber % topics.length];
 const cta = ctas[dayNumber % ctas.length];
-const format = dayNumber % 3 === 0 ? "static" : "carousel";
+// Nove dias de carrossel para cada dia de post estatico.
+const format = dayNumber % 10 === 0 ? "static" : "carousel";
 const dir = path.join("public", dayKey);
 await fs.mkdir(dir, { recursive: true });
 
@@ -19,7 +21,20 @@ const wrap = (text, max = 25) => {
   if (line) lines.push(line); return lines;
 };
 const textBlock = (lines, x, y, size, lineHeight, color="#fff", weight=800) => lines.map((l,i)=>`<text x="${x}" y="${y+i*lineHeight}" font-family="Arial,sans-serif" font-size="${size}" font-weight="${weight}" fill="${color}">${esc(l)}</text>`).join("");
-const base = (inner) => `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080"><defs><radialGradient id="g"><stop stop-color="#5720a5"/><stop offset="1" stop-color="#08020f"/></radialGradient><filter id="glow"><feGaussianBlur stdDeviation="18"/></filter></defs><rect width="1080" height="1080" fill="#07020d"/><circle cx="910" cy="150" r="420" fill="url(#g)" opacity=".75"/><circle cx="180" cy="1020" r="360" fill="#38106f" opacity=".45"/><g opacity=".15" stroke="#9b55ff">${Array.from({length:20},(_,i)=>`<path d="M0 ${500+i*32}H1080"/>`).join("")}</g>${inner}</svg>`;
+const palettes = [
+  ["#5720a5", "#38106f", "#8cf42f"],
+  ["#32149b", "#19175f", "#63f59a"],
+  ["#7416a8", "#35105c", "#b2ff35"],
+  ["#4a19c7", "#16245f", "#83ff48"]
+];
+const [glowA, glowB, accent] = palettes[dayNumber % palettes.length];
+const motif = Array.from({length: 7}, (_, i) => {
+  const x = 700 + ((dayNumber * 53 + i * 97) % 340);
+  const y = 160 + ((dayNumber * 71 + i * 113) % 700);
+  const r = 16 + ((dayNumber + i * 11) % 44);
+  return `<circle cx="${x}" cy="${y}" r="${r}" fill="none" stroke="${accent}" stroke-width="3" opacity="${0.08 + i * 0.025}"/>`;
+}).join("");
+const base = (inner) => `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080"><defs><radialGradient id="g"><stop stop-color="${glowA}"/><stop offset="1" stop-color="#08020f"/></radialGradient><filter id="glow"><feGaussianBlur stdDeviation="18"/></filter></defs><rect width="1080" height="1080" fill="#07020d"/><circle cx="910" cy="150" r="420" fill="url(#g)" opacity=".75"/><circle cx="180" cy="1020" r="360" fill="${glowB}" opacity=".45"/><g opacity=".15" stroke="#9b55ff">${Array.from({length:20},(_,i)=>`<path d="M0 ${500+i*32}H1080"/>`).join("")}</g>${motif}${inner}</svg>`;
 const logo = `<text x="70" y="95" font-family="Arial,sans-serif" font-size="38" font-weight="900" fill="#8d3cff">C</text><text x="112" y="84" font-family="Arial,sans-serif" font-size="25" font-weight="800" fill="#fff">Conecta</text><text x="112" y="107" font-family="Arial,sans-serif" font-size="22" font-weight="800" fill="#fff">crm</text><rect x="91" y="52" width="12" height="7" fill="#8cf42f"/>`;
 const files=[];
 async function render(name, svg){const out=path.join(dir,name);await sharp(Buffer.from(svg)).jpeg({quality:92}).toFile(out);files.push(out);}
@@ -32,7 +47,13 @@ if(format==="static"){
   for(let i=0;i<topic.points.length;i++) await render(`${String(i+2).padStart(2,"0")}.jpg`,base(`${logo}<text x="70" y="290" font-family="Arial,sans-serif" font-size="120" font-weight="900" fill="#8d3cff">0${i+1}</text>${textBlock(wrap(topic.points[i].toUpperCase(),21),70,450,68,70)}${textBlock(wrap(topic.body,43),70,720,30,42,"#d9cee7",500)}<text x="930" y="1000" font-family="Arial,sans-serif" font-size="20" fill="#8d819a">${i+2}/6</text>`));
   await render("06.jpg",base(`${logo}<text x="70" y="300" font-family="Arial,sans-serif" font-size="20" font-weight="900" letter-spacing="3" fill="#a85cff">COMECE AGORA</text>${textBlock(wrap(cta.toUpperCase(),22),70,410,68,70)}<rect x="70" y="850" width="520" height="70" rx="14" fill="#8cf42f"/><text x="98" y="896" font-family="Arial,sans-serif" font-size="24" font-weight="900" fill="#09040f">LINK NA BIO →</text>`));
 }
-const caption=`${topic.hook}\n\n${topic.body}\n\n${topic.points.map(p=>`• ${p}`).join("\n")}\n\n${cta} Link na bio. 🚀\n\n#ConectaCRM #CRM #Vendas #GestãoComercial #AutomaçãoDeVendas #PME`;
+const captionOpeners = [
+  "Um alerta para quem quer vender mais:",
+  "Isso pode estar travando suas vendas:",
+  "Uma verdade desconfortavel sobre vendas:",
+  "Gestor comercial, preste atencao nisso:"
+];
+const caption=`${captionOpeners[topicCycle % captionOpeners.length]}\n\n${topic.hook}\n\n${topic.body}\n\n${topic.points.map(p=>`• ${p}`).join("\n")}\n\n${cta} Link na bio. 🚀\n\n#ConectaCRM #CRM #Vendas #GestãoComercial #AutomaçãoDeVendas #PME`;
 const manifest={date:dayKey,format,files:files.map(f=>f.replaceAll(path.sep,"/")),caption};
 await fs.writeFile("manifest.json",JSON.stringify(manifest,null,2));
 let history=[];try{history=JSON.parse(await fs.readFile("history.json","utf8"));}catch{}

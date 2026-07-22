@@ -5,7 +5,8 @@ Publicador diário gratuito para o Instagram do ConectaCRM usando GitHub Actions
 ## Como funciona
 
 - Executa diariamente às 10h em `America/Sao_Paulo`.
-- Gera post estático ou carrossel com variações programáticas.
+- Mantém uma grade de 90% carrosséis e 10% posts estáticos (nove carrosséis para cada estático).
+- Alterna tema, abertura da legenda, paleta, composição e elementos gráficos diariamente.
 - Publica as imagens no repositório para que a API da Meta consiga acessá-las.
 - Cria o container de mídia e publica no Instagram.
 
