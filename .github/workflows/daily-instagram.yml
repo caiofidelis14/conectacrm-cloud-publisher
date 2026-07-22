@@ -1,0 +1,45 @@
+name: Publicar no Instagram
+
+on:
+  schedule:
+    - cron: "0 10 * * *"
+      timezone: "America/Sao_Paulo"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-instagram
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Gerar conteúdo do dia
+        env:
+          TZ: America/Sao_Paulo
+        run: npm run generate
+      - name: Publicar arquivos para a Meta acessar
+        run: |
+          git config user.name "ConectaCRM Bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add public manifest.json history.json
+          git diff --cached --quiet || git commit -m "content: post diário $(date +%F)"
+          git push
+      - name: Aguardar propagação dos arquivos
+        run: sleep 20
+      - name: Publicar no Instagram
+        env:
+          META_ACCESS_TOKEN: ${{ secrets.META_ACCESS_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          PUBLIC_BASE_URL: https://raw.githubusercontent.com/${{ github.repository }}/main
+        run: npm run publish

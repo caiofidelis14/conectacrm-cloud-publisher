@@ -1,0 +1,12 @@
+{
+  "name": "conectacrm-cloud-publisher",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "generate": "node scripts/generate-post.mjs",
+    "publish": "node scripts/publish-instagram.mjs"
+  },
+  "dependencies": {
+    "sharp": "^0.35.3"
+  }
+}
