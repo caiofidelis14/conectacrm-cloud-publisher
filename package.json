@@ -4,7 +4,8 @@
   "type": "module",
   "scripts": {
     "generate": "node scripts/generate-post.mjs",
-    "publish": "node scripts/publish-instagram.mjs"
+    "publish": "node scripts/publish-instagram.mjs",
+    "validate-meta": "node scripts/validate-meta.mjs"
   },
   "dependencies": {
     "sharp": "^0.35.3"

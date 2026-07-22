@@ -5,6 +5,12 @@ on:
     - cron: "0 10 * * *"
       timezone: "America/Sao_Paulo"
   workflow_dispatch:
+    inputs:
+      publish:
+        description: "Publicar de verdade?"
+        required: true
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -24,11 +30,18 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
+      - name: Validar conexão com a Meta
+        env:
+          META_ACCESS_TOKEN: ${{ secrets.META_ACCESS_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+        run: npm run validate-meta
       - name: Gerar conteúdo do dia
+        if: github.event_name == 'schedule' || inputs.publish == true
         env:
           TZ: America/Sao_Paulo
         run: npm run generate
       - name: Publicar arquivos para a Meta acessar
+        if: github.event_name == 'schedule' || inputs.publish == true
         run: |
           git config user.name "ConectaCRM Bot"
           git config user.email "actions@users.noreply.github.com"
@@ -36,8 +49,10 @@ jobs:
           git diff --cached --quiet || git commit -m "content: post diário $(date +%F)"
           git push
       - name: Aguardar propagação dos arquivos
+        if: github.event_name == 'schedule' || inputs.publish == true
         run: sleep 20
       - name: Publicar no Instagram
+        if: github.event_name == 'schedule' || inputs.publish == true
         env:
           META_ACCESS_TOKEN: ${{ secrets.META_ACCESS_TOKEN }}
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
