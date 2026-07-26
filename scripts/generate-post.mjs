@@ -11,6 +11,23 @@ const dayNumber = Math.floor(Date.parse(`${dayKey}T12:00:00Z`) / 86400000);
 const topicCycle = Math.floor(dayNumber / topics.length);
 const topic = topics[dayNumber % topics.length];
 const cta = ctas[dayNumber % ctas.length];
+const hookAngles = [
+  "A verdade desconfortável",
+  "O erro silencioso",
+  "O vazamento invisível",
+  "O hábito que destrói vendas",
+  "O alerta para gestores",
+  "O custo do improviso",
+  "O problema que o tráfego não resolve",
+  "A diferença entre esforço e processo",
+  "O sinal de uma operação travada",
+  "O que seu pipeline está escondendo",
+  "A conta que o comercial não mostra",
+  "O gargalo que ninguém quer assumir"
+];
+const hook = topicCycle === 0
+  ? topic.hook
+  : `${hookAngles[topicCycle % hookAngles.length]}: ${topic.hook}`;
 const format = dayNumber % 10 === 0 ? "static" : "carousel";
 const dir = path.join("public", dayKey);
 await fs.mkdir(dir, { recursive: true });
@@ -29,17 +46,49 @@ const coverPhotos = [
   "https://images.unsplash.com/photo-1500648767791-00dcc994a43e",
   "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d",
   "https://images.unsplash.com/photo-1494790108377-be9c29b29330",
-  "https://images.unsplash.com/photo-1517841905240-472988babdf9"
+  "https://images.unsplash.com/photo-1517841905240-472988babdf9",
+  "https://images.unsplash.com/photo-1531123897727-8f129e1688ce",
+  "https://images.unsplash.com/photo-1580489944761-15a19d654956",
+  "https://images.unsplash.com/photo-1595152772835-219674b2a8a6",
+  "https://images.unsplash.com/photo-1568602471122-7832951cc4c5",
+  "https://images.unsplash.com/photo-1527980965255-d3b416303d12",
+  "https://images.unsplash.com/photo-1544005313-94ddf0286df2",
+  "https://images.unsplash.com/photo-1534528741775-53994a69daeb",
+  "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d",
+  "https://images.unsplash.com/photo-1507591064344-4c6ce005b128",
+  "https://images.unsplash.com/photo-1524504388940-b1c1722653e1",
+  "https://images.unsplash.com/photo-1552374196-c4e7ffc6e126",
+  "https://images.unsplash.com/photo-1552058544-f2b08422138a",
+  "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6",
+  "https://images.unsplash.com/photo-1547425260-76bcadfb4f2c",
+  "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde",
+  "https://images.unsplash.com/photo-1544725176-7c40e5a71c5e",
+  "https://images.unsplash.com/photo-1548142813-c348350df52b",
+  "https://images.unsplash.com/photo-1557862921-37829c790f19",
+  "https://images.unsplash.com/photo-1564564321837-a57b7070ac4f",
+  "https://images.unsplash.com/photo-1551836022-4c4c79ecde51"
 ];
 
 const palettes = [
-  { purple: "#7c35ff", deep: "#10051f", lime: "#9cff39" },
-  { purple: "#9a2fff", deep: "#090318", lime: "#b2ff43" },
-  { purple: "#6538ff", deep: "#080520", lime: "#7dff54" },
-  { purple: "#b52dff", deep: "#13031c", lime: "#a6ff2f" }
+  { purple: "#7c35ff", deep: "#050505", lime: "#a6ff00" },
+  { purple: "#9a2fff", deep: "#030303", lime: "#b7ff35" },
+  { purple: "#6538ff", deep: "#070707", lime: "#88ff39" },
+  { purple: "#b52dff", deep: "#020202", lime: "#c0ff2f" }
 ];
 const palette = palettes[dayNumber % palettes.length];
-const photoUrl = `${coverPhotos[dayNumber % coverPhotos.length]}?auto=format&fit=crop&w=${W}&h=${H}&q=88&crop=faces`;
+let priorHistory = [];
+try {
+  priorHistory = JSON.parse(await fs.readFile("history.json", "utf8"));
+} catch {}
+const usedPhotos = new Set(priorHistory.map((item) => item.photo).filter(Boolean));
+const unusedPhoto = coverPhotos.find((photo, index) =>
+  !usedPhotos.has(photo) && index >= dayNumber % coverPhotos.length
+) ?? coverPhotos.find((photo) => !usedPhotos.has(photo));
+if (!unusedPhoto) {
+  throw new Error("Banco de fotos esgotado. Publicação interrompida para impedir repetição visual.");
+}
+const selectedPhoto = unusedPhoto;
+const photoUrl = `${selectedPhoto}?auto=format&fit=crop&w=${W}&h=${H}&q=88&crop=faces`;
 
 const esc = (s) => s.replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;");
 const wrap = (text, max = 25) => {
@@ -73,15 +122,15 @@ const footer = (left, page) => `
 
 const canvas = (inner) => `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}">
   <defs>
-    <radialGradient id="bg" cx="80%" cy="5%">
-      <stop stop-color="${palette.purple}" stop-opacity=".42"/>
+    <radialGradient id="bg" cx="${25 + dayNumber % 65}%" cy="${10 + dayNumber % 70}%">
+      <stop stop-color="${palette.purple}" stop-opacity=".16"/>
       <stop offset="1" stop-color="${palette.deep}" stop-opacity="0"/>
     </radialGradient>
     <filter id="shadow"><feDropShadow dx="0" dy="22" stdDeviation="28" flood-color="#000" flood-opacity=".45"/></filter>
   </defs>
   <rect width="${W}" height="${H}" fill="${palette.deep}"/>
   <rect width="${W}" height="${H}" fill="url(#bg)"/>
-  <g opacity=".13" stroke="${palette.purple}">${Array.from({ length: 18 }, (_, i) => `<path d="M0 ${700 + i * 34}H1080"/>`).join("")}</g>
+  <g opacity=".08" stroke="${palette.purple}">${Array.from({ length: 18 }, (_, i) => `<path d="M0 ${700 + i * 34}H1080"/>`).join("")}</g>
   ${inner}
 </svg>`;
 
@@ -120,8 +169,8 @@ const coverOverlay = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" heigh
   </defs>
   <rect width="${W}" height="${H}" fill="url(#shade)"/>
   ${logo}
-  <text x="72" y="340" font-family="Arial,sans-serif" font-size="22" font-weight="900" letter-spacing="3" fill="${palette.lime}">A VERDADE QUE NINGUÉM TE CONTA</text>
-  ${textBlock(wrap(topic.hook.toUpperCase(), 21), 72, 440, 72, 78)}
+  <text x="72" y="340" font-family="Arial,sans-serif" font-size="22" font-weight="900" letter-spacing="3" fill="${palette.lime}">O ALERTA QUE SEU COMERCIAL IGNORA</text>
+  ${textBlock(wrap(hook.toUpperCase(), 21), 72, 440, 72, 78)}
   <text x="72" y="1085" font-family="Arial,sans-serif" font-size="27" font-weight="800" fill="#fff">Arraste para entender →</text>
   ${footer("@conecta.crm", 1)}
 </svg>`;
@@ -134,14 +183,9 @@ if (format === "static") {
   for (let i = 0; i < topic.points.length; i++) {
     const card = `
       ${logo}
-      <rect x="84" y="260" width="912" height="720" rx="34" fill="#130c20" stroke="${palette.purple}" stroke-opacity=".45" filter="url(#shadow)"/>
-      <circle cx="150" cy="345" r="42" fill="${palette.purple}"/>
-      <text x="134" y="362" font-family="Arial,sans-serif" font-size="48" font-weight="900" fill="#fff">C</text>
-      <text x="215" y="336" font-family="Arial,sans-serif" font-size="28" font-weight="900" fill="#fff">ConectaCRM</text>
-      <text x="215" y="371" font-family="Arial,sans-serif" font-size="22" fill="#bdb1ca">@conecta.crm · Gestão de vendas</text>
-      <text x="128" y="490" font-family="Arial,sans-serif" font-size="25" font-weight="900" fill="${palette.lime}">PONTO ${String(i + 1).padStart(2, "0")}</text>
-      ${textBlock(wrap(topic.points[i].toUpperCase(), 24), 128, 585, 58, 66)}
-      ${textBlock(wrap(topic.body, 42), 128, 790, 30, 43, "#ded5e8", 500)}
+      <text x="72" y="330" font-family="Arial,sans-serif" font-size="24" font-weight="900" letter-spacing="3" fill="${palette.lime}">SEM DESCULPAS · PONTO ${String(i + 1).padStart(2, "0")}</text>
+      ${textBlock(wrap(topic.points[i].toUpperCase(), 18), 72, 455, 76, 84)}
+      ${textBlock(wrap(topic.body, 38), 72, 850, 34, 48, "#dedede", 500)}
       ${footer(i === topic.points.length - 1 ? "Continue para o CTA →" : "Continue lendo →", i + 2)}`;
     await renderSvg(`${String(i + 2).padStart(2, "0")}.jpg`, canvas(card));
   }
@@ -162,14 +206,12 @@ const captionOpeners = [
   "Uma verdade desconfortável sobre vendas:",
   "Gestor comercial, preste atenção nisso:"
 ];
-const caption = `${captionOpeners[topicCycle % captionOpeners.length]}\n\n${topic.hook}\n\n${topic.body}\n\n${topic.points.map((point) => `• ${point}`).join("\n")}\n\n${cta} Link na bio. 🚀\n\n#ConectaCRM #CRM #Vendas #GestãoComercial #AutomaçãoDeVendas #PME`;
+const caption = `${captionOpeners[topicCycle % captionOpeners.length]}\n\n${hook}\n\n${topic.body}\n\n${topic.points.map((point) => `• ${point}`).join("\n")}\n\n${cta} Link na bio. 🚀\n\n#ConectaCRM #CRM #Vendas #GestãoComercial #AutomaçãoDeVendas #PME`;
 const manifest = { date: dayKey, format, photoUrl, files: files.map((file) => file.replaceAll(path.sep, "/")), caption };
 await fs.writeFile("manifest.json", JSON.stringify(manifest, null, 2));
 
-let history = [];
-try {
-  history = JSON.parse(await fs.readFile("history.json", "utf8"));
-} catch {}
-history.push({ date: dayKey, format, hook: topic.hook, photo: coverPhotos[dayNumber % coverPhotos.length] });
+let history = priorHistory;
+history = history.filter((item) => item.date !== dayKey);
+history.push({ date: dayKey, format, hook, photo: selectedPhoto });
 await fs.writeFile("history.json", JSON.stringify(history.slice(-120), null, 2));
 console.log(JSON.stringify(manifest, null, 2));
