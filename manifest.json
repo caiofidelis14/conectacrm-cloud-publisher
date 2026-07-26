@@ -1,6 +1,7 @@
 {
   "date": "2026-07-25",
   "format": "carousel",
+  "photoUrl": "https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=1080&h=1350&q=88&crop=faces",
   "files": [
     "public/2026-07-25/01.jpg",
     "public/2026-07-25/02.jpg",
