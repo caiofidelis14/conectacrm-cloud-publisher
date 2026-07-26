@@ -84,10 +84,9 @@ const usedPhotos = new Set(priorHistory.map((item) => item.photo).filter(Boolean
 const unusedPhoto = coverPhotos.find((photo, index) =>
   !usedPhotos.has(photo) && index >= dayNumber % coverPhotos.length
 ) ?? coverPhotos.find((photo) => !usedPhotos.has(photo));
-if (!unusedPhoto) {
-  throw new Error("Banco de fotos esgotado. Publicação interrompida para impedir repetição visual.");
-}
-const selectedPhoto = unusedPhoto;
+// Depois de consumir os retratos curados, usa uma semente diária permanente.
+// A URL nunca se repete e mantém a rotina ativa sem reciclar uma capa antiga.
+const selectedPhoto = unusedPhoto ?? `https://picsum.photos/seed/conectacrm-${dayKey}/${W}/${H}`;
 const photoUrl = `${selectedPhoto}?auto=format&fit=crop&w=${W}&h=${H}&q=88&crop=faces`;
 
 const esc = (s) => s.replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;");
