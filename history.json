@@ -30,5 +30,11 @@
     "format": "static",
     "hook": "O custo do improviso: O vendedor ocupado nem sempre é o vendedor produtivo.",
     "photo": "https://images.unsplash.com/photo-1507591064344-4c6ce005b128"
+  },
+  {
+    "date": "2026-07-27",
+    "format": "carousel",
+    "hook": "O custo do improviso: Uma proposta enviada não é uma venda encaminhada.",
+    "photo": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1"
   }
 ]
