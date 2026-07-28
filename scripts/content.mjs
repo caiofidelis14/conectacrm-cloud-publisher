@@ -58,6 +58,96 @@ export const topics = [
     hook: "Previsibilidade não é adivinhar o faturamento.",
     points: ["Pipeline atualizado", "Probabilidade realista", "Próximas ações", "Histórico de conversão"],
     body: "Uma previsão útil nasce de dados atualizados e critérios comerciais consistentes."
+  },
+  {
+    hook: "Lead quente não espera vendedor desorganizado.",
+    points: ["Distribua na hora", "Avise o responsável", "Registre a resposta", "Escale o atraso"],
+    body: "Velocidade sem organização vira correria. Organização com velocidade vira vantagem comercial."
+  },
+  {
+    hook: "Se ninguém sabe o próximo passo, a venda já começou a esfriar.",
+    points: ["Combine a ação", "Defina a data", "Registre o responsável", "Cobre a execução"],
+    body: "Negociação boa não termina com 'depois a gente se fala'. Ela termina com um próximo passo claro."
+  },
+  {
+    hook: "Seu melhor vendedor não pode ser o único dono das informações.",
+    points: ["Histórico compartilhado", "Processo documentado", "Carteira visível", "Gestão contínua"],
+    body: "Quando o conhecimento fica preso em uma pessoa, a empresa perde controle e escala."
+  },
+  {
+    hook: "Desconto não corrige atendimento lento.",
+    points: ["Responda primeiro", "Entenda o contexto", "Defenda o valor", "Acompanhe a decisão"],
+    body: "Muitas margens são sacrificadas para compensar uma experiência comercial que deveria ser melhor."
+  },
+  {
+    hook: "Reunião comercial sem dados é só uma roda de opiniões.",
+    points: ["Mostre o funil", "Compare conversões", "Encontre gargalos", "Defina ações"],
+    body: "A reunião precisa terminar com decisões verificáveis, responsáveis e prazos."
+  },
+  {
+    hook: "Cliente sem retorno não está pensando. Está sendo esquecido.",
+    points: ["Crie cadências", "Programe alertas", "Mude a abordagem", "Registre o motivo"],
+    body: "Silêncio não deve encerrar uma oportunidade automaticamente. Deve acionar um processo."
+  },
+  {
+    hook: "O problema da planilha aparece quando a operação começa a crescer.",
+    points: ["Versões conflitantes", "Dados incompletos", "Ações manuais", "Gestão atrasada"],
+    body: "O que funciona para dez oportunidades pode desmoronar quando o volume aumenta."
+  },
+  {
+    hook: "Você não precisa cobrar mais o time. Precisa enxergar melhor o processo.",
+    points: ["Atividades visíveis", "Prazos claros", "Negócios parados", "Prioridades do dia"],
+    body: "Gestão não é perseguir vendedor. É criar clareza para agir no ponto certo."
+  },
+  {
+    hook: "Uma venda perdida sem motivo registrado será perdida de novo.",
+    points: ["Mapeie objeções", "Registre concorrentes", "Analise padrões", "Ajuste o discurso"],
+    body: "Perder faz parte. Repetir o mesmo erro por falta de informação é opcional."
+  },
+  {
+    hook: "Seu funil pode estar cheio e ainda assim não ter vendas.",
+    points: ["Remova oportunidades mortas", "Atualize as etapas", "Revise os prazos", "Priorize intenção real"],
+    body: "Volume no pipeline não significa qualidade. Um funil confiável precisa refletir a realidade."
+  },
+  {
+    hook: "Atendimento rápido sem contexto também perde venda.",
+    points: ["Identifique a origem", "Leia o histórico", "Entenda a necessidade", "Personalize o retorno"],
+    body: "Responder em segundos não ajuda quando o cliente precisa repetir toda a história."
+  },
+  {
+    hook: "A meta do mês não pode aparecer apenas no último dia.",
+    points: ["Acompanhe diariamente", "Projete o fechamento", "Corrija desvios", "Proteja as prioridades"],
+    body: "Gestão comercial útil antecipa o problema enquanto ainda existe tempo para agir."
+  },
+  {
+    hook: "Negócio parado ocupa espaço e esconde o que realmente importa.",
+    points: ["Defina prazo máximo", "Crie alertas", "Requalifique", "Encerre quando necessário"],
+    body: "Limpar o pipeline melhora o foco do vendedor e a confiança da previsão."
+  },
+  {
+    hook: "O cliente percebe quando sua empresa não conversa internamente.",
+    points: ["Centralize contatos", "Compartilhe notas", "Registre acordos", "Evite perguntas repetidas"],
+    body: "Uma experiência comercial consistente começa quando todos enxergam o mesmo histórico."
+  },
+  {
+    hook: "Mais ferramentas não resolvem um processo que ninguém segue.",
+    points: ["Simplifique etapas", "Treine o time", "Meça a adesão", "Ajuste a rotina"],
+    body: "Tecnologia potencializa comportamento. Antes de adicionar complexidade, garanta uso consistente."
+  },
+  {
+    hook: "Toda oportunidade sem responsável é uma venda esperando para ser perdida.",
+    points: ["Distribuição automática", "Regras transparentes", "Alertas de atraso", "Reatribuição rápida"],
+    body: "Responsabilidade clara elimina o espaço onde leads costumam desaparecer."
+  },
+  {
+    hook: "O comercial não deveria depender da memória de ninguém.",
+    points: ["Tarefas automáticas", "Agenda integrada", "Histórico completo", "Alertas inteligentes"],
+    body: "A memória falha justamente quando o volume aumenta. O processo precisa sustentar a rotina."
+  },
+  {
+    hook: "Quem mede apenas vendas descobre os problemas tarde demais.",
+    points: ["Tempo de resposta", "Taxa de avanço", "Atividades pendentes", "Motivos de perda"],
+    body: "Indicadores de processo mostram onde agir antes que o faturamento seja afetado."
   }
 ];
 
