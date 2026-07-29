@@ -42,5 +42,12 @@
     "format": "carousel",
     "hook": "O custo do improviso: O crescimento trava quando cada vendedor trabalha de um jeito.",
     "photo": "https://images.unsplash.com/photo-1552374196-c4e7ffc6e126"
+  },
+  {
+    "date": "2026-07-29",
+    "format": "carousel",
+    "layout": "editorial_split",
+    "hook": "A meta do mês não pode aparecer apenas no último dia.",
+    "photo": "https://images.unsplash.com/photo-1552058544-f2b08422138a"
   }
 ]

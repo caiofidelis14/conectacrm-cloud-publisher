@@ -1,14 +1,15 @@
 {
-  "date": "2026-07-28",
+  "date": "2026-07-29",
   "format": "carousel",
-  "photoUrl": "https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?auto=format&fit=crop&w=1080&h=1350&q=88&crop=faces",
+  "layout": "editorial_split",
+  "photoUrl": "https://images.unsplash.com/photo-1552058544-f2b08422138a?auto=format&fit=crop&w=1080&h=1350&q=88&crop=faces",
   "files": [
-    "public/2026-07-28/01.jpg",
-    "public/2026-07-28/02.jpg",
-    "public/2026-07-28/03.jpg",
-    "public/2026-07-28/04.jpg",
-    "public/2026-07-28/05.jpg",
-    "public/2026-07-28/06.jpg"
+    "public/2026-07-29/01.jpg",
+    "public/2026-07-29/02.jpg",
+    "public/2026-07-29/03.jpg",
+    "public/2026-07-29/04.jpg",
+    "public/2026-07-29/05.jpg",
+    "public/2026-07-29/06.jpg"
   ],
-  "caption": "Isso pode estar travando suas vendas:\n\nO custo do improviso: O crescimento trava quando cada vendedor trabalha de um jeito.\n\nPadronizar não significa robotizar. Significa criar uma base que o time consegue repetir e melhorar.\n\n• Processo comum\n• Etapas padronizadas\n• Campos essenciais\n• Rotina de acompanhamento\n\nPare de vender no improviso. Teste o ConectaCRM grátis por 7 dias. Link na bio. 🚀\n\n#ConectaCRM #CRM #Vendas #GestãoComercial #AutomaçãoDeVendas #PME"
+  "caption": "Um alerta para quem quer vender mais:\n\nA meta do mês não pode aparecer apenas no último dia.\n\nGestão comercial útil antecipa o problema enquanto ainda existe tempo para agir.\n\n• Acompanhe diariamente\n• Projete o fechamento\n• Corrija desvios\n• Proteja as prioridades\n\nTransforme conversas em processo. Conheça o ConectaCRM e teste grátis por 7 dias. Link na bio. 🚀\n\n#ConectaCRM #CRM #Vendas #GestãoComercial #AutomaçãoDeVendas #PME"
 }
