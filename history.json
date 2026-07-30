@@ -49,5 +49,12 @@
     "layout": "editorial_split",
     "hook": "A meta do mês não pode aparecer apenas no último dia.",
     "photo": "https://images.unsplash.com/photo-1552058544-f2b08422138a"
+  },
+  {
+    "date": "2026-07-30",
+    "format": "carousel",
+    "layout": "viral_black",
+    "hook": "Negócio parado ocupa espaço e esconde o que realmente importa.",
+    "photo": "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6"
   }
 ]
