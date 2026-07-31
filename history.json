@@ -56,5 +56,12 @@
     "layout": "viral_black",
     "hook": "Negócio parado ocupa espaço e esconde o que realmente importa.",
     "photo": "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6"
+  },
+  {
+    "date": "2026-07-31",
+    "format": "carousel",
+    "layout": "tweet_card",
+    "hook": "O cliente percebe quando sua empresa não conversa internamente.",
+    "photo": "https://images.unsplash.com/photo-1547425260-76bcadfb4f2c"
   }
 ]
