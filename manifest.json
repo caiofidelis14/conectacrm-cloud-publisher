@@ -1,15 +1,15 @@
 {
-  "date": "2026-07-31",
+  "date": "2026-08-01",
   "format": "carousel",
-  "layout": "tweet_card",
-  "photoUrl": "https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?auto=format&fit=crop&w=1080&h=1350&q=88&crop=faces",
+  "layout": "educational_neon",
+  "photoUrl": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=1080&h=1350&q=88&crop=faces",
   "files": [
-    "public/2026-07-31/01.jpg",
-    "public/2026-07-31/02.jpg",
-    "public/2026-07-31/03.jpg",
-    "public/2026-07-31/04.jpg",
-    "public/2026-07-31/05.jpg",
-    "public/2026-07-31/06.jpg"
+    "public/2026-08-01/01.jpg",
+    "public/2026-08-01/02.jpg",
+    "public/2026-08-01/03.jpg",
+    "public/2026-08-01/04.jpg",
+    "public/2026-08-01/05.jpg",
+    "public/2026-08-01/06.jpg"
   ],
-  "caption": "Um alerta para quem quer vender mais:\n\nO cliente percebe quando sua empresa não conversa internamente.\n\nUma experiência comercial consistente começa quando todos enxergam o mesmo histórico.\n\n• Centralize contatos\n• Compartilhe notas\n• Registre acordos\n• Evite perguntas repetidas\n\nPare de vender no improviso. Teste o ConectaCRM grátis por 7 dias. Link na bio. 🚀\n\n#ConectaCRM #CRM #Vendas #GestãoComercial #AutomaçãoDeVendas #PME"
+  "caption": "Um alerta para quem quer vender mais:\n\nMais ferramentas não resolvem um processo que ninguém segue.\n\nTecnologia potencializa comportamento. Antes de adicionar complexidade, garanta uso consistente.\n\n• Simplifique etapas\n• Treine o time\n• Meça a adesão\n• Ajuste a rotina\n\nTransforme conversas em processo. Conheça o ConectaCRM e teste grátis por 7 dias. Link na bio. 🚀\n\n#ConectaCRM #CRM #Vendas #GestãoComercial #AutomaçãoDeVendas #PME"
 }
