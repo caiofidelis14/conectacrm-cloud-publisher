@@ -1,15 +1,15 @@
 {
-  "date": "2026-08-01",
+  "date": "2026-08-02",
   "format": "carousel",
-  "layout": "educational_neon",
-  "photoUrl": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=1080&h=1350&q=88&crop=faces",
+  "layout": "editorial_split",
+  "photoUrl": "https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?auto=format&fit=crop&w=1080&h=1350&q=88&crop=faces",
   "files": [
-    "public/2026-08-01/01.jpg",
-    "public/2026-08-01/02.jpg",
-    "public/2026-08-01/03.jpg",
-    "public/2026-08-01/04.jpg",
-    "public/2026-08-01/05.jpg",
-    "public/2026-08-01/06.jpg"
+    "public/2026-08-02/01.jpg",
+    "public/2026-08-02/02.jpg",
+    "public/2026-08-02/03.jpg",
+    "public/2026-08-02/04.jpg",
+    "public/2026-08-02/05.jpg",
+    "public/2026-08-02/06.jpg"
   ],
-  "caption": "Um alerta para quem quer vender mais:\n\nMais ferramentas não resolvem um processo que ninguém segue.\n\nTecnologia potencializa comportamento. Antes de adicionar complexidade, garanta uso consistente.\n\n• Simplifique etapas\n• Treine o time\n• Meça a adesão\n• Ajuste a rotina\n\nTransforme conversas em processo. Conheça o ConectaCRM e teste grátis por 7 dias. Link na bio. 🚀\n\n#ConectaCRM #CRM #Vendas #GestãoComercial #AutomaçãoDeVendas #PME"
+  "caption": "Um alerta para quem quer vender mais:\n\nToda oportunidade sem responsável é uma venda esperando para ser perdida.\n\nResponsabilidade clara elimina o espaço onde leads costumam desaparecer.\n\n• Distribuição automática\n• Regras transparentes\n• Alertas de atraso\n• Reatribuição rápida\n\nOrganize sua operação comercial. Teste o ConectaCRM grátis por 7 dias. Link na bio. 🚀\n\n#ConectaCRM #CRM #Vendas #GestãoComercial #AutomaçãoDeVendas #PME"
 }
