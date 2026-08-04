@@ -84,5 +84,12 @@
     "layout": "viral_black",
     "hook": "O comercial não deveria depender da memória de ninguém.",
     "photo": "https://images.unsplash.com/photo-1548142813-c348350df52b"
+  },
+  {
+    "date": "2026-08-04",
+    "format": "carousel",
+    "layout": "tweet_card",
+    "hook": "Quem mede apenas vendas descobre os problemas tarde demais.",
+    "photo": "https://images.unsplash.com/photo-1557862921-37829c790f19"
   }
 ]

@@ -1,15 +1,15 @@
 {
-  "date": "2026-08-03",
+  "date": "2026-08-04",
   "format": "carousel",
-  "layout": "viral_black",
-  "photoUrl": "https://images.unsplash.com/photo-1548142813-c348350df52b?auto=format&fit=crop&w=1080&h=1350&q=88&crop=faces",
+  "layout": "tweet_card",
+  "photoUrl": "https://images.unsplash.com/photo-1557862921-37829c790f19?auto=format&fit=crop&w=1080&h=1350&q=88&crop=faces",
   "files": [
-    "public/2026-08-03/01.jpg",
-    "public/2026-08-03/02.jpg",
-    "public/2026-08-03/03.jpg",
-    "public/2026-08-03/04.jpg",
-    "public/2026-08-03/05.jpg",
-    "public/2026-08-03/06.jpg"
+    "public/2026-08-04/01.jpg",
+    "public/2026-08-04/02.jpg",
+    "public/2026-08-04/03.jpg",
+    "public/2026-08-04/04.jpg",
+    "public/2026-08-04/05.jpg",
+    "public/2026-08-04/06.jpg"
   ],
-  "caption": "Um alerta para quem quer vender mais:\n\nO comercial não deveria depender da memória de ninguém.\n\nA memória falha justamente quando o volume aumenta. O processo precisa sustentar a rotina.\n\n• Tarefas automáticas\n• Agenda integrada\n• Histórico completo\n• Alertas inteligentes\n\nPare de vender no improviso. Teste o ConectaCRM grátis por 7 dias. Link na bio. 🚀\n\n#ConectaCRM #CRM #Vendas #GestãoComercial #AutomaçãoDeVendas #PME"
+  "caption": "Um alerta para quem quer vender mais:\n\nQuem mede apenas vendas descobre os problemas tarde demais.\n\nIndicadores de processo mostram onde agir antes que o faturamento seja afetado.\n\n• Tempo de resposta\n• Taxa de avanço\n• Atividades pendentes\n• Motivos de perda\n\nTransforme conversas em processo. Conheça o ConectaCRM e teste grátis por 7 dias. Link na bio. 🚀\n\n#ConectaCRM #CRM #Vendas #GestãoComercial #AutomaçãoDeVendas #PME"
 }
