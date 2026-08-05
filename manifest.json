@@ -1,15 +1,10 @@
 {
-  "date": "2026-08-04",
-  "format": "carousel",
-  "layout": "tweet_card",
-  "photoUrl": "https://images.unsplash.com/photo-1557862921-37829c790f19?auto=format&fit=crop&w=1080&h=1350&q=88&crop=faces",
+  "date": "2026-08-05",
+  "format": "static",
+  "layout": "static_neon",
+  "photoUrl": "https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?auto=format&fit=crop&w=1080&h=1350&q=88&crop=faces",
   "files": [
-    "public/2026-08-04/01.jpg",
-    "public/2026-08-04/02.jpg",
-    "public/2026-08-04/03.jpg",
-    "public/2026-08-04/04.jpg",
-    "public/2026-08-04/05.jpg",
-    "public/2026-08-04/06.jpg"
+    "public/2026-08-05/01.jpg"
   ],
-  "caption": "Um alerta para quem quer vender mais:\n\nQuem mede apenas vendas descobre os problemas tarde demais.\n\nIndicadores de processo mostram onde agir antes que o faturamento seja afetado.\n\n• Tempo de resposta\n• Taxa de avanço\n• Atividades pendentes\n• Motivos de perda\n\nTransforme conversas em processo. Conheça o ConectaCRM e teste grátis por 7 dias. Link na bio. 🚀\n\n#ConectaCRM #CRM #Vendas #GestãoComercial #AutomaçãoDeVendas #PME"
+  "caption": "Isso pode estar travando suas vendas:\n\nMais leads não resolvem um processo de vendas bagunçado.\n\nAntes de aumentar o investimento em tráfego, organize o caminho que transforma interesse em venda.\n\n• Responda rápido\n• Defina a próxima ação\n• Centralize o histórico\n• Acompanhe o pipeline\n\nOrganize sua operação comercial. Teste o ConectaCRM grátis por 7 dias. Link na bio. 🚀\n\n#ConectaCRM #CRM #Vendas #GestãoComercial #AutomaçãoDeVendas #PME"
 }
