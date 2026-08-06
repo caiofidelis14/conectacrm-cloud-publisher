@@ -98,5 +98,12 @@
     "layout": "static_neon",
     "hook": "Mais leads não resolvem um processo de vendas bagunçado.",
     "photo": "https://images.unsplash.com/photo-1564564321837-a57b7070ac4f"
+  },
+  {
+    "date": "2026-08-06",
+    "format": "carousel",
+    "layout": "editorial_split",
+    "hook": "Seu time não precisa de mais pressão. Precisa de mais clareza.",
+    "photo": "https://images.unsplash.com/photo-1551836022-4c4c79ecde51"
   }
 ]
