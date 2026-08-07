@@ -105,5 +105,12 @@
     "layout": "editorial_split",
     "hook": "Seu time não precisa de mais pressão. Precisa de mais clareza.",
     "photo": "https://images.unsplash.com/photo-1551836022-4c4c79ecde51"
+  },
+  {
+    "date": "2026-08-07",
+    "format": "carousel",
+    "layout": "viral_black",
+    "hook": "O follow-up esquecido custa mais do que parece.",
+    "photo": "https://images.unsplash.com/photo-1758873272249-71e3d173f3b2"
   }
 ]
