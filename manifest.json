@@ -1,15 +1,15 @@
 {
-  "date": "2026-08-07",
+  "date": "2026-08-08",
   "format": "carousel",
-  "layout": "viral_black",
-  "photoUrl": "https://images.unsplash.com/photo-1758873272249-71e3d173f3b2?auto=format&fit=crop&w=1080&h=1350&q=88&crop=faces",
+  "layout": "tweet_card",
+  "photoUrl": "https://images.unsplash.com/photo-1758691737646-79dbce8e25fb?auto=format&fit=crop&w=1080&h=1350&q=88&crop=faces",
   "files": [
-    "public/2026-08-07/01.jpg",
-    "public/2026-08-07/02.jpg",
-    "public/2026-08-07/03.jpg",
-    "public/2026-08-07/04.jpg",
-    "public/2026-08-07/05.jpg",
-    "public/2026-08-07/06.jpg"
+    "public/2026-08-08/01.jpg",
+    "public/2026-08-08/02.jpg",
+    "public/2026-08-08/03.jpg",
+    "public/2026-08-08/04.jpg",
+    "public/2026-08-08/05.jpg",
+    "public/2026-08-08/06.jpg"
   ],
-  "caption": "Isso pode estar travando suas vendas:\n\nO follow-up esquecido custa mais do que parece.\n\nVendas raramente acontecem no primeiro contato. O processo precisa continuar mesmo quando a rotina aperta.\n\n• Lembretes automáticos\n• Histórico centralizado\n• Tarefas por vendedor\n• Retorno no momento certo\n\nTransforme conversas em processo. Conheça o ConectaCRM e teste grátis por 7 dias. Link na bio. 🚀\n\n#ConectaCRM #CRM #Vendas #GestãoComercial #AutomaçãoDeVendas #PME"
+  "caption": "Isso pode estar travando suas vendas:\n\nSe o pipeline está na cabeça do vendedor, ele não existe para a empresa.\n\nA gestão comercial melhora quando o time inteiro enxerga o mesmo processo.\n\n• Etapas visíveis\n• Critérios claros\n• Gargalos identificados\n• Previsão mais confiável\n\nOrganize sua operação comercial. Teste o ConectaCRM grátis por 7 dias. Link na bio. 🚀\n\n#ConectaCRM #CRM #Vendas #GestãoComercial #AutomaçãoDeVendas #PME"
 }

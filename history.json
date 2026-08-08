@@ -112,5 +112,12 @@
     "layout": "viral_black",
     "hook": "O follow-up esquecido custa mais do que parece.",
     "photo": "https://images.unsplash.com/photo-1758873272249-71e3d173f3b2"
+  },
+  {
+    "date": "2026-08-08",
+    "format": "carousel",
+    "layout": "tweet_card",
+    "hook": "Se o pipeline está na cabeça do vendedor, ele não existe para a empresa.",
+    "photo": "https://images.unsplash.com/photo-1758691737646-79dbce8e25fb"
   }
 ]
