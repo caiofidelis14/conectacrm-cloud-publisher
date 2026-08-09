@@ -1,15 +1,15 @@
 {
-  "date": "2026-08-08",
+  "date": "2026-08-09",
   "format": "carousel",
-  "layout": "tweet_card",
-  "photoUrl": "https://images.unsplash.com/photo-1758691737646-79dbce8e25fb?auto=format&fit=crop&w=1080&h=1350&q=88&crop=faces",
+  "layout": "educational_neon",
+  "photoUrl": "https://images.unsplash.com/photo-1758876021212-a87517fc8954?auto=format&fit=crop&w=1080&h=1350&q=88&crop=faces",
   "files": [
-    "public/2026-08-08/01.jpg",
-    "public/2026-08-08/02.jpg",
-    "public/2026-08-08/03.jpg",
-    "public/2026-08-08/04.jpg",
-    "public/2026-08-08/05.jpg",
-    "public/2026-08-08/06.jpg"
+    "public/2026-08-09/01.jpg",
+    "public/2026-08-09/02.jpg",
+    "public/2026-08-09/03.jpg",
+    "public/2026-08-09/04.jpg",
+    "public/2026-08-09/05.jpg",
+    "public/2026-08-09/06.jpg"
   ],
-  "caption": "Isso pode estar travando suas vendas:\n\nSe o pipeline está na cabeça do vendedor, ele não existe para a empresa.\n\nA gestão comercial melhora quando o time inteiro enxerga o mesmo processo.\n\n• Etapas visíveis\n• Critérios claros\n• Gargalos identificados\n• Previsão mais confiável\n\nOrganize sua operação comercial. Teste o ConectaCRM grátis por 7 dias. Link na bio. 🚀\n\n#ConectaCRM #CRM #Vendas #GestãoComercial #AutomaçãoDeVendas #PME"
+  "caption": "Isso pode estar travando suas vendas:\n\nWhatsApp não é CRM.\n\nO WhatsApp aproxima. O CRM transforma a conversa em processo comercial.\n\n• Conversas organizadas\n• Contato identificado\n• Negócio vinculado\n• Próxima ação registrada\n\nPare de vender no improviso. Teste o ConectaCRM grátis por 7 dias. Link na bio. 🚀\n\n#ConectaCRM #CRM #Vendas #GestãoComercial #AutomaçãoDeVendas #PME"
 }
