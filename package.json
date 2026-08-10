@@ -5,6 +5,7 @@
   "scripts": {
     "generate": "node scripts/generate-post.mjs",
     "generate-personal": "node scripts/generate-personal-post.mjs",
+    "discover-personal": "node scripts/discover-instagram-account.mjs",
     "publish": "node scripts/publish-instagram.mjs",
     "validate-meta": "node scripts/validate-meta.mjs"
   },
