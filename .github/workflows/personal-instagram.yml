@@ -11,6 +11,11 @@ on:
         required: true
         type: boolean
         default: false
+      use_prepared:
+        description: "Usar o post já preparado no repositório?"
+        required: true
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -42,8 +47,10 @@ jobs:
           IG_USER_ID: ${{ secrets.PERSONAL_IG_USER_ID }}
         run: npm run validate-meta
       - name: Gerar conteúdo pessoal
+        if: github.event_name == 'schedule' || inputs.use_prepared != true
         run: npm run generate-personal
       - name: Disponibilizar imagens
+        if: github.event_name == 'schedule' || inputs.use_prepared != true
         run: |
           git config user.name "Caio Fidelis Bot"
           git config user.email "actions@users.noreply.github.com"

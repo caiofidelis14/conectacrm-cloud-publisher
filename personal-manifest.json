@@ -1,9 +1,6 @@
 {
   "date": "2026-08-10",
-  "format": "carousel",
-  "files": [
-    "public/personal/2026-08-10/01.jpg",
-    "public/personal/2026-08-10/02.jpg"
-  ],
-  "caption": "Cliente confuso não compra. Ele adia.\n\nExcesso de opções transfere trabalho para quem deveria apenas decidir.\n\nAção de hoje: Recomende um caminho principal e explique por quê.\n\nConcorda ou discorda? Salve para aplicar e envie para alguém que precisa vender melhor.\n\n#Vendas #Negociação #Empreendedorismo #GestãoComercial #CaioFidelis"
+  "format": "static",
+  "files": ["public/personal/2026-08-10/01.jpg"],
+  "caption": "Seu problema não é falta de leads. É falta de follow-up.\n\nVenda perdida quase sempre tem nome: oportunidade esquecida.\n\nQuantas vendas estão paradas hoje porque ninguém fez o próximo contato? Processo comercial vence memória.\n\nEnvie este post para um vendedor que ainda confia na memória.\n\n#Vendas #FollowUp #GestãoComercial #Empreendedorismo #CaioFidelis"
 }
