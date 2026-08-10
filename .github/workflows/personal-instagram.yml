@@ -1,6 +1,9 @@
 name: Preparar post do Instagram pessoal
 
 on:
+  schedule:
+    - cron: "0 11 * * *"
+      timezone: "America/Sao_Paulo"
   workflow_dispatch:
     inputs:
       publish:
@@ -29,13 +32,13 @@ jobs:
       - run: npm ci
       - name: Identificar Instagram pessoal conectado
         env:
-          META_ACCESS_TOKEN: ${{ secrets.META_ACCESS_TOKEN }}
+          META_ACCESS_TOKEN: ${{ secrets.PERSONAL_META_ACCESS_TOKEN }}
           FACEBOOK_PAGE_ID: "806363719230849"
         run: npm run discover-personal
       - name: Validar conta pessoal na Meta
-        if: inputs.publish == true
+        if: github.event_name == 'schedule' || inputs.publish == true
         env:
-          META_ACCESS_TOKEN: ${{ secrets.META_ACCESS_TOKEN }}
+          META_ACCESS_TOKEN: ${{ secrets.PERSONAL_META_ACCESS_TOKEN }}
           IG_USER_ID: ${{ secrets.PERSONAL_IG_USER_ID }}
         run: npm run validate-meta
       - name: Gerar conteúdo pessoal
@@ -48,12 +51,12 @@ jobs:
           git diff --cached --quiet || git commit -m "content: post pessoal $(date +%F)"
           git push
       - name: Aguardar propagação
-        if: inputs.publish == true
+        if: github.event_name == 'schedule' || inputs.publish == true
         run: sleep 20
       - name: Publicar no Instagram pessoal
-        if: inputs.publish == true
+        if: github.event_name == 'schedule' || inputs.publish == true
         env:
-          META_ACCESS_TOKEN: ${{ secrets.META_ACCESS_TOKEN }}
+          META_ACCESS_TOKEN: ${{ secrets.PERSONAL_META_ACCESS_TOKEN }}
           IG_USER_ID: ${{ secrets.PERSONAL_IG_USER_ID }}
           MANIFEST_PATH: personal-manifest.json
           PUBLIC_BASE_URL: https://raw.githubusercontent.com/${{ github.repository }}/main
