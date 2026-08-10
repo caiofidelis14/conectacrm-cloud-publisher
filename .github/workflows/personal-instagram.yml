@@ -1,0 +1,55 @@
+name: Preparar post do Instagram pessoal
+
+on:
+  workflow_dispatch:
+    inputs:
+      publish:
+        description: "Publicar de verdade no perfil pessoal?"
+        required: true
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: personal-instagram
+  cancel-in-progress: false
+
+jobs:
+  personal:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Validar conta pessoal na Meta
+        if: inputs.publish == true
+        env:
+          META_ACCESS_TOKEN: ${{ secrets.PERSONAL_META_ACCESS_TOKEN }}
+          IG_USER_ID: ${{ secrets.PERSONAL_IG_USER_ID }}
+        run: npm run validate-meta
+      - name: Gerar conteúdo pessoal
+        run: npm run generate-personal
+      - name: Disponibilizar imagens
+        run: |
+          git config user.name "Caio Fidelis Bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add public/personal personal-manifest.json personal-history.json
+          git diff --cached --quiet || git commit -m "content: post pessoal $(date +%F)"
+          git push
+      - name: Aguardar propagação
+        if: inputs.publish == true
+        run: sleep 20
+      - name: Publicar no Instagram pessoal
+        if: inputs.publish == true
+        env:
+          META_ACCESS_TOKEN: ${{ secrets.PERSONAL_META_ACCESS_TOKEN }}
+          IG_USER_ID: ${{ secrets.PERSONAL_IG_USER_ID }}
+          MANIFEST_PATH: personal-manifest.json
+          PUBLIC_BASE_URL: https://raw.githubusercontent.com/${{ github.repository }}/main
+        run: npm run publish

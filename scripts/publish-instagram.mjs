@@ -4,7 +4,8 @@ const token=process.env.META_ACCESS_TOKEN;
 const ig=process.env.IG_USER_ID;
 const base=process.env.PUBLIC_BASE_URL;
 if(!token||!ig||!base) throw new Error("Configure META_ACCESS_TOKEN, IG_USER_ID e PUBLIC_BASE_URL");
-const manifest=JSON.parse(await fs.readFile("manifest.json","utf8"));
+const manifestPath=process.env.MANIFEST_PATH||"manifest.json";
+const manifest=JSON.parse(await fs.readFile(manifestPath,"utf8"));
 const api="https://graph.facebook.com/v23.0";
 async function post(endpoint,params){const body=new URLSearchParams({...params,access_token:token});const res=await fetch(`${api}/${endpoint}`,{method:"POST",body});const data=await res.json();if(!res.ok||data.error)throw new Error(JSON.stringify(data));return data;}
 const urls=manifest.files.map(f=>`${base}/${f}`);

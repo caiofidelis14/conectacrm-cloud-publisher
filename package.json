@@ -4,6 +4,7 @@
   "type": "module",
   "scripts": {
     "generate": "node scripts/generate-post.mjs",
+    "generate-personal": "node scripts/generate-personal-post.mjs",
     "publish": "node scripts/publish-instagram.mjs",
     "validate-meta": "node scripts/validate-meta.mjs"
   },
