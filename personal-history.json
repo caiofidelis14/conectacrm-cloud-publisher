@@ -3,5 +3,10 @@
     "date": "2026-08-10",
     "hook": "Cliente confuso não compra. Ele adia.",
     "theme": 3
+  },
+  {
+    "date": "2026-08-11",
+    "hook": "A objeção de preço quase sempre começou antes do preço aparecer.",
+    "template": "caio-preto-oficial"
   }
 ]
