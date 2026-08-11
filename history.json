@@ -133,5 +133,12 @@
     "layout": "editorial_split",
     "hook": "Vender mais começa eliminando vazamentos.",
     "photo": "https://images.unsplash.com/photo-1560250097-0b93528c311a"
+  },
+  {
+    "date": "2026-08-11",
+    "format": "carousel",
+    "layout": "viral_black",
+    "hook": "Gestão comercial sem dados vira opinião.",
+    "photo": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2"
   }
 ]
