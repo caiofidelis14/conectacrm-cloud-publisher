@@ -140,5 +140,12 @@
     "layout": "viral_black",
     "hook": "Gestão comercial sem dados vira opinião.",
     "photo": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2"
+  },
+  {
+    "date": "2026-08-12",
+    "format": "carousel",
+    "layout": "tweet_card",
+    "hook": "Automação boa não afasta o cliente. Ela evita o esquecimento.",
+    "photo": "https://images.unsplash.com/photo-1562788869-4ed32648eb72"
   }
 ]
