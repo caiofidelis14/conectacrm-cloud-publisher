@@ -8,5 +8,10 @@
     "date": "2026-08-11",
     "hook": "A objeção de preço quase sempre começou antes do preço aparecer.",
     "template": "caio-preto-oficial"
+  },
+  {
+    "date": "2026-08-12",
+    "hook": "Uma carteira cheia pode esconder um vendedor sem prioridade.",
+    "template": "caio-preto-oficial"
   }
 ]
