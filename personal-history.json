@@ -13,5 +13,10 @@
     "date": "2026-08-12",
     "hook": "Uma carteira cheia pode esconder um vendedor sem prioridade.",
     "template": "caio-preto-oficial"
+  },
+  {
+    "date": "2026-08-13",
+    "hook": "Venda não é insistir até o cliente cansar.",
+    "template": "caio-preto-oficial"
   }
 ]
