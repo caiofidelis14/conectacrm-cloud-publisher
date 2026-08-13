@@ -147,5 +147,12 @@
     "layout": "tweet_card",
     "hook": "Automação boa não afasta o cliente. Ela evita o esquecimento.",
     "photo": "https://images.unsplash.com/photo-1562788869-4ed32648eb72"
+  },
+  {
+    "date": "2026-08-13",
+    "format": "carousel",
+    "layout": "educational_neon",
+    "hook": "O vendedor ocupado nem sempre é o vendedor produtivo.",
+    "photo": "https://images.unsplash.com/photo-1551836022-d5d88e9218df"
   }
 ]

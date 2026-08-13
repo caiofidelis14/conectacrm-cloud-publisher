@@ -1,15 +1,15 @@
 {
-  "date": "2026-08-12",
+  "date": "2026-08-13",
   "format": "carousel",
-  "layout": "tweet_card",
-  "photoUrl": "https://images.unsplash.com/photo-1562788869-4ed32648eb72?auto=format&fit=crop&w=1080&h=1350&q=88&crop=faces",
+  "layout": "educational_neon",
+  "photoUrl": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1080&h=1350&q=88&crop=faces",
   "files": [
-    "public/2026-08-12/01.jpg",
-    "public/2026-08-12/02.jpg",
-    "public/2026-08-12/03.jpg",
-    "public/2026-08-12/04.jpg",
-    "public/2026-08-12/05.jpg",
-    "public/2026-08-12/06.jpg"
+    "public/2026-08-13/01.jpg",
+    "public/2026-08-13/02.jpg",
+    "public/2026-08-13/03.jpg",
+    "public/2026-08-13/04.jpg",
+    "public/2026-08-13/05.jpg",
+    "public/2026-08-13/06.jpg"
   ],
-  "caption": "Isso pode estar travando suas vendas:\n\nAutomação boa não afasta o cliente. Ela evita o esquecimento.\n\nAutomatize o trabalho repetitivo para que o time tenha mais tempo para conversar e vender.\n\n• Lembretes\n• Distribuição de leads\n• Tarefas\n• Mensagens no momento certo\n\nPare de vender no improviso. Teste o ConectaCRM grátis por 7 dias. Link na bio. 🚀\n\n#ConectaCRM #CRM #Vendas #GestãoComercial #AutomaçãoDeVendas #PME"
+  "caption": "Isso pode estar travando suas vendas:\n\nO vendedor ocupado nem sempre é o vendedor produtivo.\n\nProdutividade comercial é reduzir esforço operacional e aumentar foco nas oportunidades certas.\n\n• Menos digitação\n• Menos procura por informação\n• Mais prioridades claras\n• Mais tempo com clientes\n\nTransforme conversas em processo. Conheça o ConectaCRM e teste grátis por 7 dias. Link na bio. 🚀\n\n#ConectaCRM #CRM #Vendas #GestãoComercial #AutomaçãoDeVendas #PME"
 }
