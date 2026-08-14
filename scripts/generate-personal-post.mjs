@@ -7,7 +7,11 @@ const W = 1080, H = 1350;
 const now = process.env.POST_DATE ? new Date(`${process.env.POST_DATE}T12:00:00-03:00`) : new Date();
 const dayKey = now.toLocaleDateString("en-CA", { timeZone: "America/Sao_Paulo" });
 const dayNumber = Math.floor(Date.parse(`${dayKey}T12:00:00Z`) / 86400000);
-const topic = personalTopics[dayNumber % personalTopics.length];
+let history = []; try { history = JSON.parse(await fs.readFile("personal-history.json", "utf8")); } catch {}
+const usedHooks = new Set(history.map((item) => item.hook));
+const availableTopics = personalTopics.filter((item) => !usedHooks.has(item.hook));
+if (!availableTopics.length) throw new Error("Banco de copies provocativas esgotado; adicione novos temas antes de repetir.");
+const topic = availableTopics[dayNumber % availableTopics.length];
 const dir = path.join("public", "personal", dayKey);
 await fs.mkdir(dir, { recursive: true });
 const avatar = (await fs.readFile(new URL("./avatar.png", import.meta.url))).toString("base64");
@@ -43,9 +47,8 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}">
 const file = path.join(dir, "01.jpg");
 await sharp(Buffer.from(svg), { density: 144 }).jpeg({ quality: 95 }).toFile(file);
 const files = [file.replaceAll(path.sep, "/")];
-const caption = `${topic.hook}\n\n${topic.lesson}\n\n${topic.action}\n\nSalve este post e envie para alguém que precisa vender melhor.\n\n#Vendas #Negociação #Empreendedorismo #GestãoComercial #CaioFidelis`;
+const caption = `${topic.hook}\n\n${topic.lesson}\n\n${topic.action}\n\nComente sua opinião — inclusive se você discordar.\n\n#Vendas #Negociação #Empreendedorismo #GestãoComercial #CaioFidelis`;
 await fs.writeFile("personal-manifest.json", JSON.stringify({ date: dayKey, format: "static", files, caption }, null, 2));
-let history = []; try { history = JSON.parse(await fs.readFile("personal-history.json", "utf8")); } catch {}
 history = history.filter((x) => x.date !== dayKey);
 history.push({ date: dayKey, hook: topic.hook, template: "caio-preto-oficial" });
 await fs.writeFile("personal-history.json", JSON.stringify(history.slice(-180), null, 2));
