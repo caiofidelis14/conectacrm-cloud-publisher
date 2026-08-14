@@ -154,5 +154,12 @@
     "layout": "educational_neon",
     "hook": "O vendedor ocupado nem sempre é o vendedor produtivo.",
     "photo": "https://images.unsplash.com/photo-1551836022-d5d88e9218df"
+  },
+  {
+    "date": "2026-08-14",
+    "format": "carousel",
+    "layout": "editorial_split",
+    "hook": "Uma proposta enviada não é uma venda encaminhada.",
+    "photo": "https://images.unsplash.com/photo-1557804506-669a67965ba0"
   }
 ]
