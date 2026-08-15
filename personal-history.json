@@ -23,5 +23,10 @@
     "date": "2026-08-14",
     "hook": "O cliente não sumiu. Ele apenas não viu motivo suficiente para responder.",
     "template": "caio-preto-oficial"
+  },
+  {
+    "date": "2026-08-15",
+    "hook": "Quem termina uma reunião com 'qualquer coisa me avise' desistiu da venda na frente do cliente.",
+    "template": "caio-preto-oficial"
   }
 ]
