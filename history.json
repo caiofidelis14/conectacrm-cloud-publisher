@@ -168,5 +168,12 @@
     "layout": "static_neon",
     "hook": "O crescimento trava quando cada vendedor trabalha de um jeito.",
     "photo": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e"
+  },
+  {
+    "date": "2026-08-16",
+    "format": "carousel",
+    "layout": "tweet_card",
+    "hook": "Previsibilidade não é adivinhar o faturamento.",
+    "photo": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d"
   }
 ]

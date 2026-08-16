@@ -1,10 +1,15 @@
 {
-  "date": "2026-08-15",
-  "format": "static",
-  "layout": "static_neon",
-  "photoUrl": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=1080&h=1350&q=88&crop=faces",
+  "date": "2026-08-16",
+  "format": "carousel",
+  "layout": "tweet_card",
+  "photoUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=1080&h=1350&q=88&crop=faces",
   "files": [
-    "public/2026-08-15/01.jpg"
+    "public/2026-08-16/01.jpg",
+    "public/2026-08-16/02.jpg",
+    "public/2026-08-16/03.jpg",
+    "public/2026-08-16/04.jpg",
+    "public/2026-08-16/05.jpg",
+    "public/2026-08-16/06.jpg"
   ],
-  "caption": "Isso pode estar travando suas vendas:\n\nO crescimento trava quando cada vendedor trabalha de um jeito.\n\nPadronizar não significa robotizar. Significa criar uma base que o time consegue repetir e melhorar.\n\n• Processo comum\n• Etapas padronizadas\n• Campos essenciais\n• Rotina de acompanhamento\n\nPare de vender no improviso. Teste o ConectaCRM grátis por 7 dias. Link na bio. 🚀\n\n#ConectaCRM #CRM #Vendas #GestãoComercial #AutomaçãoDeVendas #PME"
+  "caption": "Isso pode estar travando suas vendas:\n\nPrevisibilidade não é adivinhar o faturamento.\n\nUma previsão útil nasce de dados atualizados e critérios comerciais consistentes.\n\n• Pipeline atualizado\n• Probabilidade realista\n• Próximas ações\n• Histórico de conversão\n\nTransforme conversas em processo. Conheça o ConectaCRM e teste grátis por 7 dias. Link na bio. 🚀\n\n#ConectaCRM #CRM #Vendas #GestãoComercial #AutomaçãoDeVendas #PME"
 }
