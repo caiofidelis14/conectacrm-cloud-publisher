@@ -28,5 +28,10 @@
     "date": "2026-08-15",
     "hook": "Quem termina uma reunião com 'qualquer coisa me avise' desistiu da venda na frente do cliente.",
     "template": "caio-preto-oficial"
+  },
+  {
+    "date": "2026-08-16",
+    "hook": "Venda não é insistir até o cliente cansar. Isso é falta de estratégia com lembrete automático.",
+    "template": "caio-preto-oficial"
   }
 ]
