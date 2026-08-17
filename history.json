@@ -175,5 +175,12 @@
     "layout": "tweet_card",
     "hook": "Previsibilidade não é adivinhar o faturamento.",
     "photo": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d"
+  },
+  {
+    "date": "2026-08-17",
+    "format": "carousel",
+    "layout": "educational_neon",
+    "hook": "Lead quente não espera vendedor desorganizado.",
+    "photo": "https://images.unsplash.com/photo-1494790108377-be9c29b29330"
   }
 ]
