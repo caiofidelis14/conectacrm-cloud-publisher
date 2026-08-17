@@ -9,9 +9,13 @@ const dayKey = now.toLocaleDateString("en-CA", { timeZone: "America/Sao_Paulo" }
 const dayNumber = Math.floor(Date.parse(`${dayKey}T12:00:00Z`) / 86400000);
 let history = []; try { history = JSON.parse(await fs.readFile("personal-history.json", "utf8")); } catch {}
 const usedHooks = new Set(history.map((item) => item.hook));
-const availableTopics = personalTopics.filter((item) => !usedHooks.has(item.hook));
-if (!availableTopics.length) throw new Error("Banco de copies provocativas esgotado; adicione novos temas antes de repetir.");
-const topic = availableTopics[dayNumber % availableTopics.length];
+const categorySchedule = ["leadership", "business", "law", "strategy", "sales", "mindset", "leadership"];
+const targetCategory = categorySchedule[dayNumber % categorySchedule.length];
+const categoryTopics = personalTopics.filter((item) => item.category === targetCategory && !usedHooks.has(item.hook));
+const anyUnusedTopics = personalTopics.filter((item) => !usedHooks.has(item.hook));
+const topicPool = categoryTopics.length ? categoryTopics : anyUnusedTopics;
+if (!topicPool.length) throw new Error("Banco de copies provocativas esgotado; adicione novos temas antes de repetir.");
+const topic = topicPool[dayNumber % topicPool.length];
 const dir = path.join("public", "personal", dayKey);
 await fs.mkdir(dir, { recursive: true });
 const avatar = (await fs.readFile(new URL("./avatar.png", import.meta.url))).toString("base64");
@@ -47,9 +51,9 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}">
 const file = path.join(dir, "01.jpg");
 await sharp(Buffer.from(svg), { density: 144 }).jpeg({ quality: 95 }).toFile(file);
 const files = [file.replaceAll(path.sep, "/")];
-const caption = `${topic.hook}\n\n${topic.lesson}\n\n${topic.action}\n\nComente sua opinião — inclusive se você discordar.\n\n#Vendas #Negociação #Empreendedorismo #GestãoComercial #CaioFidelis`;
+const caption = `${topic.hook}\n\n${topic.lesson}\n\n${topic.action}\n\nComente sua opinião — inclusive se você discordar.\n\n${topic.hashtags}`;
 await fs.writeFile("personal-manifest.json", JSON.stringify({ date: dayKey, format: "static", files, caption }, null, 2));
 history = history.filter((x) => x.date !== dayKey);
-history.push({ date: dayKey, hook: topic.hook, template: "caio-preto-oficial" });
+history.push({ date: dayKey, hook: topic.hook, category: topic.category, template: "caio-preto-oficial" });
 await fs.writeFile("personal-history.json", JSON.stringify(history.slice(-180), null, 2));
 console.log(JSON.stringify({ date: dayKey, hook: topic.hook, files }, null, 2));
