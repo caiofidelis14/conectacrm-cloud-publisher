@@ -33,5 +33,10 @@
     "date": "2026-08-16",
     "hook": "Venda não é insistir até o cliente cansar. Isso é falta de estratégia com lembrete automático.",
     "template": "caio-preto-oficial"
+  },
+  {
+    "date": "2026-08-17",
+    "hook": "Seu vendedor não precisa de motivação. Precisa de cobrança clara.",
+    "template": "caio-preto-oficial"
   }
 ]
