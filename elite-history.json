@@ -1,0 +1,26 @@
+[
+  {
+    "date": "2026-08-18",
+    "slot": "educational",
+    "hook": "Se o seu escritório reduz honorários para não perder o cliente, faça isto antes de buscar mais clientes.",
+    "topic": "honorarios",
+    "variant": 0,
+    "template": "elite-twitter-oficial"
+  },
+  {
+    "date": "2026-08-18",
+    "slot": "aggressive",
+    "hook": "Seu escritório não tem falta de oportunidade. Ele reduz honorários para não perder o cliente.",
+    "topic": "honorarios",
+    "variant": 0,
+    "template": "elite-twitter-oficial"
+  },
+  {
+    "date": "2026-08-18",
+    "slot": "sales",
+    "hook": "Você não precisa trabalhar ainda mais. Precisa corrigir isto: seu escritório reduz honorários para não perder o cliente.",
+    "topic": "honorarios",
+    "variant": 0,
+    "template": "elite-twitter-oficial"
+  }
+]

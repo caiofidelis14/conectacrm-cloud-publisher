@@ -1,0 +1,90 @@
+name: Publicar Advogado de Elite
+
+on:
+  schedule:
+    - cron: "0 11 * * *"
+      timezone: "America/Sao_Paulo"
+    - cron: "0 16 * * *"
+      timezone: "America/Sao_Paulo"
+    - cron: "0 19 * * *"
+      timezone: "America/Sao_Paulo"
+  workflow_dispatch:
+    inputs:
+      slot:
+        description: "Linha editorial"
+        required: true
+        type: choice
+        options: [educational, aggressive, sales]
+        default: educational
+      publish:
+        description: "Publicar de verdade?"
+        required: true
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: elite-instagram-${{ github.event.schedule || inputs.slot }}
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Definir linha editorial
+        shell: bash
+        run: |
+          if [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
+            slot="${{ inputs.slot }}"
+          elif [[ "${{ github.event.schedule }}" == "0 11 * * *" ]]; then
+            slot="educational"
+          elif [[ "${{ github.event.schedule }}" == "0 16 * * *" ]]; then
+            slot="aggressive"
+          else
+            slot="sales"
+          fi
+          echo "POST_SLOT=$slot" >> "$GITHUB_ENV"
+          echo "MANIFEST_PATH=elite-manifest-$slot.json" >> "$GITHUB_ENV"
+      - name: Confirmar conta @advogadodeelitee
+        env:
+          META_ACCESS_TOKEN: ${{ secrets.PERSONAL_META_ACCESS_TOKEN }}
+          META_BUSINESS_ID: "1150950643135956"
+          TARGET_USERNAME: "advogadodeelitee"
+        run: npm run discover-elite
+      - name: Validar acesso de publicação
+        if: github.event_name == 'schedule' || inputs.publish == true
+        env:
+          META_ACCESS_TOKEN: ${{ secrets.PERSONAL_META_ACCESS_TOKEN }}
+        run: npm run validate-meta
+      - name: Criar post original
+        run: npm run generate-elite
+      - name: Disponibilizar imagem
+        shell: bash
+        run: |
+          git config user.name "Advogado de Elite Bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add public/elite elite-manifest-*.json elite-history.json
+          git diff --cached --quiet || git commit -m "content: advogado de elite $POST_SLOT $(date +%F)"
+          for attempt in 1 2 3; do
+            git pull --rebase origin main && git push origin HEAD:main && break
+            [[ "$attempt" == "3" ]] && exit 1
+            sleep 5
+          done
+      - name: Aguardar imagem pública
+        if: github.event_name == 'schedule' || inputs.publish == true
+        run: sleep 20
+      - name: Publicar no Instagram
+        if: github.event_name == 'schedule' || inputs.publish == true
+        env:
+          META_ACCESS_TOKEN: ${{ secrets.PERSONAL_META_ACCESS_TOKEN }}
+          PUBLIC_BASE_URL: https://raw.githubusercontent.com/${{ github.repository }}/main
+        run: npm run publish
