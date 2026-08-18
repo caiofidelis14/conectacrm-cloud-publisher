@@ -54,16 +54,11 @@ jobs:
           fi
           echo "POST_SLOT=$slot" >> "$GITHUB_ENV"
           echo "MANIFEST_PATH=elite-manifest-$slot.json" >> "$GITHUB_ENV"
-      - name: Confirmar conta @advogadodeelitee
-        env:
-          META_ACCESS_TOKEN: ${{ secrets.PERSONAL_META_ACCESS_TOKEN }}
-          META_BUSINESS_ID: "1150950643135956"
-          TARGET_USERNAME: "advogadodeelitee"
-        run: npm run discover-elite
       - name: Validar acesso de publicação
-        if: github.event_name == 'schedule' || inputs.publish == true
         env:
           META_ACCESS_TOKEN: ${{ secrets.PERSONAL_META_ACCESS_TOKEN }}
+          IG_USER_ID: "17841401203630772"
+          EXPECTED_USERNAME: "advogadodeelitee"
         run: npm run validate-meta
       - name: Criar post original
         run: npm run generate-elite
@@ -86,5 +81,6 @@ jobs:
         if: github.event_name == 'schedule' || inputs.publish == true
         env:
           META_ACCESS_TOKEN: ${{ secrets.PERSONAL_META_ACCESS_TOKEN }}
+          IG_USER_ID: "17841401203630772"
           PUBLIC_BASE_URL: https://raw.githubusercontent.com/${{ github.repository }}/main
         run: npm run publish
