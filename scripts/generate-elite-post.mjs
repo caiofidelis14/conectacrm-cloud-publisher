@@ -31,16 +31,14 @@ const hookLines = wrap(selected.hook, 29);
 const lessonLines = wrap(selected.lesson, 35);
 const hookSize = hookLines.length > 4 ? 52 : 60;
 const lessonSize = lessonLines.length > 5 ? 39 : 44;
-const lessonY = 430 + hookLines.length * 67;
-const accent = slot === "educational" ? "#5eead4" : slot === "aggressive" ? "#fb7185" : "#c4ff3d";
-const label = slot === "educational" ? "EDUCATIVO" : slot === "aggressive" ? "SEM RODEIOS" : "CRESCIMENTO";
+const hookY = 390;
+const lessonY = hookY + hookLines.length * 67 + 30;
 const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}">
 <rect width="1080" height="1350" fill="#000"/><clipPath id="a"><circle cx="165" cy="187" r="57"/></clipPath>
 <image href="data:image/jpeg;base64,${avatar}" x="108" y="130" width="114" height="114" preserveAspectRatio="xMidYMid slice" clip-path="url(#a)"/>
 <text x="244" y="194" font-family="Arial,Helvetica,sans-serif" font-size="36" fill="#fff">Metodologia Elite</text>
 <text x="244" y="236" font-family="Arial,Helvetica,sans-serif" font-size="27" fill="#777">@advogadodeelitee</text>
-<rect x="88" y="332" width="190" height="42" rx="21" fill="${accent}"/><text x="183" y="361" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="900" fill="#000">${label}</text>
-${block(hookLines,88,455,hookSize,67,900)}${block(lessonLines,88,lessonY+55,lessonSize,51,650,"#e5e5e5")}
+${block(hookLines,88,hookY,hookSize,67,900)}${block(lessonLines,88,lessonY,lessonSize,51,650,"#e5e5e5")}
 <text x="540" y="1270" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="800" fill="#fff">Advogado de Elite | Estrutura para crescer</text></svg>`;
 const file = path.join(dir, "01.jpg");
 await sharp(Buffer.from(svg), { density: 144 }).jpeg({ quality: 95 }).toFile(file);
