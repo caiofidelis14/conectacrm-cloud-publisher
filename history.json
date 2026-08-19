@@ -189,5 +189,12 @@
     "layout": "editorial_split",
     "hook": "Se ninguém sabe o próximo passo, a venda já começou a esfriar.",
     "photo": "https://images.unsplash.com/photo-1517841905240-472988babdf9"
+  },
+  {
+    "date": "2026-08-19",
+    "format": "carousel",
+    "layout": "viral_black",
+    "hook": "Seu melhor vendedor não pode ser o único dono das informações.",
+    "photo": "https://images.unsplash.com/photo-1531123897727-8f129e1688ce"
   }
 ]
