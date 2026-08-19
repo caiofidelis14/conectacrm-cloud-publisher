@@ -30,5 +30,13 @@
     "topic": "indicacao",
     "variant": 0,
     "template": "elite-twitter-oficial"
+  },
+  {
+    "date": "2026-08-18",
+    "slot": "educational",
+    "hook": "Se o seu escritório manda proposta e espera o cliente voltar, faça isto antes de buscar mais clientes.",
+    "topic": "followup",
+    "variant": 0,
+    "template": "elite-twitter-oficial"
   }
 ]
