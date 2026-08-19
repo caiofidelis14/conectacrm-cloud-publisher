@@ -46,5 +46,13 @@
     "topic": "posicionamento",
     "variant": 0,
     "template": "elite-twitter-oficial"
+  },
+  {
+    "date": "2026-08-19",
+    "slot": "aggressive",
+    "hook": "Seu escritório não tem falta de oportunidade. Ele depende exclusivamente de indicação.",
+    "topic": "indicacao",
+    "variant": 0,
+    "template": "elite-twitter-oficial"
   }
 ]
