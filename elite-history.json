@@ -22,5 +22,13 @@
     "topic": "honorarios",
     "variant": 0,
     "template": "elite-twitter-oficial"
+  },
+  {
+    "date": "2026-08-18",
+    "slot": "educational",
+    "hook": "Se o seu escritório depende exclusivamente de indicação, faça isto antes de buscar mais clientes.",
+    "topic": "indicacao",
+    "variant": 0,
+    "template": "elite-twitter-oficial"
   }
 ]
