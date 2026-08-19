@@ -54,5 +54,13 @@
     "topic": "indicacao",
     "variant": 0,
     "template": "elite-twitter-oficial"
+  },
+  {
+    "date": "2026-08-19",
+    "slot": "sales",
+    "hook": "Você não precisa trabalhar ainda mais. Precisa corrigir isto: seu escritório depende exclusivamente de indicação.",
+    "topic": "indicacao",
+    "variant": 0,
+    "template": "elite-twitter-oficial"
   }
 ]
