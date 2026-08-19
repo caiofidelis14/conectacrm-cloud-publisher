@@ -38,5 +38,13 @@
     "topic": "followup",
     "variant": 0,
     "template": "elite-twitter-oficial"
+  },
+  {
+    "date": "2026-08-19",
+    "slot": "educational",
+    "hook": "Se o seu escritório fala com todo mundo e sobre tudo, faça isto antes de buscar mais clientes.",
+    "topic": "posicionamento",
+    "variant": 0,
+    "template": "elite-twitter-oficial"
   }
 ]
