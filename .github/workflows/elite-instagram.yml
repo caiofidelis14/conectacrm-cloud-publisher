@@ -56,7 +56,7 @@ jobs:
           echo "MANIFEST_PATH=elite-manifest-$slot.json" >> "$GITHUB_ENV"
       - name: Validar acesso de publicação
         env:
-          META_ACCESS_TOKEN: ${{ secrets.PERSONAL_META_ACCESS_TOKEN }}
+          META_ACCESS_TOKEN: ${{ secrets.ELITE_META_ACCESS_TOKEN }}
           IG_USER_ID: "17841401203630772"
           EXPECTED_USERNAME: "advogadodeelitee"
         run: npm run validate-meta
@@ -80,7 +80,7 @@ jobs:
       - name: Publicar no Instagram
         if: github.event_name == 'schedule' || inputs.publish == true
         env:
-          META_ACCESS_TOKEN: ${{ secrets.PERSONAL_META_ACCESS_TOKEN }}
+          META_ACCESS_TOKEN: ${{ secrets.ELITE_META_ACCESS_TOKEN }}
           IG_USER_ID: "17841401203630772"
           PUBLIC_BASE_URL: https://raw.githubusercontent.com/${{ github.repository }}/main
         run: npm run publish
