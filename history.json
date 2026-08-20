@@ -196,5 +196,12 @@
     "layout": "viral_black",
     "hook": "Seu melhor vendedor não pode ser o único dono das informações.",
     "photo": "https://images.unsplash.com/photo-1531123897727-8f129e1688ce"
+  },
+  {
+    "date": "2026-08-20",
+    "format": "carousel",
+    "layout": "tweet_card",
+    "hook": "Desconto não corrige atendimento lento.",
+    "photo": "https://images.unsplash.com/photo-1580489944761-15a19d654956"
   }
 ]
