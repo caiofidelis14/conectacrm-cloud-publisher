@@ -78,5 +78,13 @@
     "topic": "followup",
     "variant": 0,
     "template": "elite-twitter-oficial"
+  },
+  {
+    "date": "2026-08-20",
+    "slot": "sales",
+    "hook": "Você não precisa trabalhar ainda mais. Precisa corrigir isto: seu escritório manda proposta e espera o cliente voltar.",
+    "topic": "followup",
+    "variant": 0,
+    "template": "elite-twitter-oficial"
   }
 ]
