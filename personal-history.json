@@ -50,5 +50,11 @@
     "hook": "Seu melhor funcionário pode ser o motivo de sua equipe continuar mediana.",
     "category": "leadership",
     "template": "caio-preto-oficial"
+  },
+  {
+    "date": "2026-08-20",
+    "hook": "Funcionário não é família. E empresa que diz isso geralmente quer cobrar afeto no lugar de gestão.",
+    "category": "leadership",
+    "template": "caio-preto-oficial"
   }
 ]
