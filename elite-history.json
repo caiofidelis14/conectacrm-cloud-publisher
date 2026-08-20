@@ -70,5 +70,13 @@
     "topic": "atendimento",
     "variant": 0,
     "template": "elite-twitter-oficial"
+  },
+  {
+    "date": "2026-08-20",
+    "slot": "aggressive",
+    "hook": "Seu escritório não tem falta de oportunidade. Ele manda proposta e espera o cliente voltar.",
+    "topic": "followup",
+    "variant": 0,
+    "template": "elite-twitter-oficial"
   }
 ]
