@@ -13,9 +13,9 @@ const dayNumber = Math.floor(Date.parse(`${dayKey}T12:00:00Z`) / 86400000);
 let history = []; try { history = JSON.parse(await fs.readFile("elite-history.json", "utf8")); } catch {}
 const used = new Set(history.map((item) => `${item.slot}:${item.hook}`));
 let selected;
-for (let offset = 0; offset < eliteTopics.length * 3; offset++) {
+for (let offset = 0; offset < eliteTopics.length * 6; offset++) {
   const index = (dayNumber + offset) % eliteTopics.length;
-  const variant = Math.floor((dayNumber + offset) / eliteTopics.length) % 3;
+  const variant = Math.floor((dayNumber + offset) / eliteTopics.length) % 6;
   const copy = slotCopy[slot](eliteTopics[index], variant);
   if (!used.has(`${slot}:${copy.hook}`)) { selected = { ...copy, topic: eliteTopics[index].key, variant }; break; }
 }
@@ -27,18 +27,23 @@ const avatar = (await fs.readFile(new URL("./advogado-elite-avatar.jpg", import.
 const esc = (s) => s.replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;");
 const wrap = (text, max) => { const out=[]; let line=""; for (const word of text.split(/\s+/)) { const next=line?`${line} ${word}`:word; if(next.length>max&&line){out.push(line);line=word;}else line=next;} if(line)out.push(line); return out; };
 const block = (lines,x,y,size,lh,weight=800,color="#fff") => lines.map((line,i)=>`<text x="${x}" y="${y+i*lh}" font-family="Arial,Helvetica,sans-serif" font-size="${size}" font-weight="${weight}" fill="${color}">${esc(line)}</text>`).join("");
-const hookLines = wrap(selected.hook, 29);
+const slotIndex = { educational: 0, aggressive: 1, sales: 2 }[slot];
+const boldOnly = slotIndex === dayNumber % 3;
+const hookLines = wrap(selected.hook, boldOnly ? 23 : 29);
 const lessonLines = wrap(selected.lesson, 35);
-const hookSize = hookLines.length > 4 ? 52 : 60;
+const hookSize = boldOnly ? (hookLines.length > 5 ? 64 : 76) : (hookLines.length > 4 ? 52 : 60);
 const lessonSize = lessonLines.length > 5 ? 39 : 44;
-const hookY = 390;
+const hookY = boldOnly ? Math.max(430, 650 - Math.floor((hookLines.length - 1) * 43)) : 390;
 const lessonY = hookY + hookLines.length * 67 + 30;
+const body = boldOnly
+  ? block(hookLines,88,hookY,hookSize,88,900)
+  : `${block(hookLines,88,hookY,hookSize,67,900)}${block(lessonLines,88,lessonY,lessonSize,51,650,"#e5e5e5")}`;
 const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}">
 <rect width="1080" height="1350" fill="#000"/><clipPath id="a"><circle cx="165" cy="187" r="57"/></clipPath>
 <image href="data:image/jpeg;base64,${avatar}" x="108" y="130" width="114" height="114" preserveAspectRatio="xMidYMid slice" clip-path="url(#a)"/>
 <text x="244" y="194" font-family="Arial,Helvetica,sans-serif" font-size="36" fill="#fff">Metodologia Elite</text>
 <text x="244" y="236" font-family="Arial,Helvetica,sans-serif" font-size="27" fill="#777">@advogadodeelitee</text>
-${block(hookLines,88,hookY,hookSize,67,900)}${block(lessonLines,88,lessonY,lessonSize,51,650,"#e5e5e5")}
+${body}
 <text x="540" y="1270" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="800" fill="#fff">Advogado de Elite | Estrutura para crescer</text></svg>`;
 const file = path.join(dir, "01.jpg");
 await sharp(Buffer.from(svg), { density: 144 }).jpeg({ quality: 95 }).toFile(file);
@@ -46,6 +51,6 @@ const files = [file.replaceAll(path.sep, "/")];
 const caption = `${selected.hook}\n\n${selected.lesson}\n\n${selected.action}\n\nConteúdo informativo. Cada situação exige análise individual.\n\n#Advocacia #GestãoJurídica #EscritórioDeAdvocacia #AdvogadoDeElite`;
 const manifest = `elite-manifest-${slot}.json`;
 await fs.writeFile(manifest, JSON.stringify({ date: dayKey, slot, format: "static", files, caption }, null, 2));
-history.push({ date: dayKey, slot, hook: selected.hook, topic: selected.topic, variant: selected.variant, template: "elite-twitter-oficial" });
+history.push({ date: dayKey, slot, hook: selected.hook, topic: selected.topic, variant: selected.variant, format: boldOnly ? "bold-only" : "hook-and-context", template: "elite-twitter-oficial" });
 await fs.writeFile("elite-history.json", JSON.stringify(history.slice(-500), null, 2));
-console.log(JSON.stringify({ date: dayKey, slot, hook: selected.hook, files, manifest }, null, 2));
+console.log(JSON.stringify({ date: dayKey, slot, format: boldOnly ? "bold-only" : "hook-and-context", hook: selected.hook, files, manifest }, null, 2));

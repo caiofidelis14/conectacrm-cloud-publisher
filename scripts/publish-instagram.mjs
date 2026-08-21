@@ -8,6 +8,7 @@ const manifestPath=process.env.MANIFEST_PATH||"manifest.json";
 const manifest=JSON.parse(await fs.readFile(manifestPath,"utf8"));
 const api="https://graph.facebook.com/v23.0";
 async function post(endpoint,params){const body=new URLSearchParams({...params,access_token:token});const res=await fetch(`${api}/${endpoint}`,{method:"POST",body});const data=await res.json();if(!res.ok||data.error)throw new Error(JSON.stringify(data));return data;}
+async function get(endpoint,params={}){const url=new URL(`${api}/${endpoint}`);for(const [key,value] of Object.entries({...params,access_token:token}))url.searchParams.set(key,value);const res=await fetch(url);const data=await res.json();if(!res.ok||data.error)throw new Error(JSON.stringify(data));return data;}
 const urls=manifest.files.map(f=>`${base}/${f}`);
 let creation;
 if(urls.length===1){creation=(await post(`${ig}/media`,{image_url:urls[0],caption:manifest.caption})).id;}
@@ -15,3 +16,9 @@ else{const children=[];for(const url of urls)children.push((await post(`${ig}/me
 await new Promise(r=>setTimeout(r,5000));
 const published=await post(`${ig}/media_publish`,{creation_id:creation});
 console.log(`Publicado: ${published.id}`);
+try {
+  const media=await get(published.id,{fields:"id,permalink,timestamp,media_type"});
+  console.log(`Link publicado: ${media.permalink}`);
+} catch (error) {
+  console.warn(`Publicação confirmada, mas o link não pôde ser consultado: ${error.message}`);
+}

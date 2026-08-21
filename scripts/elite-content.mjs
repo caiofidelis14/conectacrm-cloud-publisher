@@ -22,25 +22,34 @@ export const eliteTopics = [
 export const slotCopy = {
   educational: (t, variant) => {
     const hooks = [
-      `Se o seu escritório ${t.problem}, faça isto antes de buscar mais clientes.`,
+      `Antes de buscar mais clientes, corrija isto: você ${t.problem}.`,
       `Um ajuste simples para o advogado que ${t.problem}.`,
-      `O processo que falta quando o escritório ${t.problem}.`
+      `O processo que falta quando a operação ${t.problem}.`,
+      `Quase ninguém mede o custo de quem ${t.problem}.`,
+      `O sinal de alerta aparece quando a equipe ${t.problem}.`,
+      `Faça este diagnóstico: por que você ainda ${t.problem}?`
     ];
     return { hook: hooks[variant % hooks.length], lesson: `A causa geralmente é simples: ${t.cause}. Na prática, ${t.lesson}.`, action: "Salve este post e aplique o ajuste ainda nesta semana." };
   },
   aggressive: (t, variant) => {
     const hooks = [
-      `Seu escritório não tem falta de oportunidade. Ele ${t.problem}.`,
-      `Advogado, pare de chamar de fase ruim o fato de que você ${t.problem}.`,
-      `Enquanto você ${t.problem}, outro escritório está profissionalizando a operação.`
+      `Competência técnica não compensa uma operação que ${t.problem}.`,
+      `Não é fase ruim. É falta de gestão: você ${t.problem}.`,
+      `Enquanto você ${t.problem}, alguém menos técnico constrói um negócio melhor.`,
+      `A conta de quem ${t.problem} sempre chega — normalmente no caixa.`,
+      `${t.consequence[0].toUpperCase()}${t.consequence.slice(1)}. Isso não é azar.`,
+      `O mercado não pune só advogado ruim. Pune quem ${t.problem}.`
     ];
     return { hook: hooks[variant % hooks.length], lesson: `Isso acontece porque ${t.cause}. O resultado é previsível: ${t.consequence}.`, action: "Discorda? Comente com argumento — não com desculpa." };
   },
   sales: (t, variant) => {
     const hooks = [
-      `Você não precisa trabalhar ainda mais. Precisa corrigir isto: seu escritório ${t.problem}.`,
-      `O próximo nível do seu escritório começa quando ele para de cometer este erro: ${t.problem}.`,
-      `Existe uma diferença enorme entre advogar bem e construir um escritório que cresce.`
+      `Crescimento previsível exige corrigir isto: você ${t.problem}.`,
+      `Mais esforço não resolve uma operação que ${t.problem}.`,
+      `O próximo nível exige processo para quem ${t.problem}.`,
+      `Há dinheiro sendo perdido toda vez que alguém ${t.problem}.`,
+      `Advogar bem entrega o serviço. Estrutura constrói o negócio.`,
+      `O improviso termina quando este erro é enfrentado: você ${t.problem}.`
     ];
     return { hook: hooks[variant % hooks.length], lesson: `Na Metodologia Elite, estruturamos ${t.offer}. Crescimento sustentável exige processo, gestão e execução.`, action: "Envie ELITE no direct para entender como funciona." };
   }
