@@ -94,5 +94,14 @@
     "topic": "agenda",
     "variant": 0,
     "template": "elite-twitter-oficial"
+  },
+  {
+    "date": "2026-08-21",
+    "slot": "aggressive",
+    "hook": "A conta de quem fala com todo mundo e sobre tudo sempre chega — normalmente no caixa.",
+    "topic": "posicionamento",
+    "variant": 3,
+    "format": "bold-only",
+    "template": "elite-twitter-oficial"
   }
 ]
