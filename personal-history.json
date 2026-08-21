@@ -56,5 +56,11 @@
     "hook": "Funcionário não é família. E empresa que diz isso geralmente quer cobrar afeto no lugar de gestão.",
     "category": "leadership",
     "template": "caio-preto-oficial"
+  },
+  {
+    "date": "2026-08-21",
+    "hook": "Crescer rápido demais quebra empresas que pareciam saudáveis.",
+    "category": "business",
+    "template": "caio-preto-oficial"
   }
 ]
