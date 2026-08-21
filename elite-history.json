@@ -86,5 +86,13 @@
     "topic": "followup",
     "variant": 0,
     "template": "elite-twitter-oficial"
+  },
+  {
+    "date": "2026-08-21",
+    "slot": "educational",
+    "hook": "Se o seu escritório vive ocupado e chama isso de crescimento, faça isto antes de buscar mais clientes.",
+    "topic": "agenda",
+    "variant": 0,
+    "template": "elite-twitter-oficial"
   }
 ]
