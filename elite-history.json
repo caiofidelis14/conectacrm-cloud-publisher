@@ -103,5 +103,14 @@
     "variant": 3,
     "format": "bold-only",
     "template": "elite-twitter-oficial"
+  },
+  {
+    "date": "2026-08-21",
+    "slot": "sales",
+    "hook": "Há dinheiro sendo perdido toda vez que alguém fala com todo mundo e sobre tudo.",
+    "topic": "posicionamento",
+    "variant": 3,
+    "format": "hook-and-context",
+    "template": "elite-twitter-oficial"
   }
 ]
