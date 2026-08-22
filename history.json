@@ -210,5 +210,12 @@
     "layout": "educational_neon",
     "hook": "Reunião comercial sem dados é só uma roda de opiniões.",
     "photo": "https://images.unsplash.com/photo-1595152772835-219674b2a8a6"
+  },
+  {
+    "date": "2026-08-22",
+    "format": "carousel",
+    "layout": "editorial_split",
+    "hook": "Cliente sem retorno não está pensando. Está sendo esquecido.",
+    "photo": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5"
   }
 ]
