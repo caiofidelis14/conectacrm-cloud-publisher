@@ -112,5 +112,14 @@
     "variant": 3,
     "format": "hook-and-context",
     "template": "elite-twitter-oficial"
+  },
+  {
+    "date": "2026-08-22",
+    "slot": "educational",
+    "hook": "Quase ninguém mede o custo de quem demora horas para responder novos contatos.",
+    "topic": "atendimento",
+    "variant": 3,
+    "format": "hook-and-context",
+    "template": "elite-twitter-oficial"
   }
 ]
