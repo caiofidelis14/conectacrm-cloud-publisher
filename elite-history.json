@@ -121,5 +121,14 @@
     "variant": 3,
     "format": "hook-and-context",
     "template": "elite-twitter-oficial"
+  },
+  {
+    "date": "2026-08-22",
+    "slot": "aggressive",
+    "hook": "A conta de quem demora horas para responder novos contatos sempre chega — normalmente no caixa.",
+    "topic": "atendimento",
+    "variant": 3,
+    "format": "hook-and-context",
+    "template": "elite-twitter-oficial"
   }
 ]
