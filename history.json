@@ -217,5 +217,12 @@
     "layout": "editorial_split",
     "hook": "Cliente sem retorno não está pensando. Está sendo esquecido.",
     "photo": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5"
+  },
+  {
+    "date": "2026-08-23",
+    "format": "carousel",
+    "layout": "viral_black",
+    "hook": "O problema da planilha aparece quando a operação começa a crescer.",
+    "photo": "https://images.unsplash.com/photo-1527980965255-d3b416303d12"
   }
 ]
