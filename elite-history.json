@@ -148,5 +148,14 @@
     "variant": 3,
     "format": "bold-only",
     "template": "elite-twitter-oficial"
+  },
+  {
+    "date": "2026-08-23",
+    "slot": "aggressive",
+    "hook": "A conta de quem vive ocupado e chama isso de crescimento sempre chega — normalmente no caixa.",
+    "topic": "agenda",
+    "variant": 3,
+    "format": "hook-and-context",
+    "template": "elite-twitter-oficial"
   }
 ]
