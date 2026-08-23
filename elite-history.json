@@ -157,5 +157,14 @@
     "variant": 3,
     "format": "hook-and-context",
     "template": "elite-twitter-oficial"
+  },
+  {
+    "date": "2026-08-23",
+    "slot": "sales",
+    "hook": "Há dinheiro sendo perdido toda vez que alguém vive ocupado e chama isso de crescimento.",
+    "topic": "agenda",
+    "variant": 3,
+    "format": "hook-and-context",
+    "template": "elite-twitter-oficial"
   }
 ]
