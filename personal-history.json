@@ -68,5 +68,11 @@
     "hook": "Escritório que depende de indicação não tem estratégia. Tem sorte recorrente.",
     "category": "law",
     "template": "caio-preto-oficial"
+  },
+  {
+    "date": "2026-08-23",
+    "hook": "Processo demais também é desorganização — só que documentada.",
+    "category": "strategy",
+    "template": "caio-preto-oficial"
   }
 ]
