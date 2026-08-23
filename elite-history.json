@@ -139,5 +139,14 @@
     "variant": 3,
     "format": "bold-only",
     "template": "elite-twitter-oficial"
+  },
+  {
+    "date": "2026-08-23",
+    "slot": "educational",
+    "hook": "Quase ninguém mede o custo de quem vive ocupado e chama isso de crescimento.",
+    "topic": "agenda",
+    "variant": 3,
+    "format": "bold-only",
+    "template": "elite-twitter-oficial"
   }
 ]
