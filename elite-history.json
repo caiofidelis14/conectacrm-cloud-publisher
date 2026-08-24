@@ -184,5 +184,14 @@
     "variant": 3,
     "format": "bold-only",
     "template": "elite-twitter-oficial"
+  },
+  {
+    "date": "2026-08-24",
+    "slot": "sales",
+    "hook": "Há dinheiro sendo perdido toda vez que alguém divide sociedade sem definir função e cobrança.",
+    "topic": "sociedade",
+    "variant": 3,
+    "format": "hook-and-context",
+    "template": "elite-twitter-oficial"
   }
 ]
