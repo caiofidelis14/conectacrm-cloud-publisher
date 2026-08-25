@@ -211,5 +211,14 @@
     "variant": 3,
     "format": "hook-and-context",
     "template": "elite-twitter-oficial"
+  },
+  {
+    "date": "2026-08-25",
+    "slot": "sales",
+    "hook": "Há dinheiro sendo perdido toda vez que alguém resolve cada caso como se fosse o primeiro.",
+    "topic": "processos",
+    "variant": 3,
+    "format": "bold-only",
+    "template": "elite-twitter-oficial"
   }
 ]
