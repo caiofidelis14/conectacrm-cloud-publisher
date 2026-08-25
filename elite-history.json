@@ -202,5 +202,14 @@
     "variant": 3,
     "format": "hook-and-context",
     "template": "elite-twitter-oficial"
+  },
+  {
+    "date": "2026-08-25",
+    "slot": "aggressive",
+    "hook": "A conta de quem resolve cada caso como se fosse o primeiro sempre chega — normalmente no caixa.",
+    "topic": "processos",
+    "variant": 3,
+    "format": "hook-and-context",
+    "template": "elite-twitter-oficial"
   }
 ]
