@@ -80,5 +80,11 @@
     "hook": "Mais leads não salvam uma empresa que trata mal os que já recebeu.",
     "category": "sales",
     "template": "caio-preto-oficial"
+  },
+  {
+    "date": "2026-08-25",
+    "hook": "Você não está sem tempo. Está protegendo prioridades que não admite ter.",
+    "category": "mindset",
+    "template": "caio-preto-oficial"
   }
 ]
