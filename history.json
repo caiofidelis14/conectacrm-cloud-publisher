@@ -231,5 +231,12 @@
     "layout": "tweet_card",
     "hook": "Você não precisa cobrar mais o time. Precisa enxergar melhor o processo.",
     "photo": "https://images.unsplash.com/photo-1544005313-94ddf0286df2"
+  },
+  {
+    "date": "2026-08-25",
+    "format": "static",
+    "layout": "static_neon",
+    "hook": "Uma venda perdida sem motivo registrado será perdida de novo.",
+    "photo": "https://images.unsplash.com/photo-1534528741775-53994a69daeb"
   }
 ]

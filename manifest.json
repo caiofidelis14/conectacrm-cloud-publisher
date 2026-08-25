@@ -1,15 +1,10 @@
 {
-  "date": "2026-08-24",
-  "format": "carousel",
-  "layout": "tweet_card",
-  "photoUrl": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=1080&h=1350&q=88&crop=faces",
+  "date": "2026-08-25",
+  "format": "static",
+  "layout": "static_neon",
+  "photoUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1080&h=1350&q=88&crop=faces",
   "files": [
-    "public/2026-08-24/01.jpg",
-    "public/2026-08-24/02.jpg",
-    "public/2026-08-24/03.jpg",
-    "public/2026-08-24/04.jpg",
-    "public/2026-08-24/05.jpg",
-    "public/2026-08-24/06.jpg"
+    "public/2026-08-25/01.jpg"
   ],
-  "caption": "Isso pode estar travando suas vendas:\n\nVocê não precisa cobrar mais o time. Precisa enxergar melhor o processo.\n\nGestão não é perseguir vendedor. É criar clareza para agir no ponto certo.\n\n• Atividades visíveis\n• Prazos claros\n• Negócios parados\n• Prioridades do dia\n\nPare de vender no improviso. Teste o ConectaCRM grátis por 7 dias. Link na bio. 🚀\n\n#ConectaCRM #CRM #Vendas #GestãoComercial #AutomaçãoDeVendas #PME"
+  "caption": "Isso pode estar travando suas vendas:\n\nUma venda perdida sem motivo registrado será perdida de novo.\n\nPerder faz parte. Repetir o mesmo erro por falta de informação é opcional.\n\n• Mapeie objeções\n• Registre concorrentes\n• Analise padrões\n• Ajuste o discurso\n\nTransforme conversas em processo. Conheça o ConectaCRM e teste grátis por 7 dias. Link na bio. 🚀\n\n#ConectaCRM #CRM #Vendas #GestãoComercial #AutomaçãoDeVendas #PME"
 }
