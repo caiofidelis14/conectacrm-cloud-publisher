@@ -220,5 +220,14 @@
     "variant": 3,
     "format": "bold-only",
     "template": "elite-twitter-oficial"
+  },
+  {
+    "date": "2026-08-26",
+    "slot": "educational",
+    "hook": "Quase ninguém mede o custo de quem revisa tudo porque ninguém faz do seu jeito.",
+    "topic": "delegacao",
+    "variant": 3,
+    "format": "bold-only",
+    "template": "elite-twitter-oficial"
   }
 ]
