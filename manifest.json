@@ -1,10 +1,15 @@
 {
-  "date": "2026-08-25",
-  "format": "static",
-  "layout": "static_neon",
-  "photoUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1080&h=1350&q=88&crop=faces",
+  "date": "2026-08-26",
+  "format": "carousel",
+  "layout": "editorial_split",
+  "photoUrl": "https://picsum.photos/seed/conectacrm-2026-08-26/1080/1350?auto=format&fit=crop&w=1080&h=1350&q=88&crop=faces",
   "files": [
-    "public/2026-08-25/01.jpg"
+    "public/2026-08-26/01.jpg",
+    "public/2026-08-26/02.jpg",
+    "public/2026-08-26/03.jpg",
+    "public/2026-08-26/04.jpg",
+    "public/2026-08-26/05.jpg",
+    "public/2026-08-26/06.jpg"
   ],
-  "caption": "Isso pode estar travando suas vendas:\n\nUma venda perdida sem motivo registrado será perdida de novo.\n\nPerder faz parte. Repetir o mesmo erro por falta de informação é opcional.\n\n• Mapeie objeções\n• Registre concorrentes\n• Analise padrões\n• Ajuste o discurso\n\nTransforme conversas em processo. Conheça o ConectaCRM e teste grátis por 7 dias. Link na bio. 🚀\n\n#ConectaCRM #CRM #Vendas #GestãoComercial #AutomaçãoDeVendas #PME"
+  "caption": "Isso pode estar travando suas vendas:\n\nSeu funil pode estar cheio e ainda assim não ter vendas.\n\nVolume no pipeline não significa qualidade. Um funil confiável precisa refletir a realidade.\n\n• Remova oportunidades mortas\n• Atualize as etapas\n• Revise os prazos\n• Priorize intenção real\n\nOrganize sua operação comercial. Teste o ConectaCRM grátis por 7 dias. Link na bio. 🚀\n\n#ConectaCRM #CRM #Vendas #GestãoComercial #AutomaçãoDeVendas #PME"
 }
