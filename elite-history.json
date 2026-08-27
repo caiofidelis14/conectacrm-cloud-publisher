@@ -238,5 +238,14 @@
     "variant": 3,
     "format": "hook-and-context",
     "template": "elite-twitter-oficial"
+  },
+  {
+    "date": "2026-08-26",
+    "slot": "sales",
+    "hook": "Há dinheiro sendo perdido toda vez que alguém revisa tudo porque ninguém faz do seu jeito.",
+    "topic": "delegacao",
+    "variant": 3,
+    "format": "hook-and-context",
+    "template": "elite-twitter-oficial"
   }
 ]
