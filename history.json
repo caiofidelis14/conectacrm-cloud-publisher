@@ -245,5 +245,12 @@
     "layout": "editorial_split",
     "hook": "Seu funil pode estar cheio e ainda assim não ter vendas.",
     "photo": "https://picsum.photos/seed/conectacrm-2026-08-26/1080/1350"
+  },
+  {
+    "date": "2026-08-27",
+    "format": "carousel",
+    "layout": "viral_black",
+    "hook": "Atendimento rápido sem contexto também perde venda.",
+    "photo": "https://picsum.photos/seed/conectacrm-2026-08-27/1080/1350"
   }
 ]
