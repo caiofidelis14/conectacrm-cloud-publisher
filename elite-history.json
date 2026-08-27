@@ -247,5 +247,14 @@
     "variant": 3,
     "format": "hook-and-context",
     "template": "elite-twitter-oficial"
+  },
+  {
+    "date": "2026-08-27",
+    "slot": "educational",
+    "hook": "Quase ninguém mede o custo de quem olha apenas o saldo da conta.",
+    "topic": "financeiro",
+    "variant": 3,
+    "format": "hook-and-context",
+    "template": "elite-twitter-oficial"
   }
 ]
