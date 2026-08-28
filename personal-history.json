@@ -98,5 +98,11 @@
     "hook": "Funcionário desmotivado nem sempre precisa de incentivo. Às vezes precisa de consequência.",
     "category": "leadership",
     "template": "caio-preto-oficial"
+  },
+  {
+    "date": "2026-08-28",
+    "hook": "Quem mistura dinheiro da empresa com dinheiro pessoal ainda não tem empresa.",
+    "category": "business",
+    "template": "caio-preto-oficial"
   }
 ]
