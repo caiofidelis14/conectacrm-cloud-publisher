@@ -265,5 +265,14 @@
     "variant": 3,
     "format": "hook-and-context",
     "template": "elite-twitter-oficial"
+  },
+  {
+    "date": "2026-08-28",
+    "slot": "sales",
+    "hook": "Há dinheiro sendo perdido toda vez que alguém publica conteúdo técnico que ninguém entende.",
+    "topic": "conteudo",
+    "variant": 3,
+    "format": "bold-only",
+    "template": "elite-twitter-oficial"
   }
 ]
