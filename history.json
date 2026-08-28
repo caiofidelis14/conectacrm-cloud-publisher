@@ -252,5 +252,12 @@
     "layout": "viral_black",
     "hook": "Atendimento rápido sem contexto também perde venda.",
     "photo": "https://picsum.photos/seed/conectacrm-2026-08-27/1080/1350"
+  },
+  {
+    "date": "2026-08-28",
+    "format": "carousel",
+    "layout": "tweet_card",
+    "hook": "A meta do mês não pode aparecer apenas no último dia.",
+    "photo": "https://picsum.photos/seed/conectacrm-2026-08-28/1080/1350"
   }
 ]
