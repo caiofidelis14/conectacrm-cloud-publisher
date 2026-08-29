@@ -301,5 +301,14 @@
     "variant": 3,
     "format": "hook-and-context",
     "template": "elite-twitter-oficial"
+  },
+  {
+    "date": "2026-08-29",
+    "slot": "educational",
+    "hook": "Quase ninguém mede o custo de quem contrata quando o caos já venceu.",
+    "topic": "equipe",
+    "variant": 3,
+    "format": "bold-only",
+    "template": "elite-twitter-oficial"
   }
 ]
