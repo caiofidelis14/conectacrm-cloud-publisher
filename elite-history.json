@@ -319,5 +319,14 @@
     "variant": 3,
     "format": "hook-and-context",
     "template": "elite-twitter-oficial"
+  },
+  {
+    "date": "2026-08-29",
+    "slot": "sales",
+    "hook": "Há dinheiro sendo perdido toda vez que alguém define metas que ninguém acompanha.",
+    "topic": "metas",
+    "variant": 3,
+    "format": "hook-and-context",
+    "template": "elite-twitter-oficial"
   }
 ]
