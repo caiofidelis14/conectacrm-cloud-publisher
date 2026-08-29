@@ -104,5 +104,11 @@
     "hook": "Quem mistura dinheiro da empresa com dinheiro pessoal ainda não tem empresa.",
     "category": "business",
     "template": "caio-preto-oficial"
+  },
+  {
+    "date": "2026-08-29",
+    "hook": "O cliente não contrata o advogado mais técnico. Contrata aquele cuja competência consegue perceber.",
+    "category": "law",
+    "template": "caio-preto-oficial"
   }
 ]
