@@ -283,5 +283,14 @@
     "variant": 3,
     "format": "hook-and-context",
     "template": "elite-twitter-oficial"
+  },
+  {
+    "date": "2026-08-28",
+    "slot": "aggressive",
+    "hook": "A conta de quem contrata quando o caos já venceu sempre chega — normalmente no caixa.",
+    "topic": "equipe",
+    "variant": 3,
+    "format": "hook-and-context",
+    "template": "elite-twitter-oficial"
   }
 ]
