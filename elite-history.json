@@ -292,5 +292,14 @@
     "variant": 3,
     "format": "hook-and-context",
     "template": "elite-twitter-oficial"
+  },
+  {
+    "date": "2026-08-29",
+    "slot": "sales",
+    "hook": "Há dinheiro sendo perdido toda vez que alguém contrata quando o caos já venceu.",
+    "topic": "equipe",
+    "variant": 3,
+    "format": "hook-and-context",
+    "template": "elite-twitter-oficial"
   }
 ]
