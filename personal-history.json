@@ -110,5 +110,11 @@
     "hook": "O cliente não contrata o advogado mais técnico. Contrata aquele cuja competência consegue perceber.",
     "category": "law",
     "template": "caio-preto-oficial"
+  },
+  {
+    "date": "2026-08-30",
+    "hook": "Reunião sem decisão é procrastinação com testemunhas.",
+    "category": "strategy",
+    "template": "caio-preto-oficial"
   }
 ]
