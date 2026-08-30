@@ -266,5 +266,12 @@
     "layout": "educational_neon",
     "hook": "Negócio parado ocupa espaço e esconde o que realmente importa.",
     "photo": "https://picsum.photos/seed/conectacrm-2026-08-29/1080/1350"
+  },
+  {
+    "date": "2026-08-30",
+    "format": "carousel",
+    "layout": "editorial_split",
+    "hook": "O cliente percebe quando sua empresa não conversa internamente.",
+    "photo": "https://picsum.photos/seed/conectacrm-2026-08-30/1080/1350"
   }
 ]
