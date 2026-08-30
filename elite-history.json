@@ -337,5 +337,14 @@
     "variant": 3,
     "format": "hook-and-context",
     "template": "elite-twitter-oficial"
+  },
+  {
+    "date": "2026-08-30",
+    "slot": "aggressive",
+    "hook": "A conta de quem administra contatos pela memória e por conversas soltas sempre chega — normalmente no caixa.",
+    "topic": "crm",
+    "variant": 3,
+    "format": "bold-only",
+    "template": "elite-twitter-oficial"
   }
 ]
