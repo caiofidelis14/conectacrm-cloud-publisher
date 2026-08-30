@@ -328,5 +328,14 @@
     "variant": 3,
     "format": "hook-and-context",
     "template": "elite-twitter-oficial"
+  },
+  {
+    "date": "2026-08-30",
+    "slot": "educational",
+    "hook": "Quase ninguém mede o custo de quem define metas que ninguém acompanha.",
+    "topic": "metas",
+    "variant": 3,
+    "format": "hook-and-context",
+    "template": "elite-twitter-oficial"
   }
 ]
