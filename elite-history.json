@@ -364,5 +364,14 @@
     "variant": 3,
     "format": "hook-and-context",
     "template": "elite-twitter-oficial"
+  },
+  {
+    "date": "2026-08-31",
+    "slot": "aggressive",
+    "hook": "A conta de quem só fala com o cliente quando precisa de documento sempre chega — normalmente no caixa.",
+    "topic": "experiencia",
+    "variant": 3,
+    "format": "hook-and-context",
+    "template": "elite-twitter-oficial"
   }
 ]
