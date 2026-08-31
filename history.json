@@ -273,5 +273,12 @@
     "layout": "editorial_split",
     "hook": "O cliente percebe quando sua empresa não conversa internamente.",
     "photo": "https://picsum.photos/seed/conectacrm-2026-08-30/1080/1350"
+  },
+  {
+    "date": "2026-08-31",
+    "format": "carousel",
+    "layout": "viral_black",
+    "hook": "Mais ferramentas não resolvem um processo que ninguém segue.",
+    "photo": "https://picsum.photos/seed/conectacrm-2026-08-31/1080/1350"
   }
 ]
