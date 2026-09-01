@@ -122,5 +122,11 @@
     "hook": "Cliente que pede desconto antes de entender o valor não é oportunidade. É risco.",
     "category": "sales",
     "template": "caio-preto-oficial"
+  },
+  {
+    "date": "2026-09-01",
+    "hook": "Trabalhar muito não compensa continuar escolhendo mal.",
+    "category": "mindset",
+    "template": "caio-preto-oficial"
   }
 ]
