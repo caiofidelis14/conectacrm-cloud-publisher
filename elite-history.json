@@ -391,5 +391,14 @@
     "variant": 3,
     "format": "bold-only",
     "template": "elite-twitter-oficial"
+  },
+  {
+    "date": "2026-09-01",
+    "slot": "aggressive",
+    "hook": "A conta de quem confunde especialização com limitação sempre chega — normalmente no caixa.",
+    "topic": "nicho",
+    "variant": 3,
+    "format": "hook-and-context",
+    "template": "elite-twitter-oficial"
   }
 ]
