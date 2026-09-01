@@ -382,5 +382,14 @@
     "variant": 3,
     "format": "bold-only",
     "template": "elite-twitter-oficial"
+  },
+  {
+    "date": "2026-09-01",
+    "slot": "educational",
+    "hook": "Quase ninguém mede o custo de quem só fala com o cliente quando precisa de documento.",
+    "topic": "experiencia",
+    "variant": 3,
+    "format": "bold-only",
+    "template": "elite-twitter-oficial"
   }
 ]
