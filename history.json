@@ -280,5 +280,12 @@
     "layout": "viral_black",
     "hook": "Mais ferramentas não resolvem um processo que ninguém segue.",
     "photo": "https://picsum.photos/seed/conectacrm-2026-08-31/1080/1350"
+  },
+  {
+    "date": "2026-09-01",
+    "format": "carousel",
+    "layout": "tweet_card",
+    "hook": "Toda oportunidade sem responsável é uma venda esperando para ser perdida.",
+    "photo": "https://picsum.photos/seed/conectacrm-2026-09-01/1080/1350"
   }
 ]
