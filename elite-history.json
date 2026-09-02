@@ -409,5 +409,14 @@
     "variant": 3,
     "format": "hook-and-context",
     "template": "elite-twitter-oficial"
+  },
+  {
+    "date": "2026-09-02",
+    "slot": "educational",
+    "hook": "Quase ninguém mede o custo de quem confunde especialização com limitação.",
+    "topic": "nicho",
+    "variant": 3,
+    "format": "hook-and-context",
+    "template": "elite-twitter-oficial"
   }
 ]
