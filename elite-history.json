@@ -427,5 +427,14 @@
     "variant": 3,
     "format": "bold-only",
     "template": "elite-twitter-oficial"
+  },
+  {
+    "date": "2026-09-02",
+    "slot": "sales",
+    "hook": "Há dinheiro sendo perdido toda vez que alguém envia um PDF genérico depois da reunião.",
+    "topic": "proposta",
+    "variant": 3,
+    "format": "hook-and-context",
+    "template": "elite-twitter-oficial"
   }
 ]
