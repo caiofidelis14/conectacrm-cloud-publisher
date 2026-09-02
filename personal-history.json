@@ -128,5 +128,11 @@
     "hook": "Trabalhar muito não compensa continuar escolhendo mal.",
     "category": "mindset",
     "template": "caio-preto-oficial"
+  },
+  {
+    "date": "2026-09-02",
+    "hook": "Líder que precisa ser amado pelo time quase sempre evita a conversa que o time precisa ouvir.",
+    "category": "leadership",
+    "template": "caio-preto-oficial"
   }
 ]
