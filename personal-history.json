@@ -134,5 +134,11 @@
     "hook": "Líder que precisa ser amado pelo time quase sempre evita a conversa que o time precisa ouvir.",
     "category": "leadership",
     "template": "caio-preto-oficial"
+  },
+  {
+    "date": "2026-09-03",
+    "hook": "O dono que resolve tudo não tem uma equipe. Tem uma plateia remunerada.",
+    "category": "leadership",
+    "template": "caio-preto-oficial"
   }
 ]
