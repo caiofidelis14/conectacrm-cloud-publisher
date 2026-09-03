@@ -445,5 +445,14 @@
     "variant": 3,
     "format": "hook-and-context",
     "template": "elite-twitter-oficial"
+  },
+  {
+    "date": "2026-09-03",
+    "slot": "aggressive",
+    "hook": "Agenda cheia de consultas improdutivas. Isso não é azar.",
+    "topic": "triagem",
+    "variant": 4,
+    "format": "hook-and-context",
+    "template": "elite-twitter-oficial"
   }
 ]
