@@ -454,5 +454,14 @@
     "variant": 4,
     "format": "hook-and-context",
     "template": "elite-twitter-oficial"
+  },
+  {
+    "date": "2026-09-03",
+    "slot": "sales",
+    "hook": "Advogar bem entrega o serviço. Estrutura constrói o negócio.",
+    "topic": "triagem",
+    "variant": 4,
+    "format": "bold-only",
+    "template": "elite-twitter-oficial"
   }
 ]
