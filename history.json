@@ -294,5 +294,12 @@
     "layout": "educational_neon",
     "hook": "O comercial não deveria depender da memória de ninguém.",
     "photo": "https://picsum.photos/seed/conectacrm-2026-09-02/1080/1350"
+  },
+  {
+    "date": "2026-09-03",
+    "format": "carousel",
+    "layout": "editorial_split",
+    "hook": "Quem mede apenas vendas descobre os problemas tarde demais.",
+    "photo": "https://picsum.photos/seed/conectacrm-2026-09-03/1080/1350"
   }
 ]
