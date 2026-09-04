@@ -140,5 +140,11 @@
     "hook": "O dono que resolve tudo não tem uma equipe. Tem uma plateia remunerada.",
     "category": "leadership",
     "template": "caio-preto-oficial"
+  },
+  {
+    "date": "2026-09-04",
+    "hook": "Sócio 50/50 parece justo até o primeiro impasse sério.",
+    "category": "business",
+    "template": "caio-preto-oficial"
   }
 ]
