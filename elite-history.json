@@ -463,5 +463,14 @@
     "variant": 4,
     "format": "bold-only",
     "template": "elite-twitter-oficial"
+  },
+  {
+    "date": "2026-09-04",
+    "slot": "educational",
+    "hook": "O sinal de alerta aparece quando a equipe aceita qualquer caso que chega.",
+    "topic": "triagem",
+    "variant": 4,
+    "format": "bold-only",
+    "template": "elite-twitter-oficial"
   }
 ]
