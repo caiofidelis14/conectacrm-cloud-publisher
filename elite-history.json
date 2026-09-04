@@ -472,5 +472,14 @@
     "variant": 4,
     "format": "bold-only",
     "template": "elite-twitter-oficial"
+  },
+  {
+    "date": "2026-09-04",
+    "slot": "aggressive",
+    "hook": "Trabalha mais, lucra menos e ainda atrai o cliente errado. Isso não é azar.",
+    "topic": "honorarios",
+    "variant": 4,
+    "format": "hook-and-context",
+    "template": "elite-twitter-oficial"
   }
 ]
