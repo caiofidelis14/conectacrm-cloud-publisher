@@ -301,5 +301,12 @@
     "layout": "editorial_split",
     "hook": "Quem mede apenas vendas descobre os problemas tarde demais.",
     "photo": "https://picsum.photos/seed/conectacrm-2026-09-03/1080/1350"
+  },
+  {
+    "date": "2026-09-04",
+    "format": "static",
+    "layout": "static_neon",
+    "hook": "Mais leads não resolvem um processo de vendas bagunçado.",
+    "photo": "https://picsum.photos/seed/conectacrm-2026-09-04/1080/1350"
   }
 ]
