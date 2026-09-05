@@ -308,5 +308,12 @@
     "layout": "static_neon",
     "hook": "Mais leads não resolvem um processo de vendas bagunçado.",
     "photo": "https://picsum.photos/seed/conectacrm-2026-09-04/1080/1350"
+  },
+  {
+    "date": "2026-09-05",
+    "format": "carousel",
+    "layout": "tweet_card",
+    "hook": "Seu time não precisa de mais pressão. Precisa de mais clareza.",
+    "photo": "https://picsum.photos/seed/conectacrm-2026-09-05/1080/1350"
   }
 ]
