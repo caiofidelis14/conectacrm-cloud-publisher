@@ -146,5 +146,11 @@
     "hook": "Sócio 50/50 parece justo até o primeiro impasse sério.",
     "category": "business",
     "template": "caio-preto-oficial"
+  },
+  {
+    "date": "2026-09-05",
+    "hook": "OAB não transforma advogado em empresário. E muitos descobrem isso tarde demais.",
+    "category": "law",
+    "template": "caio-preto-oficial"
   }
 ]
