@@ -490,5 +490,14 @@
     "variant": 5,
     "format": "hook-and-context",
     "template": "elite-twitter-oficial"
+  },
+  {
+    "date": "2026-09-05",
+    "slot": "educational",
+    "hook": "O sinal de alerta aparece quando a equipe reduz honorários para não perder o cliente.",
+    "topic": "honorarios",
+    "variant": 4,
+    "format": "hook-and-context",
+    "template": "elite-twitter-oficial"
   }
 ]
