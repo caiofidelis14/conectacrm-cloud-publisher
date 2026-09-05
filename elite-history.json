@@ -499,5 +499,14 @@
     "variant": 4,
     "format": "hook-and-context",
     "template": "elite-twitter-oficial"
+  },
+  {
+    "date": "2026-09-05",
+    "slot": "aggressive",
+    "hook": "O faturamento fica nas mãos de terceiros. Isso não é azar.",
+    "topic": "indicacao",
+    "variant": 4,
+    "format": "bold-only",
+    "template": "elite-twitter-oficial"
   }
 ]
