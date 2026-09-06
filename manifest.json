@@ -1,15 +1,15 @@
 {
-  "date": "2026-09-05",
+  "date": "2026-09-06",
   "format": "carousel",
-  "layout": "tweet_card",
-  "photoUrl": "https://picsum.photos/seed/conectacrm-2026-09-05/1080/1350?auto=format&fit=crop&w=1080&h=1350&q=88&crop=faces",
+  "layout": "educational_neon",
+  "photoUrl": "https://picsum.photos/seed/conectacrm-2026-09-06/1080/1350?auto=format&fit=crop&w=1080&h=1350&q=88&crop=faces",
   "files": [
-    "public/2026-09-05/01.jpg",
-    "public/2026-09-05/02.jpg",
-    "public/2026-09-05/03.jpg",
-    "public/2026-09-05/04.jpg",
-    "public/2026-09-05/05.jpg",
-    "public/2026-09-05/06.jpg"
+    "public/2026-09-06/01.jpg",
+    "public/2026-09-06/02.jpg",
+    "public/2026-09-06/03.jpg",
+    "public/2026-09-06/04.jpg",
+    "public/2026-09-06/05.jpg",
+    "public/2026-09-06/06.jpg"
   ],
-  "caption": "Uma verdade desconfortável sobre vendas:\n\nSeu time não precisa de mais pressão. Precisa de mais clareza.\n\nUma operação previsível começa quando cada oportunidade tem contexto, responsável e próxima ação.\n\n• Quem é o responsável?\n• Em qual etapa está?\n• Quando será o retorno?\n• Qual é o próximo passo?\n\nPare de vender no improviso. Teste o ConectaCRM grátis por 7 dias. Link na bio. 🚀\n\n#ConectaCRM #CRM #Vendas #GestãoComercial #AutomaçãoDeVendas #PME"
+  "caption": "Uma verdade desconfortável sobre vendas:\n\nO follow-up esquecido custa mais do que parece.\n\nVendas raramente acontecem no primeiro contato. O processo precisa continuar mesmo quando a rotina aperta.\n\n• Lembretes automáticos\n• Histórico centralizado\n• Tarefas por vendedor\n• Retorno no momento certo\n\nTransforme conversas em processo. Conheça o ConectaCRM e teste grátis por 7 dias. Link na bio. 🚀\n\n#ConectaCRM #CRM #Vendas #GestãoComercial #AutomaçãoDeVendas #PME"
 }
