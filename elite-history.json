@@ -517,5 +517,14 @@
     "variant": 5,
     "format": "hook-and-context",
     "template": "elite-twitter-oficial"
+  },
+  {
+    "date": "2026-09-06",
+    "slot": "educational",
+    "hook": "O sinal de alerta aparece quando a equipe depende exclusivamente de indicação.",
+    "topic": "indicacao",
+    "variant": 4,
+    "format": "hook-and-context",
+    "template": "elite-twitter-oficial"
   }
 ]
