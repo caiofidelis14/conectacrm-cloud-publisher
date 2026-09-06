@@ -526,5 +526,14 @@
     "variant": 4,
     "format": "hook-and-context",
     "template": "elite-twitter-oficial"
+  },
+  {
+    "date": "2026-09-06",
+    "slot": "aggressive",
+    "hook": "Boas oportunidades esfriam no WhatsApp. Isso não é azar.",
+    "topic": "followup",
+    "variant": 4,
+    "format": "hook-and-context",
+    "template": "elite-twitter-oficial"
   }
 ]
