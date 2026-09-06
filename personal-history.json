@@ -152,5 +152,11 @@
     "hook": "OAB não transforma advogado em empresário. E muitos descobrem isso tarde demais.",
     "category": "law",
     "template": "caio-preto-oficial"
+  },
+  {
+    "date": "2026-09-06",
+    "hook": "Indicador demais é uma forma sofisticada de não olhar para o número que dói.",
+    "category": "strategy",
+    "template": "caio-preto-oficial"
   }
 ]
