@@ -158,5 +158,11 @@
     "hook": "Indicador demais é uma forma sofisticada de não olhar para o número que dói.",
     "category": "strategy",
     "template": "caio-preto-oficial"
+  },
+  {
+    "date": "2026-09-07",
+    "hook": "Proposta sem data de decisão é orçamento grátis para o cliente comparar.",
+    "category": "sales",
+    "template": "caio-preto-oficial"
   }
 ]
