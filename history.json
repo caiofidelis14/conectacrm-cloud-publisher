@@ -322,5 +322,12 @@
     "layout": "educational_neon",
     "hook": "O follow-up esquecido custa mais do que parece.",
     "photo": "https://picsum.photos/seed/conectacrm-2026-09-06/1080/1350"
+  },
+  {
+    "date": "2026-09-07",
+    "format": "carousel",
+    "layout": "editorial_split",
+    "hook": "Se o pipeline está na cabeça do vendedor, ele não existe para a empresa.",
+    "photo": "https://picsum.photos/seed/conectacrm-2026-09-07/1080/1350"
   }
 ]
