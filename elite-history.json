@@ -544,5 +544,14 @@
     "variant": 5,
     "format": "bold-only",
     "template": "elite-twitter-oficial"
+  },
+  {
+    "date": "2026-09-07",
+    "slot": "educational",
+    "hook": "O sinal de alerta aparece quando a equipe manda proposta e espera o cliente voltar.",
+    "topic": "followup",
+    "variant": 4,
+    "format": "bold-only",
+    "template": "elite-twitter-oficial"
   }
 ]
