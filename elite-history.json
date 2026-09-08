@@ -562,5 +562,14 @@
     "variant": 4,
     "format": "hook-and-context",
     "template": "elite-twitter-oficial"
+  },
+  {
+    "date": "2026-09-07",
+    "slot": "sales",
+    "hook": "O improviso termina quando este erro é enfrentado: você manda proposta e espera o cliente voltar.",
+    "topic": "followup",
+    "variant": 5,
+    "format": "hook-and-context",
+    "template": "elite-twitter-oficial"
   }
 ]
