@@ -571,5 +571,14 @@
     "variant": 5,
     "format": "hook-and-context",
     "template": "elite-twitter-oficial"
+  },
+  {
+    "date": "2026-09-08",
+    "slot": "educational",
+    "hook": "O sinal de alerta aparece quando a equipe fala com todo mundo e sobre tudo.",
+    "topic": "posicionamento",
+    "variant": 4,
+    "format": "hook-and-context",
+    "template": "elite-twitter-oficial"
   }
 ]
