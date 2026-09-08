@@ -164,5 +164,11 @@
     "hook": "Proposta sem data de decisão é orçamento grátis para o cliente comparar.",
     "category": "sales",
     "template": "caio-preto-oficial"
+  },
+  {
+    "date": "2026-09-08",
+    "hook": "A pessoa que culpa o algoritmo geralmente ainda não criou nada que mereça ser compartilhado.",
+    "category": "mindset",
+    "template": "caio-preto-oficial"
   }
 ]
