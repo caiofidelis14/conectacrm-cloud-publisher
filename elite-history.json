@@ -580,5 +580,14 @@
     "variant": 4,
     "format": "hook-and-context",
     "template": "elite-twitter-oficial"
+  },
+  {
+    "date": "2026-09-08",
+    "slot": "aggressive",
+    "hook": "O cliente contrata quem respondeu primeiro com clareza. Isso não é azar.",
+    "topic": "atendimento",
+    "variant": 4,
+    "format": "bold-only",
+    "template": "elite-twitter-oficial"
   }
 ]
