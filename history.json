@@ -329,5 +329,12 @@
     "layout": "editorial_split",
     "hook": "Se o pipeline está na cabeça do vendedor, ele não existe para a empresa.",
     "photo": "https://picsum.photos/seed/conectacrm-2026-09-07/1080/1350"
+  },
+  {
+    "date": "2026-09-08",
+    "format": "carousel",
+    "layout": "viral_black",
+    "hook": "WhatsApp não é CRM.",
+    "photo": "https://picsum.photos/seed/conectacrm-2026-09-08/1080/1350"
   }
 ]
