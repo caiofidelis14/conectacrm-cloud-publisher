@@ -170,5 +170,11 @@
     "hook": "A pessoa que culpa o algoritmo geralmente ainda não criou nada que mereça ser compartilhado.",
     "category": "mindset",
     "template": "caio-preto-oficial"
+  },
+  {
+    "date": "2026-09-09",
+    "hook": "Automatizar bagunça só faz o erro acontecer mais rápido.",
+    "category": "strategy",
+    "template": "caio-preto-oficial"
   }
 ]
