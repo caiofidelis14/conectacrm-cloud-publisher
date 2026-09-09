@@ -607,5 +607,14 @@
     "variant": 4,
     "format": "hook-and-context",
     "template": "elite-twitter-oficial"
+  },
+  {
+    "date": "2026-09-09",
+    "slot": "aggressive",
+    "hook": "O escritório cresce em esforço, não em estrutura. Isso não é azar.",
+    "topic": "agenda",
+    "variant": 4,
+    "format": "hook-and-context",
+    "template": "elite-twitter-oficial"
   }
 ]
