@@ -336,5 +336,12 @@
     "layout": "viral_black",
     "hook": "WhatsApp não é CRM.",
     "photo": "https://picsum.photos/seed/conectacrm-2026-09-08/1080/1350"
+  },
+  {
+    "date": "2026-09-09",
+    "format": "carousel",
+    "layout": "tweet_card",
+    "hook": "Vender mais começa eliminando vazamentos.",
+    "photo": "https://picsum.photos/seed/conectacrm-2026-09-09/1080/1350"
   }
 ]
