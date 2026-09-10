@@ -343,5 +343,12 @@
     "layout": "tweet_card",
     "hook": "Vender mais começa eliminando vazamentos.",
     "photo": "https://picsum.photos/seed/conectacrm-2026-09-09/1080/1350"
+  },
+  {
+    "date": "2026-09-10",
+    "format": "carousel",
+    "layout": "educational_neon",
+    "hook": "Gestão comercial sem dados vira opinião.",
+    "photo": "https://picsum.photos/seed/conectacrm-2026-09-10/1080/1350"
   }
 ]

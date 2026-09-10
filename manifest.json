@@ -1,15 +1,15 @@
 {
-  "date": "2026-09-09",
+  "date": "2026-09-10",
   "format": "carousel",
-  "layout": "tweet_card",
-  "photoUrl": "https://picsum.photos/seed/conectacrm-2026-09-09/1080/1350?auto=format&fit=crop&w=1080&h=1350&q=88&crop=faces",
+  "layout": "educational_neon",
+  "photoUrl": "https://picsum.photos/seed/conectacrm-2026-09-10/1080/1350?auto=format&fit=crop&w=1080&h=1350&q=88&crop=faces",
   "files": [
-    "public/2026-09-09/01.jpg",
-    "public/2026-09-09/02.jpg",
-    "public/2026-09-09/03.jpg",
-    "public/2026-09-09/04.jpg",
-    "public/2026-09-09/05.jpg",
-    "public/2026-09-09/06.jpg"
+    "public/2026-09-10/01.jpg",
+    "public/2026-09-10/02.jpg",
+    "public/2026-09-10/03.jpg",
+    "public/2026-09-10/04.jpg",
+    "public/2026-09-10/05.jpg",
+    "public/2026-09-10/06.jpg"
   ],
-  "caption": "Uma verdade desconfortável sobre vendas:\n\nVender mais começa eliminando vazamentos.\n\nAntes de buscar mais volume, descubra onde as oportunidades atuais estão sendo perdidas.\n\n• Lead sem resposta\n• Proposta sem retorno\n• Negociação parada\n• Cliente sem acompanhamento\n\nTransforme conversas em processo. Conheça o ConectaCRM e teste grátis por 7 dias. Link na bio. 🚀\n\n#ConectaCRM #CRM #Vendas #GestãoComercial #AutomaçãoDeVendas #PME"
+  "caption": "Uma verdade desconfortável sobre vendas:\n\nGestão comercial sem dados vira opinião.\n\nDados simples e consistentes ajudam o gestor a agir antes do resultado do mês chegar.\n\n• Conversão por etapa\n• Tempo de resposta\n• Negócios parados\n• Desempenho do time\n\nOrganize sua operação comercial. Teste o ConectaCRM grátis por 7 dias. Link na bio. 🚀\n\n#ConectaCRM #CRM #Vendas #GestãoComercial #AutomaçãoDeVendas #PME"
 }
