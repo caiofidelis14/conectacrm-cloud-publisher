@@ -625,5 +625,14 @@
     "variant": 5,
     "format": "bold-only",
     "template": "elite-twitter-oficial"
+  },
+  {
+    "date": "2026-09-10",
+    "slot": "educational",
+    "hook": "O sinal de alerta aparece quando a equipe vive ocupado e chama isso de crescimento.",
+    "topic": "agenda",
+    "variant": 4,
+    "format": "bold-only",
+    "template": "elite-twitter-oficial"
   }
 ]
