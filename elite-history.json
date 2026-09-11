@@ -652,5 +652,14 @@
     "variant": 4,
     "format": "hook-and-context",
     "template": "elite-twitter-oficial"
+  },
+  {
+    "date": "2026-09-11",
+    "slot": "aggressive",
+    "hook": "Todo impasse vira desgaste pessoal. Isso não é azar.",
+    "topic": "sociedade",
+    "variant": 4,
+    "format": "bold-only",
+    "template": "elite-twitter-oficial"
   }
 ]
