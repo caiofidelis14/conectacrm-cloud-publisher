@@ -643,5 +643,14 @@
     "variant": 5,
     "format": "hook-and-context",
     "template": "elite-twitter-oficial"
+  },
+  {
+    "date": "2026-09-11",
+    "slot": "educational",
+    "hook": "O sinal de alerta aparece quando a equipe divide sociedade sem definir função e cobrança.",
+    "topic": "sociedade",
+    "variant": 4,
+    "format": "hook-and-context",
+    "template": "elite-twitter-oficial"
   }
 ]
