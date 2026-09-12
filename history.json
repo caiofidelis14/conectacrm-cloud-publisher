@@ -357,5 +357,12 @@
     "layout": "editorial_split",
     "hook": "Automação boa não afasta o cliente. Ela evita o esquecimento.",
     "photo": "https://picsum.photos/seed/conectacrm-2026-09-11/1080/1350"
+  },
+  {
+    "date": "2026-09-12",
+    "format": "carousel",
+    "layout": "viral_black",
+    "hook": "O vendedor ocupado nem sempre é o vendedor produtivo.",
+    "photo": "https://picsum.photos/seed/conectacrm-2026-09-12/1080/1350"
   }
 ]
