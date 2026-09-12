@@ -188,5 +188,11 @@
     "hook": "Empresa que não funciona sem o dono não é patrimônio. É emprego sem férias.",
     "category": "business",
     "template": "caio-preto-oficial"
+  },
+  {
+    "date": "2026-09-12",
+    "hook": "Cobrar barato não democratiza seu trabalho quando torna seu escritório inviável.",
+    "category": "law",
+    "template": "caio-preto-oficial"
   }
 ]
