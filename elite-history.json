@@ -679,5 +679,14 @@
     "variant": 4,
     "format": "hook-and-context",
     "template": "elite-twitter-oficial"
+  },
+  {
+    "date": "2026-09-12",
+    "slot": "aggressive",
+    "hook": "Retrabalho vira rotina e erro vira surpresa. Isso não é azar.",
+    "topic": "processos",
+    "variant": 4,
+    "format": "hook-and-context",
+    "template": "elite-twitter-oficial"
   }
 ]
