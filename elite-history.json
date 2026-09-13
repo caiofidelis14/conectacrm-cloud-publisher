@@ -697,5 +697,14 @@
     "variant": 5,
     "format": "bold-only",
     "template": "elite-twitter-oficial"
+  },
+  {
+    "date": "2026-09-13",
+    "slot": "educational",
+    "hook": "O sinal de alerta aparece quando a equipe revisa tudo porque ninguém faz do seu jeito.",
+    "topic": "delegacao",
+    "variant": 4,
+    "format": "bold-only",
+    "template": "elite-twitter-oficial"
   }
 ]
