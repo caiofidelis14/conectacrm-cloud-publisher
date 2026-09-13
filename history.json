@@ -364,5 +364,12 @@
     "layout": "viral_black",
     "hook": "O vendedor ocupado nem sempre é o vendedor produtivo.",
     "photo": "https://picsum.photos/seed/conectacrm-2026-09-12/1080/1350"
+  },
+  {
+    "date": "2026-09-13",
+    "format": "carousel",
+    "layout": "tweet_card",
+    "hook": "Uma proposta enviada não é uma venda encaminhada.",
+    "photo": "https://picsum.photos/seed/conectacrm-2026-09-13/1080/1350"
   }
 ]
