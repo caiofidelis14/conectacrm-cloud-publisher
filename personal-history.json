@@ -194,5 +194,11 @@
     "hook": "Cobrar barato não democratiza seu trabalho quando torna seu escritório inviável.",
     "category": "law",
     "template": "caio-preto-oficial"
+  },
+  {
+    "date": "2026-09-13",
+    "hook": "Contratar mais gente para um processo ruim é financiar o caos.",
+    "category": "strategy",
+    "template": "caio-preto-oficial"
   }
 ]
