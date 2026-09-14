@@ -724,5 +724,14 @@
     "variant": 5,
     "format": "hook-and-context",
     "template": "elite-twitter-oficial"
+  },
+  {
+    "date": "2026-09-14",
+    "slot": "educational",
+    "hook": "O sinal de alerta aparece quando a equipe olha apenas o saldo da conta.",
+    "topic": "financeiro",
+    "variant": 4,
+    "format": "hook-and-context",
+    "template": "elite-twitter-oficial"
   }
 ]
