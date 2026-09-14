@@ -733,5 +733,14 @@
     "variant": 4,
     "format": "hook-and-context",
     "template": "elite-twitter-oficial"
+  },
+  {
+    "date": "2026-09-14",
+    "slot": "aggressive",
+    "hook": "Faturamento alto esconde uma operação frágil. Isso não é azar.",
+    "topic": "financeiro",
+    "variant": 4,
+    "format": "bold-only",
+    "template": "elite-twitter-oficial"
   }
 ]
