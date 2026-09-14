@@ -371,5 +371,12 @@
     "layout": "tweet_card",
     "hook": "Uma proposta enviada não é uma venda encaminhada.",
     "photo": "https://picsum.photos/seed/conectacrm-2026-09-13/1080/1350"
+  },
+  {
+    "date": "2026-09-14",
+    "format": "static",
+    "layout": "static_neon",
+    "hook": "O crescimento trava quando cada vendedor trabalha de um jeito.",
+    "photo": "https://picsum.photos/seed/conectacrm-2026-09-14/1080/1350"
   }
 ]
