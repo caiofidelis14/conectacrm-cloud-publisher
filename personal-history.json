@@ -200,5 +200,11 @@
     "hook": "Contratar mais gente para um processo ruim é financiar o caos.",
     "category": "strategy",
     "template": "caio-preto-oficial"
+  },
+  {
+    "date": "2026-09-14",
+    "hook": "Desconto fácil é confissão de que o primeiro preço não era sério.",
+    "category": "sales",
+    "template": "caio-preto-oficial"
   }
 ]
