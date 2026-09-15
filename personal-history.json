@@ -206,5 +206,11 @@
     "hook": "Desconto fácil é confissão de que o primeiro preço não era sério.",
     "category": "sales",
     "template": "caio-preto-oficial"
+  },
+  {
+    "date": "2026-09-15",
+    "hook": "Estabilidade é confortável até o dia em que outra pessoa decide tirá-la de você.",
+    "category": "mindset",
+    "template": "caio-preto-oficial"
   }
 ]
