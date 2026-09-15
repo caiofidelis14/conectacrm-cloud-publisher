@@ -751,5 +751,14 @@
     "variant": 5,
     "format": "hook-and-context",
     "template": "elite-twitter-oficial"
+  },
+  {
+    "date": "2026-09-15",
+    "slot": "educational",
+    "hook": "O sinal de alerta aparece quando a equipe publica conteúdo técnico que ninguém entende.",
+    "topic": "conteudo",
+    "variant": 4,
+    "format": "hook-and-context",
+    "template": "elite-twitter-oficial"
   }
 ]
