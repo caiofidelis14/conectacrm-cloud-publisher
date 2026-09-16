@@ -778,5 +778,14 @@
     "variant": 5,
     "format": "bold-only",
     "template": "elite-twitter-oficial"
+  },
+  {
+    "date": "2026-09-16",
+    "slot": "educational",
+    "hook": "O sinal de alerta aparece quando a equipe contrata quando o caos já venceu.",
+    "topic": "equipe",
+    "variant": 4,
+    "format": "bold-only",
+    "template": "elite-twitter-oficial"
   }
 ]
