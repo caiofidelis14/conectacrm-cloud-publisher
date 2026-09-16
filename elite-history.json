@@ -787,5 +787,14 @@
     "variant": 4,
     "format": "bold-only",
     "template": "elite-twitter-oficial"
+  },
+  {
+    "date": "2026-09-16",
+    "slot": "aggressive",
+    "hook": "Adiciona custo sem retirar o gargalo. Isso não é azar.",
+    "topic": "equipe",
+    "variant": 4,
+    "format": "hook-and-context",
+    "template": "elite-twitter-oficial"
   }
 ]
