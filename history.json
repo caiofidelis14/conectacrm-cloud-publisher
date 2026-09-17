@@ -392,5 +392,12 @@
     "layout": "viral_black",
     "hook": "Lead quente não espera vendedor desorganizado.",
     "photo": "https://picsum.photos/seed/conectacrm-2026-09-16/1080/1350"
+  },
+  {
+    "date": "2026-09-17",
+    "format": "carousel",
+    "layout": "tweet_card",
+    "hook": "Se ninguém sabe o próximo passo, a venda já começou a esfriar.",
+    "photo": "https://picsum.photos/seed/conectacrm-2026-09-17/1080/1350"
   }
 ]
