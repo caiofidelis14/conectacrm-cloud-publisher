@@ -218,5 +218,11 @@
     "hook": "Faturamento alto é uma ótima maneira de esconder uma empresa pobre.",
     "category": "business",
     "template": "caio-preto-oficial"
+  },
+  {
+    "date": "2026-09-17",
+    "hook": "Planejamento anual costuma ser o lugar onde empresas guardam decisões que não pretendem executar.",
+    "category": "strategy",
+    "template": "caio-preto-oficial"
   }
 ]
