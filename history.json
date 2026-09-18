@@ -399,5 +399,12 @@
     "layout": "tweet_card",
     "hook": "Se ninguém sabe o próximo passo, a venda já começou a esfriar.",
     "photo": "https://picsum.photos/seed/conectacrm-2026-09-17/1080/1350"
+  },
+  {
+    "date": "2026-09-18",
+    "format": "carousel",
+    "layout": "educational_neon",
+    "hook": "Seu melhor vendedor não pode ser o único dono das informações.",
+    "photo": "https://picsum.photos/seed/conectacrm-2026-09-18/1080/1350"
   }
 ]
