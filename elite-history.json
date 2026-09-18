@@ -841,5 +841,14 @@
     "variant": 4,
     "format": "hook-and-context",
     "template": "elite-twitter-oficial"
+  },
+  {
+    "date": "2026-09-18",
+    "slot": "aggressive",
+    "hook": "Dinheiro fica escondido em mensagens esquecidas. Isso não é azar.",
+    "topic": "crm",
+    "variant": 4,
+    "format": "hook-and-context",
+    "template": "elite-twitter-oficial"
   }
 ]
