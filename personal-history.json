@@ -224,5 +224,11 @@
     "hook": "Planejamento anual costuma ser o lugar onde empresas guardam decisões que não pretendem executar.",
     "category": "strategy",
     "template": "caio-preto-oficial"
+  },
+  {
+    "date": "2026-09-18",
+    "hook": "O empresário que comemora agenda cheia talvez não tenha percebido que construiu uma prisão.",
+    "category": "business",
+    "template": "caio-preto-oficial"
   }
 ]
