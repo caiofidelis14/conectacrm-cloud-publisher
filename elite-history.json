@@ -868,5 +868,14 @@
     "variant": 4,
     "format": "bold-only",
     "template": "elite-twitter-oficial"
+  },
+  {
+    "date": "2026-09-19",
+    "slot": "aggressive",
+    "hook": "Silêncio operacional é percebido como abandono. Isso não é azar.",
+    "topic": "experiencia",
+    "variant": 4,
+    "format": "hook-and-context",
+    "template": "elite-twitter-oficial"
   }
 ]
