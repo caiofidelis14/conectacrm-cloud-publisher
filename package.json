@@ -9,6 +9,7 @@
     "discover-personal": "node scripts/discover-instagram-account.mjs",
     "discover-elite": "node scripts/discover-business-instagram.mjs",
     "publish": "node scripts/publish-instagram.mjs",
+    "publish-reel": "node scripts/publish-reel.mjs",
     "validate-meta": "node scripts/validate-meta.mjs"
   },
   "dependencies": {
