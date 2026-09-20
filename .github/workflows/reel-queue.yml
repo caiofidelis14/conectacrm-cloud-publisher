@@ -2,8 +2,8 @@ name: Fila temporária de Reels pessoais
 
 on:
   schedule:
-    - cron: "0 19 * * *"
-      timezone: "America/Sao_Paulo"
+    # 15:00 UTC = 12:00 em Brasília. Horário UTC explícito evita atraso por timezone.
+    - cron: "0 15 * * *"
   workflow_dispatch:
     inputs:
       date:
