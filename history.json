@@ -413,5 +413,12 @@
     "layout": "editorial_split",
     "hook": "Desconto não corrige atendimento lento.",
     "photo": "https://picsum.photos/seed/conectacrm-2026-09-19/1080/1350"
+  },
+  {
+    "date": "2026-09-20",
+    "format": "carousel",
+    "layout": "viral_black",
+    "hook": "Reunião comercial sem dados é só uma roda de opiniões.",
+    "photo": "https://picsum.photos/seed/conectacrm-2026-09-20/1080/1350"
   }
 ]
