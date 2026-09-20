@@ -904,5 +904,14 @@
     "variant": 4,
     "format": "bold-only",
     "template": "elite-twitter-oficial"
+  },
+  {
+    "date": "2026-09-20",
+    "slot": "sales",
+    "hook": "O improviso termina quando este erro é enfrentado: você confunde especialização com limitação.",
+    "topic": "nicho",
+    "variant": 5,
+    "format": "hook-and-context",
+    "template": "elite-twitter-oficial"
   }
 ]
