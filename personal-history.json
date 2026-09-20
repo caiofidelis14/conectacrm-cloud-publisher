@@ -236,5 +236,11 @@
     "hook": "Advogado que aceita todo tipo de caso não tem escritório completo. Tem medo de dizer não.",
     "category": "law",
     "template": "caio-preto-oficial"
+  },
+  {
+    "date": "2026-09-20",
+    "hook": "Advogado que promete atendimento humanizado não está se posicionando. Está prometendo o mínimo.",
+    "category": "law",
+    "template": "caio-preto-oficial"
   }
 ]
