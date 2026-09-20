@@ -895,5 +895,14 @@
     "variant": 4,
     "format": "hook-and-context",
     "template": "elite-twitter-oficial"
+  },
+  {
+    "date": "2026-09-20",
+    "slot": "aggressive",
+    "hook": "Continua generalista por medo e invisível por consequência. Isso não é azar.",
+    "topic": "nicho",
+    "variant": 4,
+    "format": "bold-only",
+    "template": "elite-twitter-oficial"
   }
 ]
