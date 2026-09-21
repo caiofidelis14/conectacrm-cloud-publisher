@@ -420,5 +420,12 @@
     "layout": "viral_black",
     "hook": "Reunião comercial sem dados é só uma roda de opiniões.",
     "photo": "https://picsum.photos/seed/conectacrm-2026-09-20/1080/1350"
+  },
+  {
+    "date": "2026-09-21",
+    "format": "carousel",
+    "layout": "tweet_card",
+    "hook": "Cliente sem retorno não está pensando. Está sendo esquecido.",
+    "photo": "https://picsum.photos/seed/conectacrm-2026-09-21/1080/1350"
   }
 ]
