@@ -2,11 +2,7 @@ name: Publicar Advogado de Elite
 
 on:
   schedule:
-    - cron: "0 11 * * *"
-      timezone: "America/Sao_Paulo"
-    - cron: "0 16 * * *"
-      timezone: "America/Sao_Paulo"
-    - cron: "0 19 * * *"
+    - cron: "0 11 * * 1"
       timezone: "America/Sao_Paulo"
   workflow_dispatch:
     inputs:
@@ -31,6 +27,7 @@ concurrency:
 
 jobs:
   publish:
+    if: github.event_name != 'schedule' || github.event.schedule == '0 11 * * 1'
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
@@ -45,12 +42,13 @@ jobs:
         run: |
           if [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
             slot="${{ inputs.slot }}"
-          elif [[ "${{ github.event.schedule }}" == "0 11 * * *" ]]; then
-            slot="educational"
-          elif [[ "${{ github.event.schedule }}" == "0 16 * * *" ]]; then
-            slot="aggressive"
           else
-            slot="sales"
+            week=$(TZ=America/Sao_Paulo date +%V)
+            case $((10#$week % 3)) in
+              0) slot="educational" ;;
+              1) slot="aggressive" ;;
+              2) slot="sales" ;;
+            esac
           fi
           echo "POST_SLOT=$slot" >> "$GITHUB_ENV"
           echo "MANIFEST_PATH=elite-manifest-$slot.json" >> "$GITHUB_ENV"
