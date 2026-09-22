@@ -20,11 +20,13 @@ const wrap = (input, limit) => {
 const lines = (items, x, y, size, gap, color = '#fff', weight = 700) => items.map((line, i) => text(line, x, y + i * gap, size, color, weight)).join('');
 const logo = sharp(await fs.readFile(asset('logo-original.png')));
 const logoMark = await logo.clone().extract({ left: 28, top: 40, width: 95, height: 125 }).png().toBuffer();
-const logoWord = await logo.clone().extract({ left: 142, top: 64, width: 320, height: 43 }).png().toBuffer();
+const logoWord = await logo.clone().extract({ left: 142, top: 70, width: 320, height: 27 }).png().toBuffer();
 const brand = async () => [
-  { input: await sharp(logoMark).resize({ width: 57 }).toBuffer(), left: 68, top: 64 },
-  { input: await sharp(logoWord).resize({ width: 299 }).toBuffer(), left: 139, top: 88 },
+  // Keep the entire logo inside the centred 1:1 grid crop of a 4:5 Instagram post.
+  { input: await sharp(logoMark).resize({ width: 57 }).toBuffer(), left: 68, top: 164 },
+  { input: await sharp(logoWord).resize({ width: 299 }).toBuffer(), left: 139, top: 188 },
 ];
+const week = Math.floor((Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate()) - Date.UTC(2026, 0, 1)) / (7 * 86400000));
 const decode = (s) => s.replaceAll('<![CDATA[', '').replaceAll(']]>', '').replaceAll('&amp;', '&').replaceAll('&quot;', '"').replaceAll('&#39;', "'").replaceAll('&lt;', '<').replaceAll('&gt;', '>');
 async function news() {
   const response = await fetch('https://agenciabrasil.ebc.com.br/rss/economia/feed.xml', { signal: AbortSignal.timeout(15000) });
@@ -43,8 +45,8 @@ async function news() {
   const overlay = svg(`
     <defs><linearGradient id="shade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#000" stop-opacity=".38"/><stop offset=".43" stop-color="#000" stop-opacity=".08"/><stop offset=".68" stop-color="#000" stop-opacity=".76"/><stop offset="1" stop-color="#000" stop-opacity=".96"/></linearGradient></defs>
     <rect width="1080" height="1350" fill="url(#shade)"/>
-    ${text('Fidelis', 722, 99, 37, '#fff', 700)}${text('News', 853, 99, 37, '#d9aa65', 700)}
-    <rect x="1003" y="84" width="77" height="4" fill="#d9aa65"/>
+    ${text('Fidelis', 722, 205, 37, '#fff', 700)}${text('News', 853, 205, 37, '#d9aa65', 700)}
+    <rect x="1003" y="190" width="37" height="4" fill="#d9aa65"/>
     <rect x="68" y="858" width="185" height="54" fill="#db171d"/>
     ${text('EM PAUTA', 90, 896, 28)}
     ${lines(headline, 68, 993, headline.length > 3 ? 59 : 68, headline.length > 3 ? 72 : 82)}
@@ -52,22 +54,22 @@ async function news() {
     <rect x="70" y="1291" width="100" height="3" fill="#d9aa65"/>
   `);
   const caption = `${item.title}\n\nNotícia publicada pela Agência Brasil em ${sourceDate}. Acompanhe a matéria completa na fonte: ${item.url}\n\nAqui na Fidelis, informação vira contexto para decisões empresariais. Esta publicação é informativa e não substitui análise individual.\n\n#FidelisNews #FidelisEmpresarial #Negócios #GestãoEmpresarial`;
-  return { background: 'news-desk.png', overlay, caption, source: item.url, topic: item.title };
+  const backgrounds = ['news-desk.png', 'news-boardroom.png', 'news-city.png'];
+  return { background: backgrounds[((week % backgrounds.length) + backgrounds.length) % backgrounds.length], overlay, caption, source: item.url, topic: item.title };
 }
 const products = [
   { topic: 'Sistemas empresariais', accent: '#42b7ff', bg: 'product-systems.png', title: ['Sistemas', 'empresariais'], subtitle: 'Tecnologia feita para a operação real da sua empresa.', benefits: ['Processos mais eficientes', 'Informações em tempo real', 'Integração com sua equipe'], caption: 'Planilha demais, visibilidade de menos? Criamos sistemas sob medida para organizar processos, conectar equipes e apoiar decisões com dados. Converse com a Fidelis sobre a sua operação. #FidelisEmpresarial #SistemasEmpresariais #Tecnologia' },
   { topic: 'Hub empresarial', accent: '#42b7ff', bg: 'product-hub.png', title: ['Um hub para', 'o seu negócio'], subtitle: 'Soluções diferentes. Uma visão integrada.', benefits: ['Estratégia conectada', 'Parceiros para cada desafio', 'Execução com direção'], caption: 'Sua empresa não vive em caixinhas. O hub empresarial da Fidelis reúne frentes de tecnologia, gestão, marketing e estratégia para enxergar o negócio por inteiro. Fale com um associado. #FidelisEmpresarial #HubEmpresarial #Negócios' },
   { topic: 'Planejamento tributário', accent: '#d9aa65', bg: 'product-tax.png', title: ['Planejamento', 'tributário'], subtitle: 'Decisões fiscais começam antes do fechamento.', benefits: ['Diagnóstico da operação', 'Cenários para decidir', 'Acompanhamento contínuo'], caption: 'Planejamento tributário não é atalho: é método, dados e análise do contexto da empresa. A Fidelis ajuda você a avaliar caminhos com responsabilidade. Fale com um especialista. #FidelisEmpresarial #PlanejamentoTributário' },
-  { topic: 'Marketing empresarial', accent: '#42b7ff', bg: 'product-hub.png', title: ['Marketing que', 'move negócios'], subtitle: 'Posicionamento, demanda e consistência.', benefits: ['Marca com direção', 'Conteúdo com propósito', 'Indicadores de resultado'], caption: 'Marketing empresarial não é apenas postar. É tornar sua proposta clara para o mercado certo, medir a resposta e ajustar a rota. Conheça as soluções da Fidelis. #FidelisEmpresarial #MarketingEmpresarial' },
-  { topic: 'Gestão de passivo tributário', accent: '#d9aa65', bg: 'product-tax.png', title: ['Passivo tributário', 'sob controle'], subtitle: 'Clareza para agir antes que o problema cresça.', benefits: ['Mapeamento da situação', 'Priorização de riscos', 'Plano de ação responsável'], caption: 'Passivo tributário pede diagnóstico, prioridade e estratégia — não promessa fácil. A Fidelis ajuda sua empresa a entender o cenário e construir um plano de ação. Fale com um especialista. #FidelisEmpresarial #GestãoTributária' },
+  { topic: 'Marketing empresarial', accent: '#42b7ff', bg: 'product-marketing.png', title: ['Marketing que', 'move negócios'], subtitle: 'Posicionamento, demanda e consistência.', benefits: ['Marca com direção', 'Conteúdo com propósito', 'Indicadores de resultado'], caption: 'Marketing empresarial não é apenas postar. É tornar sua proposta clara para o mercado certo, medir a resposta e ajustar a rota. Conheça as soluções da Fidelis. #FidelisEmpresarial #MarketingEmpresarial' },
+  { topic: 'Gestão de passivo tributário', accent: '#d9aa65', bg: 'product-passivo.png', title: ['Passivo tributário', 'sob controle'], subtitle: 'Clareza para agir antes que o problema cresça.', benefits: ['Mapeamento da situação', 'Priorização de riscos', 'Plano de ação responsável'], caption: 'Passivo tributário pede diagnóstico, prioridade e estratégia — não promessa fácil. A Fidelis ajuda sua empresa a entender o cenário e construir um plano de ação. Fale com um especialista. #FidelisEmpresarial #GestãoTributária' },
 ];
 async function product() {
-  const week = Math.floor((Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate()) - Date.UTC(2026, 0, 1)) / (7 * 86400000));
   const p = products[(((week - 2) % products.length) + products.length) % products.length];
   const overlay = svg(`
     <defs><linearGradient id="shade" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#02070e" stop-opacity=".96"/><stop offset=".52" stop-color="#02070e" stop-opacity=".72"/><stop offset="1" stop-color="#02070e" stop-opacity=".05"/></linearGradient></defs>
     <rect width="1080" height="1350" fill="url(#shade)"/>
-    ${text('SOLUÇÕES FIDELIS', 765, 97, 20, '#d9e1e9', 500, 'letter-spacing="4"')}
+    ${text('SOLUÇÕES FIDELIS', 765, 205, 20, '#d9e1e9', 500, 'letter-spacing="4"')}
     ${text(p.title[0], 68, 349, 70)}${text(p.title[1], 68, 428, 70, p.accent)}
     ${lines(wrap(p.subtitle, 32), 70, 494, 29, 38, '#f3f6f8', 400)}
     <rect x="70" y="550" width="55" height="4" fill="${p.accent}"/>
