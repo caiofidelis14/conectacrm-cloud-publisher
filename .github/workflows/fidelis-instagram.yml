@@ -1,0 +1,69 @@
+name: Preparar Fidelis Empresarial
+
+# A agenda será ativada depois da conta @fidelisempresarial ser validada na Meta.
+on:
+  workflow_dispatch:
+    inputs:
+      format:
+        description: Linha editorial
+        required: true
+        type: choice
+        options: [news, product]
+      publish:
+        description: Publicar de verdade? Requer acesso Meta validado.
+        required: true
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fidelis-instagram-${{ inputs.format }}
+  cancel-in-progress: false
+
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Validar conta antes de publicar
+        if: inputs.publish == true
+        env:
+          META_ACCESS_TOKEN: ${{ secrets.FIDELIS_META_ACCESS_TOKEN }}
+          IG_USER_ID: ${{ secrets.FIDELIS_IG_USER_ID }}
+          EXPECTED_USERNAME: fidelisempresarial
+        run: npm run validate-meta
+      - name: Criar arte e legenda
+        env:
+          FIDELIS_MODE: ${{ inputs.format }}
+        run: npm run generate-fidelis
+      - name: Salvar arquivos públicos
+        shell: bash
+        run: |
+          git config user.name "Fidelis Empresarial Bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add public/fidelis fidelis-manifest-*.json
+          git diff --cached --quiet || git commit -m "content: fidelis ${{ inputs.format }} $(date +%F)"
+          for attempt in 1 2 3; do
+            git pull --rebase origin main && git push origin HEAD:main && break
+            [[ "$attempt" == "3" ]] && exit 1
+            sleep 5
+          done
+      - name: Esperar imagem pública
+        if: inputs.publish == true
+        run: sleep 20
+      - name: Publicar no Instagram
+        if: inputs.publish == true
+        env:
+          META_ACCESS_TOKEN: ${{ secrets.FIDELIS_META_ACCESS_TOKEN }}
+          IG_USER_ID: ${{ secrets.FIDELIS_IG_USER_ID }}
+          MANIFEST_PATH: fidelis-manifest-${{ inputs.format }}.json
+          PUBLIC_BASE_URL: https://raw.githubusercontent.com/${{ github.repository }}/main
+        run: npm run publish
