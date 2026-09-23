@@ -1,15 +1,15 @@
 {
-  "date": "2026-09-22",
+  "date": "2026-09-23",
   "format": "carousel",
-  "layout": "educational_neon",
-  "photoUrl": "https://picsum.photos/seed/conectacrm-2026-09-22/1080/1350?auto=format&fit=crop&w=1080&h=1350&q=88&crop=faces",
+  "layout": "editorial_split",
+  "photoUrl": "https://picsum.photos/seed/conectacrm-2026-09-23/1080/1350?auto=format&fit=crop&w=1080&h=1350&q=88&crop=faces",
   "files": [
-    "public/2026-09-22/01.jpg",
-    "public/2026-09-22/02.jpg",
-    "public/2026-09-22/03.jpg",
-    "public/2026-09-22/04.jpg",
-    "public/2026-09-22/05.jpg",
-    "public/2026-09-22/06.jpg"
+    "public/2026-09-23/01.jpg",
+    "public/2026-09-23/02.jpg",
+    "public/2026-09-23/03.jpg",
+    "public/2026-09-23/04.jpg",
+    "public/2026-09-23/05.jpg",
+    "public/2026-09-23/06.jpg"
   ],
-  "caption": "Uma verdade desconfortável sobre vendas:\n\nO problema da planilha aparece quando a operação começa a crescer.\n\nO que funciona para dez oportunidades pode desmoronar quando o volume aumenta.\n\n• Versões conflitantes\n• Dados incompletos\n• Ações manuais\n• Gestão atrasada\n\nOrganize sua operação comercial. Teste o ConectaCRM grátis por 7 dias. Link na bio. 🚀\n\n#ConectaCRM #CRM #Vendas #GestãoComercial #AutomaçãoDeVendas #PME"
+  "caption": "Uma verdade desconfortável sobre vendas:\n\nVocê não precisa cobrar mais o time. Precisa enxergar melhor o processo.\n\nGestão não é perseguir vendedor. É criar clareza para agir no ponto certo.\n\n• Atividades visíveis\n• Prazos claros\n• Negócios parados\n• Prioridades do dia\n\nPare de vender no improviso. Teste o ConectaCRM grátis por 7 dias. Link na bio. 🚀\n\n#ConectaCRM #CRM #Vendas #GestãoComercial #AutomaçãoDeVendas #PME"
 }
