@@ -441,5 +441,12 @@
     "layout": "editorial_split",
     "hook": "Você não precisa cobrar mais o time. Precisa enxergar melhor o processo.",
     "photo": "https://picsum.photos/seed/conectacrm-2026-09-23/1080/1350"
+  },
+  {
+    "date": "2026-09-24",
+    "format": "static",
+    "layout": "static_neon",
+    "hook": "Uma venda perdida sem motivo registrado será perdida de novo.",
+    "photo": "https://picsum.photos/seed/conectacrm-2026-09-24/1080/1350"
   }
 ]
