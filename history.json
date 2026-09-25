@@ -448,5 +448,12 @@
     "layout": "static_neon",
     "hook": "Uma venda perdida sem motivo registrado será perdida de novo.",
     "photo": "https://picsum.photos/seed/conectacrm-2026-09-24/1080/1350"
+  },
+  {
+    "date": "2026-09-25",
+    "format": "carousel",
+    "layout": "tweet_card",
+    "hook": "Seu funil pode estar cheio e ainda assim não ter vendas.",
+    "photo": "https://picsum.photos/seed/conectacrm-2026-09-25/1080/1350"
   }
 ]
