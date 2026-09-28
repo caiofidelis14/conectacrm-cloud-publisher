@@ -469,5 +469,12 @@
     "layout": "editorial_split",
     "hook": "A meta do mês não pode aparecer apenas no último dia.",
     "photo": "https://picsum.photos/seed/conectacrm-2026-09-27/1080/1350"
+  },
+  {
+    "date": "2026-09-28",
+    "format": "carousel",
+    "layout": "viral_black",
+    "hook": "Negócio parado ocupa espaço e esconde o que realmente importa.",
+    "photo": "https://picsum.photos/seed/conectacrm-2026-09-28/1080/1350"
   }
 ]
