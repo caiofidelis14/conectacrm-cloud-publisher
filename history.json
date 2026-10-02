@@ -497,5 +497,12 @@
     "layout": "editorial_split",
     "hook": "Toda oportunidade sem responsável é uma venda esperando para ser perdida.",
     "photo": "https://picsum.photos/seed/conectacrm-2026-10-01/1080/1350"
+  },
+  {
+    "date": "2026-10-02",
+    "format": "carousel",
+    "layout": "viral_black",
+    "hook": "O comercial não deveria depender da memória de ninguém.",
+    "photo": "https://picsum.photos/seed/conectacrm-2026-10-02/1080/1350"
   }
 ]
