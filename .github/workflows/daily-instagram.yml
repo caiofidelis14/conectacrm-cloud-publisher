@@ -1,4 +1,4 @@
-name: Publicar no Instagram
+name: ConectaCRM — publicar 3x por semana
 
 on:
   schedule:
@@ -46,7 +46,7 @@ jobs:
           git config user.name "ConectaCRM Bot"
           git config user.email "actions@users.noreply.github.com"
           git add public manifest.json history.json
-          git diff --cached --quiet || git commit -m "content: post diário $(date +%F)"
+          git diff --cached --quiet || git commit -m "content: ConectaCRM $(date +%F)"
           git push
       - name: Aguardar propagação dos arquivos
         if: github.event_name == 'schedule' || inputs.publish == true
