@@ -931,5 +931,14 @@
     "variant": 5,
     "format": "hook-and-context",
     "template": "elite-twitter-oficial"
+  },
+  {
+    "date": "2026-10-05",
+    "slot": "sales",
+    "hook": "O improviso termina quando este erro é enfrentado: você envia um PDF genérico depois da reunião.",
+    "topic": "proposta",
+    "variant": 5,
+    "format": "hook-and-context",
+    "template": "elite-twitter-oficial"
   }
 ]
