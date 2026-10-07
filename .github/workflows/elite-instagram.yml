@@ -1,9 +1,6 @@
-name: Publicar Advogado de Elite
+name: Publicar Advogado de Elite (manual até definir dia mensal)
 
 on:
-  schedule:
-    - cron: "0 11 * * 1"
-      timezone: "America/Sao_Paulo"
   workflow_dispatch:
     inputs:
       slot:
@@ -27,7 +24,6 @@ concurrency:
 
 jobs:
   publish:
-    if: github.event_name != 'schedule' || github.event.schedule == '0 11 * * 1'
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
