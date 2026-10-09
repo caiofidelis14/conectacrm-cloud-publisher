@@ -518,5 +518,12 @@
     "layout": "editorial_split",
     "hook": "Mais leads não resolvem um processo de vendas bagunçado.",
     "photo": "scripts/conecta-art/04-ai-network.png"
+  },
+  {
+    "date": "2026-10-09",
+    "format": "carousel",
+    "layout": "viral_black",
+    "hook": "Seu time não precisa de mais pressão. Precisa de mais clareza.",
+    "photo": "scripts/conecta-art/01-pipeline-phone.png"
   }
 ]

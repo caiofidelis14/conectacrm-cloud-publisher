@@ -1,15 +1,15 @@
 {
-  "date": "2026-10-07",
+  "date": "2026-10-09",
   "format": "carousel",
-  "layout": "editorial_split",
-  "art": "scripts/conecta-art/04-ai-network.png",
+  "layout": "viral_black",
+  "art": "scripts/conecta-art/01-pipeline-phone.png",
   "files": [
-    "public/2026-10-07/01.jpg",
-    "public/2026-10-07/02.jpg",
-    "public/2026-10-07/03.jpg",
-    "public/2026-10-07/04.jpg",
-    "public/2026-10-07/05.jpg",
-    "public/2026-10-07/06.jpg"
+    "public/2026-10-09/01.jpg",
+    "public/2026-10-09/02.jpg",
+    "public/2026-10-09/03.jpg",
+    "public/2026-10-09/04.jpg",
+    "public/2026-10-09/05.jpg",
+    "public/2026-10-09/06.jpg"
   ],
-  "caption": "Isso pode estar travando suas vendas:\n\nMais leads não resolvem um processo de vendas bagunçado.\n\nAntes de aumentar o investimento em tráfego, organize o caminho que transforma interesse em venda.\n\n• Responda rápido\n• Defina a próxima ação\n• Centralize o histórico\n• Acompanhe o pipeline\n\nOrganize sua operação comercial. Teste o ConectaCRM grátis por 7 dias. Link na bio. 🚀\n\n#ConectaCRM #CRM #Vendas #GestãoComercial #AutomaçãoDeVendas #PME"
+  "caption": "Gestor comercial, preste atenção nisso:\n\nSeu time não precisa de mais pressão. Precisa de mais clareza.\n\nUma operação previsível começa quando cada oportunidade tem contexto, responsável e próxima ação.\n\n• Quem é o responsável?\n• Em qual etapa está?\n• Quando será o retorno?\n• Qual é o próximo passo?\n\nTransforme conversas em processo. Conheça o ConectaCRM e teste grátis por 7 dias. Link na bio. 🚀\n\n#ConectaCRM #CRM #Vendas #GestãoComercial #AutomaçãoDeVendas #PME"
 }
