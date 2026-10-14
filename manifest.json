@@ -1,15 +1,10 @@
 {
-  "date": "2026-10-12",
-  "format": "carousel",
-  "layout": "editorial_split",
-  "art": "scripts/conecta-art/04-ai-network.png",
+  "date": "2026-10-14",
+  "format": "static",
+  "layout": "viral_black",
+  "art": "scripts/conecta-art/01-pipeline-phone.png",
   "files": [
-    "public/2026-10-12/01.jpg",
-    "public/2026-10-12/02.jpg",
-    "public/2026-10-12/03.jpg",
-    "public/2026-10-12/04.jpg",
-    "public/2026-10-12/05.jpg",
-    "public/2026-10-12/06.jpg"
+    "public/2026-10-14/01.jpg"
   ],
-  "caption": "Uma verdade desconfortável sobre vendas:\n\nO follow-up esquecido custa mais do que parece.\n\nVendas raramente acontecem no primeiro contato. O processo precisa continuar mesmo quando a rotina aperta.\n\n• Lembretes automáticos\n• Histórico centralizado\n• Tarefas por vendedor\n• Retorno no momento certo\n\nTransforme conversas em processo. Conheça o ConectaCRM e teste grátis por 7 dias. Link na bio. 🚀\n\n#ConectaCRM #CRM #Vendas #GestãoComercial #AutomaçãoDeVendas #PME"
+  "caption": "Um alerta para quem quer vender mais:\n\nSe o pipeline está na cabeça do vendedor, ele não existe para a empresa.\n\nA gestão comercial melhora quando o time inteiro enxerga o mesmo processo.\n\n• Etapas visíveis\n• Critérios claros\n• Gargalos identificados\n• Previsão mais confiável\n\nPare de vender no improviso. Teste o ConectaCRM grátis por 7 dias. Link na bio. 🚀\n\n#ConectaCRM #CRM #Vendas #GestãoComercial #AutomaçãoDeVendas #PME"
 }
