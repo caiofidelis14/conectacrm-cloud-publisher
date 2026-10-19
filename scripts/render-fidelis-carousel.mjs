@@ -1,6 +1,10 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
-import sharp from 'sharp';
+
+// Register the bundled open-licensed display font before Sharp/fontconfig initializes.
+process.env.FONTCONFIG_FILE = path.resolve('scripts/fidelis-assets/fonts/fonts.conf');
+process.env.PANGOCAIRO_BACKEND = 'fontconfig';
+const { default: sharp } = await import('sharp');
 
 // Editorial structure, not a copy of a third-party post. Each new story must be researched
 // and supplied as a separate JSON file; this renderer never invents a statistic or deadline.
@@ -19,7 +23,7 @@ const asset = (name) => path.resolve('scripts/fidelis-assets', name);
 const W = 1080, H = 1350, GOLD = '#D9AA65', LIGHT = '#F5D395', INK = '#08090B', WHITE = '#F7F7F5';
 const esc = (s) => String(s).replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;').replaceAll('"', '&quot;');
 const txt = (s, x, y, size, color = WHITE, weight = 400, extra = '') => `<text x="${x}" y="${y}" fill="${color}" font-family="Arial,Helvetica,sans-serif" font-size="${size}" font-weight="${weight}" ${extra}>${esc(s)}</text>`;
-const condensed = (s, x, y, size, color = WHITE) => `<text x="${x}" y="${y}" fill="${color}" font-family="Arial Narrow,DIN Condensed,Impact,sans-serif" font-size="${size}" font-weight="900" letter-spacing="-1.4">${esc(s)}</text>`;
+const condensed = (s, x, y, size, color = WHITE) => `<text x="${x}" y="${y}" fill="${color}" font-family="Anton" font-size="${size}" font-weight="400" letter-spacing="-1.4">${esc(s)}</text>`;
 const wrap = (s, max) => { const out = []; let line = ''; for (const word of String(s).split(/\s+/)) { const next = line ? `${line} ${word}` : word; if (next.length > max && line) { out.push(line); line = word; } else line = next; } if (line) out.push(line); return out; };
 const multiline = (s, x, y, max, size, gap, color = WHITE, weight = 400) => wrap(s, max).map((line, i) => txt(line, x, y + i * gap, size, color, weight)).join('');
 const svg = (body) => Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">${body}</svg>`);
