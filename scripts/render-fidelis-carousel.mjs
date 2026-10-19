@@ -1,5 +1,6 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
+import crypto from 'node:crypto';
 
 // Register the bundled open-licensed display font before Sharp/fontconfig initializes.
 process.env.FONTCONFIG_FILE = path.resolve('scripts/fidelis-assets/fonts/fonts.conf');
@@ -20,6 +21,43 @@ const preview = process.env.FIDELIS_PREVIEW_DIR;
 const day = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Sao_Paulo', year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date());
 const outputDir = preview ? path.resolve(preview) : path.resolve('public/fidelis', day, 'carousel-news');
 const asset = (name) => path.resolve('scripts/fidelis-assets', name);
+// The published prototype predates per-story art. New stories must bring documented,
+// topic-specific photography; a generic stock background is not a safe fallback.
+const isPrototype = storySlug === 'simples-2027-rfb-2026-10-16';
+const images = story.visual?.images;
+if (!isPrototype && (!Array.isArray(images) || images.length < 3)) {
+  throw new Error('Nova pauta exige três fotos próprias em visual.images.');
+}
+const imagePath = (image) => {
+  if (!image) return null;
+  const relative = image.file;
+  if (!relative || path.isAbsolute(relative) || relative.split(/[\\/]/).includes('..') || !relative.startsWith('fidelis-stories/images/')) {
+    throw new Error('Foto da pauta deve estar em scripts/fidelis-stories/images/, sem caminho externo.');
+  }
+  if (!image.sourceUrl || !image.credit || !image.license) {
+    throw new Error(`Faltam fonte, crédito ou licença da foto ${relative}.`);
+  }
+  return asset(`../${relative}`);
+};
+const photoFiles = images?.map(imagePath) ?? [];
+if (!isPrototype) {
+  const imageHashes = new Set();
+  for (const file of photoFiles) {
+    const hash = crypto.createHash('sha256').update(await fs.readFile(file)).digest('hex');
+    if (imageHashes.has(hash)) throw new Error('A mesma foto aparece duas vezes nesta pauta.');
+    imageHashes.add(hash);
+  }
+  const otherStories = (await fs.readdir(path.resolve('scripts/fidelis-stories'))).filter(name => name.endsWith('.json') && name !== `${storySlug}.json`);
+  for (const name of otherStories) {
+    const other = JSON.parse(await fs.readFile(path.resolve('scripts/fidelis-stories', name), 'utf8'));
+    for (const image of other.visual?.images ?? []) {
+      const otherFile = imagePath(image);
+      if (!otherFile) continue;
+      const hash = crypto.createHash('sha256').update(await fs.readFile(otherFile)).digest('hex');
+      if (imageHashes.has(hash)) throw new Error(`Foto repetida da pauta ${name}.`);
+    }
+  }
+}
 const W = 1080, H = 1350, GOLD = '#D9AA65', LIGHT = '#F5D395', INK = '#08090B', WHITE = '#F7F7F5';
 const esc = (s) => String(s).replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;').replaceAll('"', '&quot;');
 const txt = (s, x, y, size, color = WHITE, weight = 400, extra = '') => `<text x="${x}" y="${y}" fill="${color}" font-family="Arial,Helvetica,sans-serif" font-size="${size}" font-weight="${weight}" ${extra}>${esc(s)}</text>`;
@@ -51,22 +89,22 @@ const logo = sharp(await fs.readFile(asset('logo-original.png')));
 const logoMark = await logo.clone().extract({ left: 28, top: 40, width: 95, height: 125 }).resize({ width: 57 }).png().toBuffer();
 const logoWord = await logo.clone().extract({ left: 142, top: 70, width: 320, height: 27 }).resize({ width: 299 }).png().toBuffer();
 const brand = [{ input: logoMark, left: 68, top: 164 }, { input: logoWord, left: 139, top: 188 }];
-const base = (name) => name ? sharp(asset(name)).resize(W, H, { fit: 'cover' }) : sharp({ create: { width: W, height: H, channels: 3, background: INK } });
+const base = (name) => name ? sharp(path.isAbsolute(name) ? name : asset(name)).resize(W, H, { fit: 'cover' }) : sharp({ create: { width: W, height: H, channels: 3, background: INK } });
 
 const pages = [
   {
-    bg: 'news-desk.png',
+    bg: photoFiles[0] ?? 'news-desk.png',
     body: `<defs><linearGradient id="fade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#000" stop-opacity=".58"/><stop offset=".39" stop-color="#000" stop-opacity=".10"/><stop offset=".58" stop-color="#000" stop-opacity=".73"/><stop offset="1" stop-color="#000" stop-opacity=".98"/></linearGradient></defs><rect width="1080" height="1350" fill="url(#fade)"/>${header}${txt(story.cover.eyebrow, 70, 645, 30, LIGHT, 800, 'letter-spacing="2"')}${condensed(story.cover.headline[0], 68, 756, 77)}${condensed(story.cover.headline[1], 68, 844, 77, LIGHT)}<rect x="70" y="888" width="180" height="6" fill="${GOLD}"/>${multiline(story.cover.question, 70, 962, 42, 35, 47, WHITE, 500)}${footer(1)}`
   },
   {
     body: `${header}${txt('O TAMANHO DO ALERTA', 69, 378, 30, GOLD, 800, 'letter-spacing="2"')}${condensed(story.numbers.lead, 90, 542, 157, LIGHT)}${multiline(story.numbers.label, 70, 608, 36, 33, 43)}<rect x="70" y="706" width="940" height="2" fill="#696052"/><rect x="70" y="758" width="446" height="259" rx="24" fill="#171719"/><rect x="540" y="758" width="470" height="259" rx="24" fill="#171719"/>${condensed(story.numbers.other[0].value, 96, 875, 58, WHITE)}${multiline(story.numbers.other[0].label, 99, 936, 19, 25, 33, '#CAC7C2')}${condensed(story.numbers.other[1].value, 568, 875, 58, LIGHT)}${multiline(story.numbers.other[1].label, 570, 936, 19, 25, 33, '#CAC7C2')}${multiline(story.numbers.note, 70, 1101, 60, 24, 34, '#B9B8B5')}${footer(2)}`
   },
   {
-    bg: 'news-boardroom.png',
+    bg: photoFiles[1] ?? 'news-boardroom.png',
     body: `<rect width="1080" height="1350" fill="#050506" fill-opacity=".83"/>${header}${condensed(story.explanation.headline[0], 70, 421, 77)}${condensed(story.explanation.headline[1], 70, 509, 77, LIGHT)}<rect x="70" y="552" width="135" height="6" fill="${GOLD}"/><rect x="69" y="610" width="939" height="193" rx="22" fill="#111214" fill-opacity=".91" stroke="${GOLD}" stroke-opacity=".50"/>${multiline(story.explanation.body[0], 97, 674, 51, 29, 39, WHITE, 600)}<rect x="69" y="831" width="939" height="180" rx="22" fill="#111214" fill-opacity=".91"/>${multiline(story.explanation.body[1], 97, 891, 53, 28, 39, '#D4D0CB')}${footer(3)}`
   },
   {
-    bg: 'news-city.png',
+    bg: photoFiles[2] ?? 'news-city.png',
     body: `<rect width="1080" height="1350" fill="#D9AA65" fill-opacity=".90"/>${header}${condensed(story.dates.headline, 66, 389, 53, INK)}${story.dates.items.map((item, i) => { const y = 471 + i * 287; return `<rect x="68" y="${y}" width="943" height="249" rx="22" fill="#0B0B0C" fill-opacity=".94"/>${condensed(item.date, 98, y + 99, 82, LIGHT)}${txt(item.title.toUpperCase(), 405, y + 79, 31, WHITE, 800)}${multiline(item.body, 405, y + 125, 33, 27, 38, '#E5E1DC')}`; }).join('')}<rect x="68" y="1096" width="940" height="6" fill="${INK}"/>${multiline(story.dates.note, 70, 1151, 63, 24, 33, INK, 700)}${footer(4, false, true)}`
   },
   {

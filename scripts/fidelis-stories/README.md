@@ -18,3 +18,16 @@ O fluxo da Fidelis não tem agenda automática ativa. Gerar JPEGs ou salvar o te
 Cadência aprovada em 19/10/2026: terça e sexta às 10h, horário de Brasília. **Ainda não está ativada**: faltam credenciais Meta específicas de `@fidelisempresarial` e um executor de pesquisa/produção em nuvem com custo autorizado. Não reutilizar o JSON de exemplo como pauta agendada. A especificação editorial do agente está em `agents/fidelis-news.md`.
 
 O renderizador reprova texto nos 65 px laterais de cada página, margem que protege o conteúdo quando uma imagem 4:5 é exibida em enquadramento 3:4. Conferir também a prévia do perfil; o corte 1:1 da grade não deve conter informação indispensável nas faixas superior/inferior. O arquivo `previews/fidelis-news-editorial/mobile-3x4-cover.jpg` mostra o teste lateral da capa de exemplo.
+# Fotos por pauta
+
+Cada pauta nova deve incluir `visual.images` com três fotos distintas, nesta ordem: capa, contexto e implicação. Guarde os arquivos em `scripts/fidelis-stories/images/` e registre a fonte e a licença de cada um:
+
+```json
+"visual": {
+  "images": [
+    { "file": "fidelis-stories/images/exemplo-capa.jpg", "sourceUrl": "https://fonte.example/foto", "credit": "Nome do fotógrafo", "license": "Licença ou autorização específica" }
+  ]
+}
+```
+
+O exemplo acima é apenas o formato: o renderizador exige **três** entradas reais e rejeita imagens repetidas entre pautas. Fotos de políticos só cabem em notícias pertinentes, com direito de uso confirmado e sem montagem ou endosso inventado. O carrossel já publicado sobre Simples 2027 permanece como protótipo legado; não o reutilize como nova pauta.
