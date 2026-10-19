@@ -27,8 +27,25 @@ const condensed = (s, x, y, size, color = WHITE) => `<text x="${x}" y="${y}" fil
 const wrap = (s, max) => { const out = []; let line = ''; for (const word of String(s).split(/\s+/)) { const next = line ? `${line} ${word}` : word; if (next.length > max && line) { out.push(line); line = word; } else line = next; } if (line) out.push(line); return out; };
 const multiline = (s, x, y, max, size, gap, color = WHITE, weight = 400) => wrap(s, max).map((line, i) => txt(line, x, y + i * gap, size, color, weight)).join('');
 const svg = (body) => Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">${body}</svg>`);
-const header = `<rect x="48" y="146" width="473" height="116" rx="18" fill="#050608" fill-opacity=".78"/><rect x="855" y="177" width="171" height="43" rx="21" fill="${GOLD}"/>${txt('FIDELIS NEWS', 874, 207, 22, INK, 800)}`;
-const footer = (n, source = true, dark = false) => `${source ? txt(`FONTE: ${story.source.name.toUpperCase()} · ${story.source.published}`, 69, 1248, 19, dark ? '#272522' : '#B8B6B2', 700) : ''}${txt(`${String(n).padStart(2, '0')} / 06`, 924, 1250, 24, dark ? '#272522' : GOLD, 700)}`;
+// A 4:5 card may be displayed in a narrower 3:4 frame. Reject typography
+// entering the outer 6% on either side; checking rendered alpha also catches
+// unexpectedly long headlines that coordinate-only tests would miss.
+async function assertSafeText(body, pageNumber) {
+  const textNodes = [...body.matchAll(/<text\b[^>]*>[\s\S]*?<\/text>/g)].map(([node]) => node);
+  const mask = svg(textNodes.join('').replace(/fill="[^"]*"/g, 'fill="#fff"'));
+  const { data, info } = await sharp(mask).ensureAlpha().raw().toBuffer({ resolveWithObject: true });
+  const inset = 65;
+  for (let y = 0; y < H; y += 1) {
+    for (let x = 0; x < W; x += 1) {
+      if (x >= inset && x < W - inset) continue;
+      if (data[(y * info.width + x) * info.channels + 3] > 16) {
+        throw new Error(`Página ${pageNumber}: texto fora da área segura lateral em x=${x}, y=${y}. Reduza ou quebre a frase antes de publicar.`);
+      }
+    }
+  }
+}
+const header = `<rect x="48" y="146" width="473" height="116" rx="18" fill="#050608" fill-opacity=".78"/><rect x="814" y="177" width="171" height="43" rx="21" fill="${GOLD}"/>${txt('FIDELIS NEWS', 833, 207, 22, INK, 800)}`;
+const footer = (n, source = true, dark = false) => `${source ? txt(`FONTE: ${story.source.name.toUpperCase()} · ${story.source.published}`, 69, 1248, 19, dark ? '#272522' : '#B8B6B2', 700) : ''}${txt(`${String(n).padStart(2, '0')} / 06`, 880, 1250, 24, dark ? '#272522' : GOLD, 700)}`;
 
 const logo = sharp(await fs.readFile(asset('logo-original.png')));
 const logoMark = await logo.clone().extract({ left: 28, top: 40, width: 95, height: 125 }).resize({ width: 57 }).png().toBuffer();
@@ -42,7 +59,7 @@ const pages = [
     body: `<defs><linearGradient id="fade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#000" stop-opacity=".58"/><stop offset=".39" stop-color="#000" stop-opacity=".10"/><stop offset=".58" stop-color="#000" stop-opacity=".73"/><stop offset="1" stop-color="#000" stop-opacity=".98"/></linearGradient></defs><rect width="1080" height="1350" fill="url(#fade)"/>${header}${txt(story.cover.eyebrow, 70, 645, 30, LIGHT, 800, 'letter-spacing="2"')}${condensed(story.cover.headline[0], 68, 756, 77)}${condensed(story.cover.headline[1], 68, 844, 77, LIGHT)}<rect x="70" y="888" width="180" height="6" fill="${GOLD}"/>${multiline(story.cover.question, 70, 962, 42, 35, 47, WHITE, 500)}${footer(1)}`
   },
   {
-    body: `${header}${txt('O TAMANHO DO ALERTA', 69, 378, 30, GOLD, 800, 'letter-spacing="2"')}${condensed(story.numbers.lead, 62, 542, 157, LIGHT)}${multiline(story.numbers.label, 70, 608, 36, 33, 43)}<rect x="70" y="706" width="940" height="2" fill="#696052"/><rect x="70" y="758" width="446" height="259" rx="24" fill="#171719"/><rect x="540" y="758" width="470" height="259" rx="24" fill="#171719"/>${condensed(story.numbers.other[0].value, 96, 875, 58, WHITE)}${multiline(story.numbers.other[0].label, 99, 936, 19, 25, 33, '#CAC7C2')}${condensed(story.numbers.other[1].value, 568, 875, 58, LIGHT)}${multiline(story.numbers.other[1].label, 570, 936, 19, 25, 33, '#CAC7C2')}${multiline(story.numbers.note, 70, 1101, 60, 24, 34, '#B9B8B5')}${footer(2)}`
+    body: `${header}${txt('O TAMANHO DO ALERTA', 69, 378, 30, GOLD, 800, 'letter-spacing="2"')}${condensed(story.numbers.lead, 90, 542, 157, LIGHT)}${multiline(story.numbers.label, 70, 608, 36, 33, 43)}<rect x="70" y="706" width="940" height="2" fill="#696052"/><rect x="70" y="758" width="446" height="259" rx="24" fill="#171719"/><rect x="540" y="758" width="470" height="259" rx="24" fill="#171719"/>${condensed(story.numbers.other[0].value, 96, 875, 58, WHITE)}${multiline(story.numbers.other[0].label, 99, 936, 19, 25, 33, '#CAC7C2')}${condensed(story.numbers.other[1].value, 568, 875, 58, LIGHT)}${multiline(story.numbers.other[1].label, 570, 936, 19, 25, 33, '#CAC7C2')}${multiline(story.numbers.note, 70, 1101, 60, 24, 34, '#B9B8B5')}${footer(2)}`
   },
   {
     bg: 'news-boardroom.png',
@@ -63,6 +80,7 @@ const pages = [
 await fs.mkdir(outputDir, { recursive: true });
 const files = [];
 for (const [index, page] of pages.entries()) {
+  await assertSafeText(page.body, index + 1);
   const file = path.join(outputDir, `${String(index + 1).padStart(2, '0')}.jpg`);
   await base(page.bg).composite([{ input: svg(page.body) }, ...brand]).jpeg({ quality: 92, mozjpeg: true }).toFile(file);
   files.push(path.relative(process.cwd(), file).replaceAll(path.sep, '/'));

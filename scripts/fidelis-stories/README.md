@@ -14,3 +14,7 @@ Os títulos e números usam **Anton**, fonte de manchete condensada visualmente 
 5. Após revisão e autorização para publicar, execute o fluxo manual `fidelis-instagram.yml` com formato `carousel-news`, informe o mesmo `slug` em `story` e escolha `publish=true` apenas se o acesso da Meta estiver validado.
 
 O fluxo da Fidelis não tem agenda automática ativa. Gerar JPEGs ou salvar o template não equivale a postar no Instagram. A fonte e a data aparecem nos cards; a legenda traz o link completo e ressalva de análise individual.
+
+Cadência aprovada em 19/10/2026: terça e sexta às 10h, horário de Brasília. **Ainda não está ativada**: faltam credenciais Meta específicas de `@fidelisempresarial` e um executor de pesquisa/produção em nuvem com custo autorizado. Não reutilizar o JSON de exemplo como pauta agendada. A especificação editorial do agente está em `agents/fidelis-news.md`.
+
+O renderizador reprova texto nos 65 px laterais de cada página, margem que protege o conteúdo quando uma imagem 4:5 é exibida em enquadramento 3:4. Conferir também a prévia do perfil; o corte 1:1 da grade não deve conter informação indispensável nas faixas superior/inferior. O arquivo `previews/fidelis-news-editorial/mobile-3x4-cover.jpg` mostra o teste lateral da capa de exemplo.
