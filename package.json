@@ -7,6 +7,7 @@
     "generate-personal": "node scripts/generate-personal-post.mjs",
     "generate-elite": "node scripts/generate-elite-post.mjs",
     "generate-fidelis": "node scripts/generate-fidelis-post.mjs",
+    "generate-fidelis-carousel": "node scripts/render-fidelis-carousel.mjs",
     "discover-personal": "node scripts/discover-instagram-account.mjs",
     "discover-elite": "node scripts/discover-business-instagram.mjs",
     "publish": "node scripts/publish-instagram.mjs",

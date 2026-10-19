@@ -8,7 +8,11 @@ on:
         description: Linha editorial
         required: true
         type: choice
-        options: [news, product]
+        options: [news, product, carousel-news]
+      story:
+        description: "Slug da pauta validada em scripts/fidelis-stories (obrigatório para carousel-news)"
+        required: false
+        type: string
       publish:
         description: Publicar de verdade? Requer acesso Meta validado.
         required: true
@@ -43,7 +47,13 @@ jobs:
       - name: Criar arte e legenda
         env:
           FIDELIS_MODE: ${{ inputs.format }}
-        run: npm run generate-fidelis
+          FIDELIS_STORY: ${{ inputs.story }}
+        run: |
+          if [[ "$FIDELIS_MODE" == "carousel-news" ]]; then
+            npm run generate-fidelis-carousel
+          else
+            npm run generate-fidelis
+          fi
       - name: Salvar arquivos públicos
         shell: bash
         run: |

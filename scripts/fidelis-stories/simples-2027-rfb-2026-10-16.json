@@ -1,0 +1,53 @@
+{
+  "slug": "simples-2027-rfb-2026-10-16",
+  "kind": "news",
+  "source": {
+    "name": "Receita Federal",
+    "published": "16/10/2026",
+    "url": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/outubro/a-receita-federal-divulga-a-atualizacao-dos-numeros-referentes-as-solicitacoes-de-opcao-pelo-simples-nacional-e-pelo-regime-regular-do-ibs-e-da-cbs"
+  },
+  "cover": {
+    "eyebrow": "SIMPLES NACIONAL 2027",
+    "headline": ["401 MIL PEDIDOS", "INDEFERIDOS."],
+    "question": "E se o da sua empresa estiver entre eles?"
+  },
+  "numbers": {
+    "lead": "401.146",
+    "label": "solicitações indeferidas no balanço da Receita Federal",
+    "other": [
+      { "value": "657.753", "label": "solicitações recebidas" },
+      { "value": "256.607", "label": "solicitações deferidas" }
+    ],
+    "note": "Balanço publicado em 16/10/2026. Indeferimento inicial não é o mesmo que exclusão definitiva."
+  },
+  "explanation": {
+    "headline": ["INDEFERIDO", "NÃO É O FIM."],
+    "body": [
+      "Quem pediu a opção e teve pendências impeditivas pode regularizá-las até 30/10/2026.",
+      "O motivo concreto deve ser consultado nos canais oficiais; não presuma que todos os casos são iguais."
+    ]
+  },
+  "dates": {
+    "headline": "DOIS MARCOS. DUAS AÇÕES DIFERENTES.",
+    "items": [
+      { "date": "15/10", "title": "Novos pedidos", "body": "O prazo para solicitar a opção pelo Simples Nacional em 2027 terminou." },
+      { "date": "30/10", "title": "Regularização", "body": "Prazo para resolver pendências impeditivas de solicitações já feitas." }
+    ],
+    "note": "A opção pelo regime regular do IBS e da CBS é um procedimento distinto e também vai até 30/10."
+  },
+  "action": {
+    "headline": ["NÃO ESPERE", "O ÚLTIMO DIA."],
+    "steps": [
+      "Consulte a situação do pedido no portal oficial.",
+      "Identifique a pendência e o órgão responsável.",
+      "Avalie a regularização com apoio técnico adequado."
+    ],
+    "note": "Prazo geral não substitui a análise do caso da sua empresa."
+  },
+  "closing": {
+    "headline": ["DECISÕES TRIBUTÁRIAS", "PEDEM CLAREZA."],
+    "body": "A Fidelis ajuda sua empresa a entender o cenário e organizar os próximos passos, com análise individual.",
+    "cta": "FALE COM A FIDELIS"
+  },
+  "caption": "401.146 solicitações de opção pelo Simples Nacional 2027 estavam indeferidas no balanço da Receita Federal publicado em 16/10/2026. Isso não significa, por si só, que todas as empresas ficaram definitivamente fora do regime.\n\nPara quem já solicitou a opção e tem pendências impeditivas, a Receita informa prazo até 30/10/2026 para regularização. Novos pedidos tinham prazo até 15/10. A escolha pelo regime regular do IBS e da CBS é outro procedimento, também com prazo até 30/10.\n\nConsulte a situação específica da sua empresa nos canais oficiais e busque orientação técnica antes de decidir. A Fidelis pode ajudar a organizar esse diagnóstico.\n\nFonte: Receita Federal, 16/10/2026: https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/outubro/a-receita-federal-divulga-a-atualizacao-dos-numeros-referentes-as-solicitacoes-de-opcao-pelo-simples-nacional-e-pelo-regime-regular-do-ibs-e-da-cbs\n\nConteúdo informativo; não substitui análise individual.\n\n#FidelisEmpresarial #SimplesNacional #GestãoEmpresarial #FidelisNews"
+}
