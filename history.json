@@ -553,5 +553,12 @@
     "layout": "viral_black",
     "hook": "Vender mais começa eliminando vazamentos.",
     "photo": "scripts/conecta-art/01-pipeline-phone.png"
+  },
+  {
+    "date": "2026-10-21",
+    "format": "carousel",
+    "layout": "educational_neon",
+    "hook": "Gestão comercial sem dados vira opinião.",
+    "photo": "scripts/conecta-art/03-data-growth.png"
   }
 ]
