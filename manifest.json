@@ -1,15 +1,15 @@
 {
-  "date": "2026-10-21",
+  "date": "2026-10-23",
   "format": "carousel",
-  "layout": "educational_neon",
-  "art": "scripts/conecta-art/03-data-growth.png",
+  "layout": "static_neon",
+  "art": "scripts/conecta-art/05-founder-editorial.png",
   "files": [
-    "public/2026-10-21/01.jpg",
-    "public/2026-10-21/02.jpg",
-    "public/2026-10-21/03.jpg",
-    "public/2026-10-21/04.jpg",
-    "public/2026-10-21/05.jpg",
-    "public/2026-10-21/06.jpg"
+    "public/2026-10-23/01.jpg",
+    "public/2026-10-23/02.jpg",
+    "public/2026-10-23/03.jpg",
+    "public/2026-10-23/04.jpg",
+    "public/2026-10-23/05.jpg",
+    "public/2026-10-23/06.jpg"
   ],
-  "caption": "Gestor comercial, preste atenção nisso:\n\nGestão comercial sem dados vira opinião.\n\nDados simples e consistentes ajudam o gestor a agir antes do resultado do mês chegar.\n\n• Conversão por etapa\n• Tempo de resposta\n• Negócios parados\n• Desempenho do time\n\nTransforme conversas em processo. Conheça o ConectaCRM e teste grátis por 7 dias. Link na bio. 🚀\n\n#ConectaCRM #CRM #Vendas #GestãoComercial #AutomaçãoDeVendas #PME"
+  "caption": "Isso pode estar travando suas vendas:\n\nAutomação boa não afasta o cliente. Ela evita o esquecimento.\n\nAutomatize o trabalho repetitivo para que o time tenha mais tempo para conversar e vender.\n\n• Lembretes\n• Distribuição de leads\n• Tarefas\n• Mensagens no momento certo\n\nPare de vender no improviso. Teste o ConectaCRM grátis por 7 dias. Link na bio. 🚀\n\n#ConectaCRM #CRM #Vendas #GestãoComercial #AutomaçãoDeVendas #PME"
 }
