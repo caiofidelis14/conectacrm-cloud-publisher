@@ -1,15 +1,15 @@
 {
-  "date": "2026-10-23",
+  "date": "2026-10-26",
   "format": "carousel",
-  "layout": "static_neon",
-  "art": "scripts/conecta-art/05-founder-editorial.png",
+  "layout": "educational_neon",
+  "art": "scripts/conecta-art/03-data-growth.png",
   "files": [
-    "public/2026-10-23/01.jpg",
-    "public/2026-10-23/02.jpg",
-    "public/2026-10-23/03.jpg",
-    "public/2026-10-23/04.jpg",
-    "public/2026-10-23/05.jpg",
-    "public/2026-10-23/06.jpg"
+    "public/2026-10-26/01.jpg",
+    "public/2026-10-26/02.jpg",
+    "public/2026-10-26/03.jpg",
+    "public/2026-10-26/04.jpg",
+    "public/2026-10-26/05.jpg",
+    "public/2026-10-26/06.jpg"
   ],
-  "caption": "Isso pode estar travando suas vendas:\n\nAutomação boa não afasta o cliente. Ela evita o esquecimento.\n\nAutomatize o trabalho repetitivo para que o time tenha mais tempo para conversar e vender.\n\n• Lembretes\n• Distribuição de leads\n• Tarefas\n• Mensagens no momento certo\n\nPare de vender no improviso. Teste o ConectaCRM grátis por 7 dias. Link na bio. 🚀\n\n#ConectaCRM #CRM #Vendas #GestãoComercial #AutomaçãoDeVendas #PME"
+  "caption": "Um alerta para quem quer vender mais:\n\nO vendedor ocupado nem sempre é o vendedor produtivo.\n\nProdutividade comercial é reduzir esforço operacional e aumentar foco nas oportunidades certas.\n\n• Menos digitação\n• Menos procura por informação\n• Mais prioridades claras\n• Mais tempo com clientes\n\nPare de vender no improviso. Teste o ConectaCRM grátis por 7 dias. Link na bio. 🚀\n\n#ConectaCRM #CRM #Vendas #GestãoComercial #AutomaçãoDeVendas #PME"
 }

@@ -567,5 +567,12 @@
     "layout": "static_neon",
     "hook": "Automação boa não afasta o cliente. Ela evita o esquecimento.",
     "photo": "scripts/conecta-art/05-founder-editorial.png"
+  },
+  {
+    "date": "2026-10-26",
+    "format": "carousel",
+    "layout": "educational_neon",
+    "hook": "O vendedor ocupado nem sempre é o vendedor produtivo.",
+    "photo": "scripts/conecta-art/03-data-growth.png"
   }
 ]
