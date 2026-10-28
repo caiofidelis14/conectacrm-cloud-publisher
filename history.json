@@ -574,5 +574,12 @@
     "layout": "educational_neon",
     "hook": "O vendedor ocupado nem sempre é o vendedor produtivo.",
     "photo": "scripts/conecta-art/03-data-growth.png"
+  },
+  {
+    "date": "2026-10-28",
+    "format": "carousel",
+    "layout": "static_neon",
+    "hook": "Uma proposta enviada não é uma venda encaminhada.",
+    "photo": "scripts/conecta-art/05-founder-editorial.png"
   }
 ]
