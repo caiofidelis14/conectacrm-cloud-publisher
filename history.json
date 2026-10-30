@@ -581,5 +581,12 @@
     "layout": "static_neon",
     "hook": "Uma proposta enviada não é uma venda encaminhada.",
     "photo": "scripts/conecta-art/05-founder-editorial.png"
+  },
+  {
+    "date": "2026-10-30",
+    "format": "carousel",
+    "layout": "tweet_card",
+    "hook": "O crescimento trava quando cada vendedor trabalha de um jeito.",
+    "photo": "scripts/conecta-art/02-chat-hub.png"
   }
 ]

@@ -1,15 +1,15 @@
 {
-  "date": "2026-10-28",
+  "date": "2026-10-30",
   "format": "carousel",
-  "layout": "static_neon",
-  "art": "scripts/conecta-art/05-founder-editorial.png",
+  "layout": "tweet_card",
+  "art": "scripts/conecta-art/02-chat-hub.png",
   "files": [
-    "public/2026-10-28/01.jpg",
-    "public/2026-10-28/02.jpg",
-    "public/2026-10-28/03.jpg",
-    "public/2026-10-28/04.jpg",
-    "public/2026-10-28/05.jpg",
-    "public/2026-10-28/06.jpg"
+    "public/2026-10-30/01.jpg",
+    "public/2026-10-30/02.jpg",
+    "public/2026-10-30/03.jpg",
+    "public/2026-10-30/04.jpg",
+    "public/2026-10-30/05.jpg",
+    "public/2026-10-30/06.jpg"
   ],
-  "caption": "Uma verdade desconfortável sobre vendas:\n\nUma proposta enviada não é uma venda encaminhada.\n\nToda proposta precisa nascer com um plano de acompanhamento.\n\n• Confirme o recebimento\n• Agende o retorno\n• Registre objeções\n• Defina o próximo passo\n\nOrganize sua operação comercial. Teste o ConectaCRM grátis por 7 dias. Link na bio. 🚀\n\n#ConectaCRM #CRM #Vendas #GestãoComercial #AutomaçãoDeVendas #PME"
+  "caption": "Um alerta para quem quer vender mais:\n\nO crescimento trava quando cada vendedor trabalha de um jeito.\n\nPadronizar não significa robotizar. Significa criar uma base que o time consegue repetir e melhorar.\n\n• Processo comum\n• Etapas padronizadas\n• Campos essenciais\n• Rotina de acompanhamento\n\nTransforme conversas em processo. Conheça o ConectaCRM e teste grátis por 7 dias. Link na bio. 🚀\n\n#ConectaCRM #CRM #Vendas #GestãoComercial #AutomaçãoDeVendas #PME"
 }
