@@ -940,5 +940,14 @@
     "variant": 5,
     "format": "hook-and-context",
     "template": "elite-twitter-oficial"
+  },
+  {
+    "date": "2026-11-02",
+    "slot": "educational",
+    "hook": "Um ajuste simples para o advogado que demora horas para responder novos contatos.",
+    "topic": "atendimento",
+    "variant": 1,
+    "format": "hook-and-context",
+    "template": "elite-twitter-oficial"
   }
 ]
