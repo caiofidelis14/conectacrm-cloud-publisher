@@ -1,15 +1,15 @@
 {
-  "date": "2026-10-30",
+  "date": "2026-11-02",
   "format": "carousel",
-  "layout": "tweet_card",
-  "art": "scripts/conecta-art/02-chat-hub.png",
+  "layout": "static_neon",
+  "art": "scripts/conecta-art/05-founder-editorial.png",
   "files": [
-    "public/2026-10-30/01.jpg",
-    "public/2026-10-30/02.jpg",
-    "public/2026-10-30/03.jpg",
-    "public/2026-10-30/04.jpg",
-    "public/2026-10-30/05.jpg",
-    "public/2026-10-30/06.jpg"
+    "public/2026-11-02/01.jpg",
+    "public/2026-11-02/02.jpg",
+    "public/2026-11-02/03.jpg",
+    "public/2026-11-02/04.jpg",
+    "public/2026-11-02/05.jpg",
+    "public/2026-11-02/06.jpg"
   ],
-  "caption": "Um alerta para quem quer vender mais:\n\nO crescimento trava quando cada vendedor trabalha de um jeito.\n\nPadronizar não significa robotizar. Significa criar uma base que o time consegue repetir e melhorar.\n\n• Processo comum\n• Etapas padronizadas\n• Campos essenciais\n• Rotina de acompanhamento\n\nTransforme conversas em processo. Conheça o ConectaCRM e teste grátis por 7 dias. Link na bio. 🚀\n\n#ConectaCRM #CRM #Vendas #GestãoComercial #AutomaçãoDeVendas #PME"
+  "caption": "Gestor comercial, preste atenção nisso:\n\nPrevisibilidade não é adivinhar o faturamento.\n\nUma previsão útil nasce de dados atualizados e critérios comerciais consistentes.\n\n• Pipeline atualizado\n• Probabilidade realista\n• Próximas ações\n• Histórico de conversão\n\nTransforme conversas em processo. Conheça o ConectaCRM e teste grátis por 7 dias. Link na bio. 🚀\n\n#ConectaCRM #CRM #Vendas #GestãoComercial #AutomaçãoDeVendas #PME"
 }
