@@ -1,15 +1,15 @@
 {
-  "date": "2026-11-04",
+  "date": "2026-11-06",
   "format": "carousel",
-  "layout": "tweet_card",
-  "art": "scripts/conecta-art/02-chat-hub.png",
+  "layout": "editorial_split",
+  "art": "scripts/conecta-art/04-ai-network.png",
   "files": [
-    "public/2026-11-04/01.jpg",
-    "public/2026-11-04/02.jpg",
-    "public/2026-11-04/03.jpg",
-    "public/2026-11-04/04.jpg",
-    "public/2026-11-04/05.jpg",
-    "public/2026-11-04/06.jpg"
+    "public/2026-11-06/01.jpg",
+    "public/2026-11-06/02.jpg",
+    "public/2026-11-06/03.jpg",
+    "public/2026-11-06/04.jpg",
+    "public/2026-11-06/05.jpg",
+    "public/2026-11-06/06.jpg"
   ],
-  "caption": "Isso pode estar travando suas vendas:\n\nLead quente não espera vendedor desorganizado.\n\nVelocidade sem organização vira correria. Organização com velocidade vira vantagem comercial.\n\n• Distribua na hora\n• Avise o responsável\n• Registre a resposta\n• Escale o atraso\n\nPare de vender no improviso. Teste o ConectaCRM grátis por 7 dias. Link na bio. 🚀\n\n#ConectaCRM #CRM #Vendas #GestãoComercial #AutomaçãoDeVendas #PME"
+  "caption": "Gestor comercial, preste atenção nisso:\n\nSe ninguém sabe o próximo passo, a venda já começou a esfriar.\n\nNegociação boa não termina com 'depois a gente se fala'. Ela termina com um próximo passo claro.\n\n• Combine a ação\n• Defina a data\n• Registre o responsável\n• Cobre a execução\n\nOrganize sua operação comercial. Teste o ConectaCRM grátis por 7 dias. Link na bio. 🚀\n\n#ConectaCRM #CRM #Vendas #GestãoComercial #AutomaçãoDeVendas #PME"
 }

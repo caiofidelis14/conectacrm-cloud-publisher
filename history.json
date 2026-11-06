@@ -602,5 +602,12 @@
     "layout": "tweet_card",
     "hook": "Lead quente não espera vendedor desorganizado.",
     "photo": "scripts/conecta-art/02-chat-hub.png"
+  },
+  {
+    "date": "2026-11-06",
+    "format": "carousel",
+    "layout": "editorial_split",
+    "hook": "Se ninguém sabe o próximo passo, a venda já começou a esfriar.",
+    "photo": "scripts/conecta-art/04-ai-network.png"
   }
 ]
