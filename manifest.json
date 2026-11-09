@@ -1,15 +1,15 @@
 {
-  "date": "2026-11-06",
+  "date": "2026-11-09",
   "format": "carousel",
-  "layout": "editorial_split",
-  "art": "scripts/conecta-art/04-ai-network.png",
+  "layout": "tweet_card",
+  "art": "scripts/conecta-art/02-chat-hub.png",
   "files": [
-    "public/2026-11-06/01.jpg",
-    "public/2026-11-06/02.jpg",
-    "public/2026-11-06/03.jpg",
-    "public/2026-11-06/04.jpg",
-    "public/2026-11-06/05.jpg",
-    "public/2026-11-06/06.jpg"
+    "public/2026-11-09/01.jpg",
+    "public/2026-11-09/02.jpg",
+    "public/2026-11-09/03.jpg",
+    "public/2026-11-09/04.jpg",
+    "public/2026-11-09/05.jpg",
+    "public/2026-11-09/06.jpg"
   ],
-  "caption": "Gestor comercial, preste atenção nisso:\n\nSe ninguém sabe o próximo passo, a venda já começou a esfriar.\n\nNegociação boa não termina com 'depois a gente se fala'. Ela termina com um próximo passo claro.\n\n• Combine a ação\n• Defina a data\n• Registre o responsável\n• Cobre a execução\n\nOrganize sua operação comercial. Teste o ConectaCRM grátis por 7 dias. Link na bio. 🚀\n\n#ConectaCRM #CRM #Vendas #GestãoComercial #AutomaçãoDeVendas #PME"
+  "caption": "Uma verdade desconfortável sobre vendas:\n\nSeu melhor vendedor não pode ser o único dono das informações.\n\nQuando o conhecimento fica preso em uma pessoa, a empresa perde controle e escala.\n\n• Histórico compartilhado\n• Processo documentado\n• Carteira visível\n• Gestão contínua\n\nOrganize sua operação comercial. Teste o ConectaCRM grátis por 7 dias. Link na bio. 🚀\n\n#ConectaCRM #CRM #Vendas #GestãoComercial #AutomaçãoDeVendas #PME"
 }
