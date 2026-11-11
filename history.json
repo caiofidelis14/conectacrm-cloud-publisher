@@ -616,5 +616,12 @@
     "layout": "tweet_card",
     "hook": "Seu melhor vendedor não pode ser o único dono das informações.",
     "photo": "scripts/conecta-art/02-chat-hub.png"
+  },
+  {
+    "date": "2026-11-11",
+    "format": "carousel",
+    "layout": "editorial_split",
+    "hook": "Desconto não corrige atendimento lento.",
+    "photo": "scripts/conecta-art/04-ai-network.png"
   }
 ]
