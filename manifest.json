@@ -1,15 +1,10 @@
 {
-  "date": "2026-11-11",
-  "format": "carousel",
-  "layout": "editorial_split",
-  "art": "scripts/conecta-art/04-ai-network.png",
+  "date": "2026-11-13",
+  "format": "static",
+  "layout": "viral_black",
+  "art": "scripts/conecta-art/01-pipeline-phone.png",
   "files": [
-    "public/2026-11-11/01.jpg",
-    "public/2026-11-11/02.jpg",
-    "public/2026-11-11/03.jpg",
-    "public/2026-11-11/04.jpg",
-    "public/2026-11-11/05.jpg",
-    "public/2026-11-11/06.jpg"
+    "public/2026-11-13/01.jpg"
   ],
-  "caption": "Um alerta para quem quer vender mais:\n\nDesconto não corrige atendimento lento.\n\nMuitas margens são sacrificadas para compensar uma experiência comercial que deveria ser melhor.\n\n• Responda primeiro\n• Entenda o contexto\n• Defenda o valor\n• Acompanhe a decisão\n\nTransforme conversas em processo. Conheça o ConectaCRM e teste grátis por 7 dias. Link na bio. 🚀\n\n#ConectaCRM #CRM #Vendas #GestãoComercial #AutomaçãoDeVendas #PME"
+  "caption": "Uma verdade desconfortável sobre vendas:\n\nReunião comercial sem dados é só uma roda de opiniões.\n\nA reunião precisa terminar com decisões verificáveis, responsáveis e prazos.\n\n• Mostre o funil\n• Compare conversões\n• Encontre gargalos\n• Defina ações\n\nPare de vender no improviso. Teste o ConectaCRM grátis por 7 dias. Link na bio. 🚀\n\n#ConectaCRM #CRM #Vendas #GestãoComercial #AutomaçãoDeVendas #PME"
 }
