@@ -1,10 +1,15 @@
 {
-  "date": "2026-11-13",
-  "format": "static",
-  "layout": "viral_black",
-  "art": "scripts/conecta-art/01-pipeline-phone.png",
+  "date": "2026-11-16",
+  "format": "carousel",
+  "layout": "editorial_split",
+  "art": "scripts/conecta-art/04-ai-network.png",
   "files": [
-    "public/2026-11-13/01.jpg"
+    "public/2026-11-16/01.jpg",
+    "public/2026-11-16/02.jpg",
+    "public/2026-11-16/03.jpg",
+    "public/2026-11-16/04.jpg",
+    "public/2026-11-16/05.jpg",
+    "public/2026-11-16/06.jpg"
   ],
-  "caption": "Uma verdade desconfortável sobre vendas:\n\nReunião comercial sem dados é só uma roda de opiniões.\n\nA reunião precisa terminar com decisões verificáveis, responsáveis e prazos.\n\n• Mostre o funil\n• Compare conversões\n• Encontre gargalos\n• Defina ações\n\nPare de vender no improviso. Teste o ConectaCRM grátis por 7 dias. Link na bio. 🚀\n\n#ConectaCRM #CRM #Vendas #GestãoComercial #AutomaçãoDeVendas #PME"
+  "caption": "Isso pode estar travando suas vendas:\n\nCliente sem retorno não está pensando. Está sendo esquecido.\n\nSilêncio não deve encerrar uma oportunidade automaticamente. Deve acionar um processo.\n\n• Crie cadências\n• Programe alertas\n• Mude a abordagem\n• Registre o motivo\n\nPare de vender no improviso. Teste o ConectaCRM grátis por 7 dias. Link na bio. 🚀\n\n#ConectaCRM #CRM #Vendas #GestãoComercial #AutomaçãoDeVendas #PME"
 }

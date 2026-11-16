@@ -630,5 +630,12 @@
     "layout": "viral_black",
     "hook": "Reunião comercial sem dados é só uma roda de opiniões.",
     "photo": "scripts/conecta-art/01-pipeline-phone.png"
+  },
+  {
+    "date": "2026-11-16",
+    "format": "carousel",
+    "layout": "editorial_split",
+    "hook": "Cliente sem retorno não está pensando. Está sendo esquecido.",
+    "photo": "scripts/conecta-art/04-ai-network.png"
   }
 ]
