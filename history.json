@@ -637,5 +637,12 @@
     "layout": "editorial_split",
     "hook": "Cliente sem retorno não está pensando. Está sendo esquecido.",
     "photo": "scripts/conecta-art/04-ai-network.png"
+  },
+  {
+    "date": "2026-11-18",
+    "format": "carousel",
+    "layout": "viral_black",
+    "hook": "O problema da planilha aparece quando a operação começa a crescer.",
+    "photo": "scripts/conecta-art/01-pipeline-phone.png"
   }
 ]
