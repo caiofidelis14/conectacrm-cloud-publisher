@@ -644,5 +644,12 @@
     "layout": "viral_black",
     "hook": "O problema da planilha aparece quando a operação começa a crescer.",
     "photo": "scripts/conecta-art/01-pipeline-phone.png"
+  },
+  {
+    "date": "2026-11-20",
+    "format": "carousel",
+    "layout": "educational_neon",
+    "hook": "Você não precisa cobrar mais o time. Precisa enxergar melhor o processo.",
+    "photo": "scripts/conecta-art/03-data-growth.png"
   }
 ]
