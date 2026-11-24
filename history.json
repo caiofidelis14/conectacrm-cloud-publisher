@@ -651,5 +651,12 @@
     "layout": "educational_neon",
     "hook": "Você não precisa cobrar mais o time. Precisa enxergar melhor o processo.",
     "photo": "scripts/conecta-art/03-data-growth.png"
+  },
+  {
+    "date": "2026-11-23",
+    "format": "static",
+    "layout": "viral_black",
+    "hook": "Uma venda perdida sem motivo registrado será perdida de novo.",
+    "photo": "scripts/conecta-art/01-pipeline-phone.png"
   }
 ]
