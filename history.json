@@ -658,5 +658,12 @@
     "layout": "viral_black",
     "hook": "Uma venda perdida sem motivo registrado será perdida de novo.",
     "photo": "scripts/conecta-art/01-pipeline-phone.png"
+  },
+  {
+    "date": "2026-11-25",
+    "format": "carousel",
+    "layout": "educational_neon",
+    "hook": "Seu funil pode estar cheio e ainda assim não ter vendas.",
+    "photo": "scripts/conecta-art/03-data-growth.png"
   }
 ]

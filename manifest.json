@@ -1,10 +1,15 @@
 {
-  "date": "2026-11-23",
-  "format": "static",
-  "layout": "viral_black",
-  "art": "scripts/conecta-art/01-pipeline-phone.png",
+  "date": "2026-11-25",
+  "format": "carousel",
+  "layout": "educational_neon",
+  "art": "scripts/conecta-art/03-data-growth.png",
   "files": [
-    "public/2026-11-23/01.jpg"
+    "public/2026-11-25/01.jpg",
+    "public/2026-11-25/02.jpg",
+    "public/2026-11-25/03.jpg",
+    "public/2026-11-25/04.jpg",
+    "public/2026-11-25/05.jpg",
+    "public/2026-11-25/06.jpg"
   ],
-  "caption": "Um alerta para quem quer vender mais:\n\nUma venda perdida sem motivo registrado será perdida de novo.\n\nPerder faz parte. Repetir o mesmo erro por falta de informação é opcional.\n\n• Mapeie objeções\n• Registre concorrentes\n• Analise padrões\n• Ajuste o discurso\n\nTransforme conversas em processo. Conheça o ConectaCRM e teste grátis por 7 dias. Link na bio. 🚀\n\n#ConectaCRM #CRM #Vendas #GestãoComercial #AutomaçãoDeVendas #PME"
+  "caption": "Uma verdade desconfortável sobre vendas:\n\nSeu funil pode estar cheio e ainda assim não ter vendas.\n\nVolume no pipeline não significa qualidade. Um funil confiável precisa refletir a realidade.\n\n• Remova oportunidades mortas\n• Atualize as etapas\n• Revise os prazos\n• Priorize intenção real\n\nPare de vender no improviso. Teste o ConectaCRM grátis por 7 dias. Link na bio. 🚀\n\n#ConectaCRM #CRM #Vendas #GestãoComercial #AutomaçãoDeVendas #PME"
 }
