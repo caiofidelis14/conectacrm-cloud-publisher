@@ -665,5 +665,12 @@
     "layout": "educational_neon",
     "hook": "Seu funil pode estar cheio e ainda assim não ter vendas.",
     "photo": "scripts/conecta-art/03-data-growth.png"
+  },
+  {
+    "date": "2026-11-27",
+    "format": "carousel",
+    "layout": "static_neon",
+    "hook": "Atendimento rápido sem contexto também perde venda.",
+    "photo": "scripts/conecta-art/05-founder-editorial.png"
   }
 ]
